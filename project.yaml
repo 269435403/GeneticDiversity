@@ -42,4 +42,8 @@ acceptance:
     - "yyyyy.geneticdiversity"
   error_patterns: []
 git:
-  enabled: false
+  enabled: true
+  remote: "origin"
+  owner: "269435403"
+  repository: "GeneticDiversity"
+  branch: "main"
