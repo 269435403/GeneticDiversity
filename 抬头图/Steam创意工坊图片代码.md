@@ -37,3 +37,9 @@
 `[img]https://raw.githubusercontent.com/269435403/GeneticDiversity/main/%E6%8A%AC%E5%A4%B4%E5%9B%BE/English_03_FAQ_and_Load_Order.png[/img]`
 
 原图地址：https://raw.githubusercontent.com/269435403/GeneticDiversity/main/%E6%8A%AC%E5%A4%B4%E5%9B%BE/English_03_FAQ_and_Load_Order.png
+
+## GIF 动图
+
+`[img]https://raw.githubusercontent.com/269435403/GeneticDiversity/main/%E6%8A%AC%E5%A4%B4%E5%9B%BE/output.gif[/img]`
+
+原图地址：https://raw.githubusercontent.com/269435403/GeneticDiversity/main/%E6%8A%AC%E5%A4%B4%E5%9B%BE/output.gif
