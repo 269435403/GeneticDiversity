@@ -4,7 +4,7 @@ namespace GeneticDiversity
 {
     internal static class GD_Log
     {
-        private const string Prefix = "[Genetic Diversity] ";
+        private const string Prefix = "[Mutation and Hererity] ";
 
         internal static void Message(string text)
         {

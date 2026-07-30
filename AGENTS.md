@@ -1,6 +1,13 @@
-# 基因多样性开发约束（所有后续 Agent 必读）
+# Mutation and Hererity 开发约束（所有后续 Agent 必读）
 
 > 最后更新：2026-07-30｜阶段 1～6 已完整验收并收口；阶段 6 收口后修复了主菜单 ModSettings 访问 `Find.Selector` 的生命周期异常，修复 DLL 已同步，等待用户手动复测。
+
+
+## 正式名称
+
+- 本模组对外正式名称固定为 `Mutation and Hererity`，必须保留用户指定的 `Hererity` 拼写，不得自动“纠正”为 `Heredity`。
+- 玩家可见的 About 名称、设置菜单、日志前缀、当前文档和宣传素材统一使用 `Mutation and Hererity`。
+- 为保持存档、代码和发布兼容，`yyyyy.geneticdiversity`、`yyyyy_GeneticDiversity`、`GeneticDiversity` 命名空间与 DLL 名均作为内部技术标识保留，不随展示名改名。
 
 ## 不可变核心理念
 

@@ -73,7 +73,7 @@ namespace GeneticDiversity
             GD_Settings settings = GD_SettingsAccess.Current;
             if (!settings.Enabled)
             {
-                Messages.Message("当前设置已关闭基因多样性，未执行旧档补充。", MessageTypeDefOf.RejectInput);
+                Messages.Message("当前设置已关闭 Mutation and Hererity，未执行旧档补充。", MessageTypeDefOf.RejectInput);
                 return;
             }
             foreach (Pawn pawn in pawns.Where(x => x != null).Distinct())

@@ -1,4 +1,4 @@
-# Genetic Diversity (基因多样性)
+# Mutation and Hererity
 
 A RimWorld mod that adds genetic variation to pawns through endogenes, simulating natural genetic diversity and mutation across generations.
 
@@ -23,7 +23,7 @@ A RimWorld mod that adds genetic variation to pawns through endogenes, simulatin
 New in latest version! Players can now exclude unwanted genes:
 - **By Gene**: Blacklist individual genes by defName
 - **By Category**: Blacklist entire gene categories
-- Access via ModSettings → Genetic Diversity → "Manage Blacklist"
+- Access via ModSettings → Mutation and Hererity → "Manage Blacklist"
 - Blacklisted genes are filtered in all random generation
 
 ## Requirements
@@ -47,7 +47,7 @@ New in latest version! Players can now exclude unwanted genes:
 
 ## Configuration
 
-Open **Options → Mod Settings → Genetic Diversity** to customize:
+Open **Options → Mod Settings → Mutation and Hererity** to customize:
 - Enable/disable for player/NPC factions
 - Adjust global intensity (see probability distribution)
 - Set mutation ratios
@@ -106,7 +106,7 @@ See LICENSE file for details.
 最新版本新增！玩家现在可以排除不想要的基因：
 - **按基因**：通过 defName 禁用单个基因
 - **按类别**：禁用整个基因类别
-- 通过"模组设置 → 基因多样性 → 管理黑名单"访问
+- 通过"模组设置 → Mutation and Hererity → 管理黑名单"访问
 - 黑名单基因在所有随机生成中都会被过滤
 
 ### 需求
@@ -130,7 +130,7 @@ See LICENSE file for details.
 
 ### 配置
 
-打开**选项 → 模组设置 → 基因多样性**进行自定义：
+打开**选项 → 模组设置 → Mutation and Hererity**进行自定义：
 - 启用/禁用玩家/NPC 阵营
 - 调整全局强度（查看概率分布）
 - 设置突变比例

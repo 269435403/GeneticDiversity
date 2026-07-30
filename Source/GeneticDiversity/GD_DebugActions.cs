@@ -9,20 +9,20 @@ namespace GeneticDiversity
 {
     internal static class GD_DebugActions
     {
-        private const string Category = "基因多样性";
+        private const string Category = "Mutation and Hererity";
 
         [DebugAction(Category, "清空基因池缓存", actionType = DebugActionType.Action, allowedGameStates = AllowedGameStates.Playing)]
         private static void ClearGenePoolCache()
         {
             GD_WorldGenePool.ClearCache();
-            Messages.Message("基因多样性：缓存已清空；下次生成角色时重建。", MessageTypeDefOf.TaskCompletion);
+            Messages.Message("Mutation and Hererity：缓存已清空；下次生成角色时重建。", MessageTypeDefOf.TaskCompletion);
         }
 
         [DebugAction(Category, "立即刷新基因池缓存", actionType = DebugActionType.Action, allowedGameStates = AllowedGameStates.Playing)]
         private static void RefreshGenePoolCache()
         {
             GD_GenePoolSnapshot snapshot = GD_WorldGenePool.RefreshNow();
-            Messages.Message("基因多样性：缓存已刷新，Race " + snapshot.ScannedRaceCount + "，系谱观察 " + snapshot.Observations.Count + "。", MessageTypeDefOf.TaskCompletion);
+            Messages.Message("Mutation and Hererity：缓存已刷新，Race " + snapshot.ScannedRaceCount + "，系谱观察 " + snapshot.Observations.Count + "。", MessageTypeDefOf.TaskCompletion);
         }
 
         [DebugAction(Category, "只读统计当前地图成年人物", actionType = DebugActionType.Action, allowedGameStates = AllowedGameStates.PlayingOnMap)]
@@ -154,7 +154,7 @@ namespace GeneticDiversity
         private static void ReportBirthMutationDiagnostics()
         {
             GD_Log.Message("\n" + GD_Diagnostics.BuildReport());
-            Messages.Message("基因多样性：阶段2聚合诊断已写入日志；未修改任何 Pawn。", MessageTypeDefOf.NeutralEvent);
+            Messages.Message("Mutation and Hererity：阶段2聚合诊断已写入日志；未修改任何 Pawn。", MessageTypeDefOf.NeutralEvent);
         }
 
 

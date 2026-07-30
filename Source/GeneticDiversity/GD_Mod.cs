@@ -18,7 +18,7 @@ namespace GeneticDiversity
 
         public override string SettingsCategory()
         {
-            return "\u57fa\u56e0\u591a\u6837\u6027";
+            return "Mutation and Hererity";
         }
 
         public override void DoSettingsWindowContents(Rect inRect)
