@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <GeneticDiversity.GD_RaceGeneCompatibilityDef MayRequire="keeptpa.NivarianRace">
+    <defName>GD_Compat_Nivarian</defName>
+    <label>Nivarian precise gene compatibility</label>
+    <description>Defines the native Nivarian xenotypes and keeps Nivarian-specific genes inside the Nivarian race.</description>
+    <sourcePackageIds><li>keeptpa.NivarianRace</li></sourcePackageIds>
+    <raceDefName>NivarianRace_Pawn</raceDefName>
+    <nativeXenotypeDefNames>
+      <li>LuminNivarian</li>
+      <li>PulsarNivarian</li>
+      <li>AegisNivarian</li>
+    </nativeXenotypeDefNames>
+    <nativeGeneDefNames>
+      <li>Nivarian_Lumin_PsychicProgression</li>
+      <li>Nivarian_Custos_UnyieldingFocus</li>
+      <li>Nivarian_Artifex_Machinery</li>
+      <li>Nivarian_Scale_Cover</li>
+    </nativeGeneDefNames>
+  </GeneticDiversity.GD_RaceGeneCompatibilityDef>
+
+  <GeneticDiversity.GD_RaceGeneCompatibilityDef MayRequire="Solaris.RatkinRaceMod">
+    <defName>GD_Compat_NewRatkinPlus</defName>
+    <label>NewRatkinPlus precise gene compatibility</label>
+    <description>Defines the native Ratkin xenotype and keeps Ratkin body and appearance genes inside Ratkin.</description>
+    <sourcePackageIds><li>Solaris.RatkinRaceMod</li></sourcePackageIds>
+    <raceDefName>Ratkin</raceDefName>
+    <nativeXenotypeDefNames><li>RK_XenoType_Ratkin</li></nativeXenotypeDefNames>
+    <nativeGeneDefNames>
+      <li>RK_Gene_SmallBody</li>
+      <li>RK_Gene_Nimble</li>
+      <li>RK_Gene_PoorEyesight</li>
+      <li>RK_Gene_FragilePain</li>
+      <li>RK_Gene_GoodGardening</li>
+      <li>RK_Skin_PureWhite</li>
+      <li>RK_Gene_LargeEars</li>
+      <li>RK_Gene_ThinTail</li>
+      <li>RK_Gene_CuteFace</li>
+    </nativeGeneDefNames>
+    <sameRaceOnlyGeneDefNames>
+      <li>RK_Gene_SmallBody</li>
+      <li>RK_Skin_PureWhite</li>
+      <li>RK_Gene_LargeEars</li>
+      <li>RK_Gene_ThinTail</li>
+      <li>RK_Gene_CuteFace</li>
+    </sameRaceOnlyGeneDefNames>
+  </GeneticDiversity.GD_RaceGeneCompatibilityDef>
+
+  <GeneticDiversity.GD_RaceGeneCompatibilityDef MayRequire="OARK.RatkinFaction.OberoniaAurea">
+    <defName>GD_Compat_OberoniaAurea</defName>
+    <label>Oberonia Aurea precise gene compatibility</label>
+    <description>Defines the Oberonia Aurea Ratkin xenotype and keeps its adaptation genes inside Ratkin.</description>
+    <sourcePackageIds><li>OARK.RatkinFaction.OberoniaAurea</li></sourcePackageIds>
+    <raceDefName>Ratkin</raceDefName>
+    <nativeXenotypeDefNames><li>Ratkin_OA</li></nativeXenotypeDefNames>
+    <nativeGeneDefNames>
+      <li>RK_OA_gene_Social</li>
+      <li>OA_RK_Gene_ColdAdaptation</li>
+      <li>OA_RK_Gene_HotAdaptation</li>
+    </nativeGeneDefNames>
+    <sameRaceOnlyGeneDefNames>
+      <li>OA_RK_Gene_ColdAdaptation</li>
+      <li>OA_RK_Gene_HotAdaptation</li>
+    </sameRaceOnlyGeneDefNames>
+  </GeneticDiversity.GD_RaceGeneCompatibilityDef>
+
+  <GeneticDiversity.GD_RaceGeneCompatibilityDef MayRequire="ZuoYao.KiiroOrangeCat">
+    <defName>GD_Compat_KiiroOrangeCat</defName>
+    <label>Kiiro Orange Cat precise gene compatibility</label>
+    <description>Defines the Orange Cat xenotype and keeps all source custom and structural genes inside Kiiro.</description>
+    <sourcePackageIds><li>ZuoYao.KiiroOrangeCat</li></sourcePackageIds>
+    <raceDefName>Kiiro_Race</raceDefName>
+    <nativeXenotypeDefNames><li>KiiroXenotype_OrangeCat</li></nativeXenotypeDefNames>
+    <nativeGeneDefNames>
+      <li>Kiiro_EatALittle</li>
+      <li>Kiiro_HeavyOrange</li>
+    </nativeGeneDefNames>
+    <sameRaceOnlyGeneDefNames>
+      <li>Kiiro_EatALittle</li>
+      <li>Kiiro_HeavyOrange</li>
+    </sameRaceOnlyGeneDefNames>
+    <sameRaceOnlySourceCustomGenes>true</sameRaceOnlySourceCustomGenes>
+  </GeneticDiversity.GD_RaceGeneCompatibilityDef>
+
+  <GeneticDiversity.GD_RaceGeneCompatibilityDef MayRequire="ZuoYao.KiiroMaineCoon">
+    <defName>GD_Compat_KiiroMaineCoon</defName>
+    <label>Kiiro Maine Coon precise gene compatibility</label>
+    <description>Defines the Maine Coon xenotype and keeps all source custom and structural genes inside Kiiro.</description>
+    <sourcePackageIds><li>ZuoYao.KiiroMaineCoon</li></sourcePackageIds>
+    <raceDefName>Kiiro_Race</raceDefName>
+    <nativeXenotypeDefNames><li>KiiroXenotype_MaineCoon</li></nativeXenotypeDefNames>
+    <nativeGeneDefNames>
+      <li>Kiiro_GentleGiant</li>
+      <li>Kiiro_CatBoss</li>
+    </nativeGeneDefNames>
+    <sameRaceOnlyGeneDefNames>
+      <li>Kiiro_GentleGiant</li>
+      <li>Kiiro_CatBoss</li>
+    </sameRaceOnlyGeneDefNames>
+    <sameRaceOnlySourceCustomGenes>true</sameRaceOnlySourceCustomGenes>
+  </GeneticDiversity.GD_RaceGeneCompatibilityDef>
+
+  <GeneticDiversity.GD_RaceGeneCompatibilityDef MayRequire="ZuoYao.KiiroSiamese">
+    <defName>GD_Compat_KiiroSiamese</defName>
+    <label>Kiiro Siamese precise gene compatibility</label>
+    <description>Defines the Siamese xenotype and keeps all source custom and structural genes inside Kiiro.</description>
+    <sourcePackageIds><li>ZuoYao.KiiroSiamese</li></sourcePackageIds>
+    <raceDefName>Kiiro_Race</raceDefName>
+    <nativeXenotypeDefNames><li>KiiroXenotype_Siamese</li></nativeXenotypeDefNames>
+    <nativeGeneDefNames>
+      <li>Kiiro_SiameseMiner</li>
+      <li>Kiiro_SiameseActiveSpirit</li>
+      <li>Eyes_SiameseBlue</li>
+    </nativeGeneDefNames>
+    <sameRaceOnlyGeneDefNames>
+      <li>Kiiro_SiameseMiner</li>
+      <li>Kiiro_SiameseActiveSpirit</li>
+      <li>Eyes_SiameseBlue</li>
+    </sameRaceOnlyGeneDefNames>
+    <sameRaceOnlySourceCustomGenes>true</sameRaceOnlySourceCustomGenes>
+  </GeneticDiversity.GD_RaceGeneCompatibilityDef>
+
+  <GeneticDiversity.GD_RaceGeneCompatibilityDef MayRequire="ZuoYao.KiiroRagdoll">
+    <defName>GD_Compat_KiiroRagdoll</defName>
+    <label>Kiiro Ragdoll precise gene compatibility</label>
+    <description>Defines the Ragdoll xenotype and keeps all source custom and structural genes inside Kiiro.</description>
+    <sourcePackageIds><li>ZuoYao.KiiroRagdoll</li></sourcePackageIds>
+    <raceDefName>Kiiro_Race</raceDefName>
+    <nativeXenotypeDefNames><li>KiiroXenotype_Ragdoll</li></nativeXenotypeDefNames>
+    <nativeGeneDefNames>
+      <li>Kiiro_CatFairy</li>
+      <li>Kiiro_GlassStomach</li>
+      <li>Eyes_RagdollBlue</li>
+    </nativeGeneDefNames>
+    <sameRaceOnlyGeneDefNames>
+      <li>Kiiro_CatFairy</li>
+      <li>Kiiro_GlassStomach</li>
+      <li>Eyes_RagdollBlue</li>
+    </sameRaceOnlyGeneDefNames>
+    <sameRaceOnlySourceCustomGenes>true</sameRaceOnlySourceCustomGenes>
+  </GeneticDiversity.GD_RaceGeneCompatibilityDef>
+
+  <GeneticDiversity.GD_RaceGeneCompatibilityDef MayRequire="RooAndGloomy.DragonianRaceMod">
+    <defName>GD_Compat_Dragonian</defName>
+    <label>Dragonian precise gene compatibility</label>
+    <description>Defines the native Dragonian xenotypes and keeps Dragonborn genes inside Dragonian.</description>
+    <sourcePackageIds><li>RooAndGloomy.DragonianRaceMod</li></sourcePackageIds>
+    <raceDefName>Dragonian_Race</raceDefName>
+    <nativeXenotypeDefNames>
+      <li>DragonianXenotype</li>
+      <li>DragonianXenotypeBlack</li>
+    </nativeXenotypeDefNames>
+    <nativeGeneDefNames>
+      <li>Dragonian_Dragonborn</li>
+      <li>Dragonian_Dragonborn_Black</li>
+    </nativeGeneDefNames>
+    <sameRaceOnlyGeneDefNames>
+      <li>Dragonian_Dragonborn</li>
+      <li>Dragonian_Dragonborn_Black</li>
+    </sameRaceOnlyGeneDefNames>
+  </GeneticDiversity.GD_RaceGeneCompatibilityDef>
+
+  <GeneticDiversity.GD_RaceGeneCompatibilityDef MayRequire="HenTaiLoliTeam.Axolotl">
+    <defName>GD_Compat_MoeLotl</defName>
+    <label>MoeLotl precise gene compatibility</label>
+    <description>Defines the MoeLotl base xenotype and its ordinary research gene for Axolotl.</description>
+    <sourcePackageIds><li>HenTaiLoliTeam.Axolotl</li></sourcePackageIds>
+    <raceDefName>Axolotl</raceDefName>
+    <nativeXenotypeDefNames><li>Axolotl_Xenotype_MoeLotlBase</li></nativeXenotypeDefNames>
+    <nativeGeneDefNames><li>Axolotl_Research_Slow</li></nativeGeneDefNames>
+  </GeneticDiversity.GD_RaceGeneCompatibilityDef>
+
+  <GeneticDiversity.GD_RaceGeneCompatibilityDef MayRequire="miho.fortifiedoutremer">
+    <defName>GD_Compat_Miho</defName>
+    <label>Miho precise gene compatibility</label>
+    <description>Defines the six inheritable Celestial Miho xenotypes, registers all Miho source genes, and keeps race-identity genes inside Miho.</description>
+    <sourcePackageIds><li>miho.fortifiedoutremer</li></sourcePackageIds>
+    <raceDefName>Alien_Miho</raceDefName>
+    <nativeXenotypeDefNames>
+      <li>Xeno_CelestialMiho</li>
+      <li>Xeno_CelestialMiho_Arctic</li>
+      <li>Xeno_CelestialMiho_Desert</li>
+      <li>Xeno_CelestialMiho_Highland</li>
+      <li>Xeno_CelestialMiho_Highmate</li>
+      <li>Xeno_CelestialMiho_Voidborn</li>
+    </nativeXenotypeDefNames>
+    <nativeGeneDefNames>
+      <li>Hair_Miho_Ash</li>
+      <li>Hair_Miho_Pink</li>
+      <li>Hair_Miho_Orange</li>
+      <li>Hair_Miho_Red</li>
+      <li>Hair_Miho_Sky</li>
+      <li>Gene_Miho_AdvancedAuditory</li>
+      <li>Gene_Miho_Naked</li>
+      <li>Ears_Arctic_Miho</li>
+      <li>Ears_Desert_Miho</li>
+      <li>Ears_Highland_Miho</li>
+      <li>Ears_Highmate_Miho</li>
+      <li>Gene_CelestialMiho</li>
+      <li>Hair_Miho_Violet</li>
+      <li>Hair_Miho_SpaceBlonde</li>
+      <li>Ears_Voidborn_Miho</li>
+    </nativeGeneDefNames>
+    <sameRaceOnlyGeneDefNames>
+      <li>Ears_Arctic_Miho</li>
+      <li>Ears_Desert_Miho</li>
+      <li>Ears_Highland_Miho</li>
+      <li>Ears_Highmate_Miho</li>
+      <li>Gene_CelestialMiho</li>
+      <li>Ears_Voidborn_Miho</li>
+    </sameRaceOnlyGeneDefNames>
+  </GeneticDiversity.GD_RaceGeneCompatibilityDef>
+
+  <GeneticDiversity.GD_RaceGeneCompatibilityDef MayRequire="RooAndGloomy.YuranRaceMod">
+    <defName>GD_Compat_Yuran</defName>
+    <label>Yuran precise gene compatibility</label>
+    <description>Keeps the base Yuran race tied to its native xenotype.</description>
+    <sourcePackageIds><li>RooAndGloomy.YuranRaceMod</li></sourcePackageIds>
+    <raceDefName>Yuran_Race</raceDefName>
+    <nativeXenotypeDefNames><li>YuranXenotype</li></nativeXenotypeDefNames>
+  </GeneticDiversity.GD_RaceGeneCompatibilityDef>
+
+  <GeneticDiversity.GD_RaceGeneCompatibilityDef MayRequire="RooAndGloomy.YuranRaceMod">
+    <defName>GD_Compat_YuranBlackSnake</defName>
+    <label>Yuran Black Snake Miko precise gene compatibility</label>
+    <description>Keeps the Black Snake Miko Yuran race tied to its native xenotype.</description>
+    <sourcePackageIds><li>RooAndGloomy.YuranRaceMod</li></sourcePackageIds>
+    <raceDefName>Yuran_Race_Miko_BlackSnake</raceDefName>
+    <nativeXenotypeDefNames><li>YuranXenotypeBlackSnake</li></nativeXenotypeDefNames>
+  </GeneticDiversity.GD_RaceGeneCompatibilityDef>
+</Defs>

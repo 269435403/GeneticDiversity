@@ -1,0 +1,19 @@
+{
+  "owner": "rimworld-mod-workbench/project_wiki.py",
+  "schema": 1,
+  "generated_date": "2026-07-30",
+  "mode": "mixed",
+  "project_root": "D:\\RimWorldModding\\projects\\yyyyy_GeneticDiversity",
+  "output_root": "D:\\RimWorldModding\\projects\\yyyyy_GeneticDiversity\\Wiki",
+  "managed_files": {
+    "Translations/_翻译索引.md": "66AA3983A4D7991AB9DE3507A2A3F0DF197FF691C23782E0EA67D0109693BD90",
+    "Translations/_翻译覆盖.md": "9313B18CD7A4DB8C2C52239B7C0A3D3707C3AB9C752734B4A2DC732EF48B215F",
+    "_工作台总索引.md": "0EF018A294FECA9288C7BA8C355F847FA9BB19AEC2F024A9C87AAA815DF1DCD5",
+    "_工作台Wiki校验.json": "98235ADAB4DAF7E28FAD7CDFC2CACBFEF381BB03634F50E217DD18200CB098F1"
+  },
+  "preserved_manual_markdown": [
+    "Defs/GeneticDiversity.GD_RaceGeneCompatibilityDef.md",
+    "_总索引.md"
+  ],
+  "validation_status": "ok"
+}

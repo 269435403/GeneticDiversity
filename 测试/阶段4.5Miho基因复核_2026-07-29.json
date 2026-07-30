@@ -1,0 +1,75 @@
+{
+    "scanDate":  "2026-07-29",
+    "workshopId":  "2816826107",
+    "name":  "Miho, the celestial fox",
+    "packageId":  "miho.fortifiedoutremer",
+    "sourceAddonPackageId":  "src.Core.markeazzyh",
+    "sourceAddonDefinesGenes":  false,
+    "activeRoots":  [
+                        "1.6",
+                        "Cont"
+                    ],
+    "conditionalRoots":  [
+                             {
+                                 "path":  "Odyssey",
+                                 "ifModActive":  "Ludeon.RimWorld.Odyssey"
+                             },
+                             {
+                                 "path":  "Seedsplease",
+                                 "ifModActive":  "Owlchemist.SeedsPleaseLite"
+                             },
+                             {
+                                 "path":  "SeedspleaseTranslation",
+                                 "ifModActive":  "Owlchemist.SeedsPleaseLite"
+                             },
+                             {
+                                 "path":  "RimLanguages",
+                                 "ifModActive":  "DimonSever000.FactionLanguages"
+                             }
+                         ],
+    "raceDef":  "Alien_Miho",
+    "coreXenotypes":  [
+                          "Xeno_CelestialMiho",
+                          "Xeno_CelestialMiho_Arctic",
+                          "Xeno_CelestialMiho_Desert",
+                          "Xeno_CelestialMiho_Highland",
+                          "Xeno_CelestialMiho_Highmate"
+                      ],
+    "odysseyXenotypes":  [
+                             "Xeno_CelestialMiho_Voidborn"
+                         ],
+    "coreGenes":  [
+                      "Hair_Miho_Ash",
+                      "Hair_Miho_Pink",
+                      "Hair_Miho_Orange",
+                      "Hair_Miho_Red",
+                      "Hair_Miho_Sky",
+                      "Gene_Miho_AdvancedAuditory",
+                      "Gene_Miho_Naked",
+                      "Ears_Arctic_Miho",
+                      "Ears_Desert_Miho",
+                      "Ears_Highland_Miho",
+                      "Ears_Highmate_Miho",
+                      "Gene_CelestialMiho"
+                  ],
+    "odysseyGenes":  [
+                         "Hair_Miho_Violet",
+                         "Hair_Miho_SpaceBlonde",
+                         "Ears_Voidborn_Miho"
+                     ],
+    "raceRestrictedGenes":  [
+                                "Ears_Arctic_Miho",
+                                "Ears_Desert_Miho",
+                                "Ears_Highland_Miho",
+                                "Ears_Highmate_Miho",
+                                "Gene_CelestialMiho",
+                                "Ears_Voidborn_Miho"
+                            ],
+    "sourceFiles":  [
+                        "About/About.xml",
+                        "LoadFolders.xml",
+                        "1.6/Defs/Race_Miho.xml",
+                        "1.6/Defs/BioDesu/XenotypeDefs.xml",
+                        "Odyssey/Defs/Xenotype.xml"
+                    ]
+}

@@ -1,0 +1,6307 @@
+{
+  "scanDate": "2026-07-29",
+  "basePath": "D:\\steam\\steamapps\\common\\RimWorld\\Mods\\模组制作工作台\\创意工坊其他模组及源码\\HAR系列\\已兼容",
+  "mods": [
+    {
+      "relativePath": "[OA]Ratkin Faction Oberonia aurea",
+      "name": "[OA]Ratkin Faction: Oberonia aurea",
+      "packageId": "OARK.RatkinFaction.OberoniaAurea",
+      "supportedVersions": [
+        "1.4",
+        "1.5",
+        "1.6"
+      ],
+      "loadRoots": [
+        {
+          "path": "1.6/Frame_Temp",
+          "conditions": {
+            "IfModNotActive": "OARK.OberoniaAurea.Framework"
+          },
+          "source": "LoadFolders.xml"
+        },
+        {
+          "path": "Mods/EnvironmentApparelFramework/1.6",
+          "conditions": {
+            "IfModNotActive": "ZuoYao.WeatherApparelFramework"
+          },
+          "source": "LoadFolders.xml"
+        },
+        {
+          "path": ".",
+          "conditions": {},
+          "source": "LoadFolders.xml"
+        },
+        {
+          "path": "1.6",
+          "conditions": {},
+          "source": "LoadFolders.xml"
+        },
+        {
+          "path": "Mods/Ideology",
+          "conditions": {
+            "IfModActive": "Ludeon.RimWorld.Ideology"
+          },
+          "source": "LoadFolders.xml"
+        },
+        {
+          "path": "Mods/Ideology/1.6",
+          "conditions": {
+            "IfModActive": "Ludeon.RimWorld.Ideology"
+          },
+          "source": "LoadFolders.xml"
+        },
+        {
+          "path": "Mods/Biotech",
+          "conditions": {
+            "IfModActive": "Ludeon.RimWorld.Biotech"
+          },
+          "source": "LoadFolders.xml"
+        },
+        {
+          "path": "Mods/Biotech/1.6",
+          "conditions": {
+            "IfModActive": "Ludeon.RimWorld.Biotech"
+          },
+          "source": "LoadFolders.xml"
+        },
+        {
+          "path": "Mods/Odyssey",
+          "conditions": {
+            "IfModActive": "Ludeon.RimWorld.Odyssey"
+          },
+          "source": "LoadFolders.xml"
+        },
+        {
+          "path": "Mods/Odyssey/1.6",
+          "conditions": {
+            "IfModActive": "Ludeon.RimWorld.Odyssey"
+          },
+          "source": "LoadFolders.xml"
+        },
+        {
+          "path": "Mods/CombatExtended/1.6",
+          "conditions": {
+            "IfModActive": "CETeam.CombatExtended"
+          },
+          "source": "LoadFolders.xml"
+        }
+      ],
+      "raceDefs": [],
+      "xenotypeDefs": [
+        {
+          "defName": "Ratkin_OA",
+          "file": "Mods\\Biotech\\1.6\\Defs\\XentypeDefs\\XenotypeDefs.xml",
+          "loadRoot": {
+            "path": "Mods/Biotech/1.6",
+            "conditions": {
+              "IfModActive": "Ludeon.RimWorld.Biotech"
+            },
+            "source": "LoadFolders.xml"
+          },
+          "conditions": {},
+          "genes": [
+            "Immunity_Weak",
+            "PsychicAbility_Dull",
+            "MoveSpeed_Slow",
+            "Mood_Optimist",
+            "MinTemp_SmallDecrease",
+            "LowSleep",
+            "Beauty_Pretty",
+            "Beard_NoBeardOnly",
+            "Hair_Gray",
+            "Hair_Blonde",
+            "Hair_LightOrange",
+            "Hair_LightBlue",
+            "Hair_LightTeal",
+            "Skin_SheerWhite",
+            "Hair_Grayless",
+            "AptitudePoor_Mining",
+            "AptitudeStrong_Artistic",
+            "RK_OA_gene_Social",
+            "OA_RK_Gene_ColdAdaptation",
+            "RK_Gene_LargeEars",
+            "RK_Gene_ThinTail",
+            "RK_Gene_CuteFace",
+            "OAGene_NormalEyesight",
+            "OAGene_OAMetabolicGeneChain"
+          ],
+          "inheritable": "true",
+          "label": "Oberonia Aurea Ratkin"
+        }
+      ],
+      "geneDefs": [
+        {
+          "defName": "RK_OA_gene_Social",
+          "file": "Mods\\Biotech\\1.6\\Defs\\XentypeDefs\\Gene_Social.xml",
+          "loadRoot": {
+            "path": "Mods/Biotech/1.6",
+            "conditions": {
+              "IfModActive": "Ludeon.RimWorld.Biotech"
+            },
+            "source": "LoadFolders.xml"
+          },
+          "conditions": {},
+          "parentName": null,
+          "geneClass": null,
+          "canGenerateInGeneSet": null,
+          "biostatArc": null,
+          "label": "Oberonia hormone"
+        },
+        {
+          "defName": "OA_RK_Gene_ColdAdaptation",
+          "file": "Mods\\Biotech\\1.6\\Defs\\XentypeDefs\\Gene_TemperatureAdaptation.xml",
+          "loadRoot": {
+            "path": "Mods/Biotech/1.6",
+            "conditions": {
+              "IfModActive": "Ludeon.RimWorld.Biotech"
+            },
+            "source": "LoadFolders.xml"
+          },
+          "conditions": {},
+          "parentName": null,
+          "geneClass": "OberoniaAurea.Gene_ColdAdaptation",
+          "canGenerateInGeneSet": null,
+          "biostatArc": null,
+          "label": "Cold stress adaptation"
+        },
+        {
+          "defName": "OA_RK_Gene_HotAdaptation",
+          "file": "Mods\\Biotech\\1.6\\Defs\\XentypeDefs\\Gene_TemperatureAdaptation.xml",
+          "loadRoot": {
+            "path": "Mods/Biotech/1.6",
+            "conditions": {
+              "IfModActive": "Ludeon.RimWorld.Biotech"
+            },
+            "source": "LoadFolders.xml"
+          },
+          "conditions": {},
+          "parentName": null,
+          "geneClass": "OberoniaAurea.Gene_HotAdaptation",
+          "canGenerateInGeneSet": null,
+          "biostatArc": null,
+          "label": "Heat stress adaptation"
+        }
+      ],
+      "uniqueRaceDefNames": [],
+      "uniqueXenotypeDefNames": [
+        "Ratkin_OA"
+      ],
+      "uniqueGeneDefNames": [
+        "OA_RK_Gene_ColdAdaptation",
+        "OA_RK_Gene_HotAdaptation",
+        "RK_OA_gene_Social"
+      ],
+      "errors": []
+    },
+    {
+      "relativePath": "[OA]Ratkin Gene Expand",
+      "name": "[OA]Ratkin Gene Expand",
+      "packageId": "OARK.RatkinFaction.GeneExpand",
+      "supportedVersions": [
+        "1.5",
+        "1.6"
+      ],
+      "loadRoots": [
+        {
+          "path": "1.6/Frame_Temp",
+          "conditions": {
+            "IfModNotActive": "OARK.OberoniaAurea.Framework"
+          },
+          "source": "LoadFolders.xml"
+        },
+        {
+          "path": ".",
+          "conditions": {},
+          "source": "LoadFolders.xml"
+        },
+        {
+          "path": "1.6",
+          "conditions": {},
+          "source": "LoadFolders.xml"
+        },
+        {
+          "path": "Ideology",
+          "conditions": {
+            "IfModActive": "Ludeon.RimWorld.Ideology"
+          },
+          "source": "LoadFolders.xml"
+        },
+        {
+          "path": "Ideology/1.6",
+          "conditions": {
+            "IfModActive": "Ludeon.RimWorld.Ideology"
+          },
+          "source": "LoadFolders.xml"
+        },
+        {
+          "path": "Ratkin",
+          "conditions": {
+            "IfModActive": "Solaris.RatkinRaceMod"
+          },
+          "source": "LoadFolders.xml"
+        },
+        {
+          "path": "Ratkin/1.6",
+          "conditions": {
+            "IfModActive": "Solaris.RatkinRaceMod"
+          },
+          "source": "LoadFolders.xml"
+        },
+        {
+          "path": "Ratkin",
+          "conditions": {
+            "IfModActive": "fxz.Solaris.RatkinRaceMod.odyssey"
+          },
+          "source": "LoadFolders.xml"
+        },
+        {
+          "path": "Ratkin/1.6",
+          "conditions": {
+            "IfModActive": "fxz.Solaris.RatkinRaceMod.odyssey"
+          },
+          "source": "LoadFolders.xml"
+        }
+      ],
+      "raceDefs": [],
+      "xenotypeDefs": [
+        {
+          "defName": "OAGene_RatkinBase",
+          "file": "Ratkin\\1.6\\Defs\\GeneDefs\\Ratkin_XenotypeDefs.xml",
+          "loadRoot": {
+            "path": "Ratkin/1.6",
+            "conditions": {
+              "IfModActive": "Solaris.RatkinRaceMod"
+            },
+            "source": "LoadFolders.xml"
+          },
+          "conditions": {},
+          "genes": [
+            "RK_Gene_LargeEars"
+          ],
+          "inheritable": "true",
+          "label": "Tribe Ratkin"
+        },
+        {
+          "defName": "OAGene_PrimordialRatkin",
+          "file": "Ratkin\\1.6\\Defs\\GeneDefs\\Ratkin_XenotypeDefs.xml",
+          "loadRoot": {
+            "path": "Ratkin/1.6",
+            "conditions": {
+              "IfModActive": "Solaris.RatkinRaceMod"
+            },
+            "source": "LoadFolders.xml"
+          },
+          "conditions": {},
+          "genes": [
+            "RK_Gene_LargeEars",
+            "RK_Gene_GoodGardening",
+            "RK_Gene_FragilePain",
+            "Hair_SnowWhite",
+            "AptitudeStrong_Plants",
+            "Fertile"
+          ],
+          "inheritable": null,
+          "label": "Initial Ratkin"
+        },
+        {
+          "defName": "OAGene_WhiteRatkin",
+          "file": "Ratkin\\1.6\\Defs\\GeneDefs\\Ratkin_XenotypeDefs.xml",
+          "loadRoot": {
+            "path": "Ratkin/1.6",
+            "conditions": {
+              "IfModActive": "Solaris.RatkinRaceMod"
+            },
+            "source": "LoadFolders.xml"
+          },
+          "conditions": {},
+          "genes": [
+            "RK_Gene_LargeEars",
+            "RK_Gene_FragilePain",
+            "Hair_SnowWhite",
+            "OAGene_MonarchyBased",
+            "AptitudeStrong_Social",
+            "Beauty_Pretty",
+            "WoundHealing_Slow",
+            "OAGene_NormalEyesight",
+            "PsychicAbility_Enhanced",
+            "AptitudePoor_Plants",
+            "AptitudeTerrible_Mining",
+            "OAGene_ColdSleepy"
+          ],
+          "inheritable": null,
+          "label": "White Ratkin"
+        },
+        {
+          "defName": "OAGene_TravelRatkin",
+          "file": "Ratkin\\1.6\\Defs\\GeneDefs\\Ratkin_XenotypeDefs.xml",
+          "loadRoot": {
+            "path": "Ratkin/1.6",
+            "conditions": {
+              "IfModActive": "Solaris.RatkinRaceMod"
+            },
+            "source": "LoadFolders.xml"
+          },
+          "conditions": {},
+          "genes": [
+            "RK_Gene_LargeEars",
+            "RK_Gene_GoodGardening",
+            "RK_Gene_FragilePain",
+            "AptitudeStrong_Plants",
+            "AptitudeStrong_Animals",
+            "AptitudeTerrible_Intellectual",
+            "Mood_Sanguine",
+            "Fertile",
+            "PsychicAbility_Dull",
+            "OAGene_ElasticGastricWall",
+            "OAGene_SurvivalInstinct"
+          ],
+          "inheritable": null,
+          "label": "Travel Ratkin"
+        },
+        {
+          "defName": "OAGene_RockRatkin",
+          "file": "Ratkin\\1.6\\Defs\\GeneDefs\\Ratkin_XenotypeDefs.xml",
+          "loadRoot": {
+            "path": "Ratkin/1.6",
+            "conditions": {
+              "IfModActive": "Solaris.RatkinRaceMod"
+            },
+            "source": "LoadFolders.xml"
+          },
+          "conditions": {},
+          "genes": [
+            "OAGene_RockRatkinEar",
+            "Hair_DarkSaturatedReddish",
+            "Hair_ReddishBrown",
+            "OAGene_ExcellentPhysique",
+            "OAGene_ScarConstitution",
+            "OAGene_HardBone",
+            "OAGene_DeepSleep",
+            "OAGene_HardBoneShell",
+            "MinTemp_SmallIncrease",
+            "Aggression_Aggressive",
+            "Robust",
+            "WoundHealing_Fast",
+            "AptitudeStrong_Mining",
+            "AptitudePoor_Medicine"
+          ],
+          "inheritable": null,
+          "label": "Rock Ratkin"
+        },
+        {
+          "defName": "OAGene_SnowRatkin",
+          "file": "Ratkin\\1.6\\Defs\\GeneDefs\\Ratkin_XenotypeDefs.xml",
+          "loadRoot": {
+            "path": "Ratkin/1.6",
+            "conditions": {
+              "IfModActive": "Solaris.RatkinRaceMod"
+            },
+            "source": "LoadFolders.xml"
+          },
+          "conditions": {},
+          "genes": [
+            "OAGene_SnowRatkinEar",
+            "MoveSpeed_VeryQuick",
+            "OAGene_AgilityAction",
+            "MinTemp_SmallDecrease",
+            "MaxTemp_SmallDecrease",
+            "OAGene_HeatSleepy",
+            "OAGene_SpecificHemogen",
+            "Hair_SnowWhite",
+            "Hair_Blonde",
+            "OAGene_Suspicious",
+            "OAGene_BloodCellsAutophagy",
+            "AptitudeRemarkable_Melee",
+            "AptitudePoor_Plants",
+            "AptitudePoor_Social"
+          ],
+          "inheritable": null,
+          "label": "Snow Ratkin"
+        },
+        {
+          "defName": "OAGene_LowlandRatkin",
+          "file": "Ratkin\\1.6\\Defs\\GeneDefs\\Ratkin_XenotypeDefs.xml",
+          "loadRoot": {
+            "path": "Ratkin/1.6",
+            "conditions": {
+              "IfModActive": "Solaris.RatkinRaceMod"
+            },
+            "source": "LoadFolders.xml"
+          },
+          "conditions": {},
+          "genes": [
+            "OAGene_LowlandRatkinEar",
+            "RK_Gene_GoodGardening",
+            "RK_Gene_FragilePain",
+            "Hair_Blonde",
+            "Hair_LightOrange",
+            "MaxTemp_SmallDecrease",
+            "OAGene_BillInspiration",
+            "AptitudeStrong_Crafting",
+            "AptitudePoor_Melee",
+            "OAGene_NormalEyesight",
+            "OAGene_FragileOrgans",
+            "ElongatedFingers"
+          ],
+          "inheritable": null,
+          "label": "Lowland Ratkin"
+        },
+        {
+          "defName": "OAGene_BiochemicalRatkinI",
+          "file": "Ratkin\\1.6\\Defs\\GeneDefs\\Ratkin_XenotypeDefs.xml",
+          "loadRoot": {
+            "path": "Ratkin/1.6",
+            "conditions": {
+              "IfModActive": "Solaris.RatkinRaceMod"
+            },
+            "source": "LoadFolders.xml"
+          },
+          "conditions": {},
+          "genes": [
+            "OAGene_EfficientNeuron",
+            "OAGene_Suspicious",
+            "OAGene_DenseMuscles",
+            "OAGene_MildNearsightedness",
+            "Sterile",
+            "Instability_Major",
+            "MeleeDamage_Strong",
+            "PsychicAbility_Deaf",
+            "Robust",
+            "Aggression_HyperAggressive",
+            "Pain_Reduced",
+            "AptitudeRemarkable_Melee",
+            "Unstoppable",
+            "KillThirst",
+            "MaxTemp_SmallIncrease"
+          ],
+          "inheritable": null,
+          "label": "Ratkin Biochemical Type I"
+        },
+        {
+          "defName": "OAGene_BiochemicalRatkinII",
+          "file": "Ratkin\\1.6\\Defs\\GeneDefs\\Ratkin_XenotypeDefs.xml",
+          "loadRoot": {
+            "path": "Ratkin/1.6",
+            "conditions": {
+              "IfModActive": "Solaris.RatkinRaceMod"
+            },
+            "source": "LoadFolders.xml"
+          },
+          "conditions": {},
+          "genes": [
+            "RK_Gene_GoodGardening",
+            "OAGene_NaturalDiligence",
+            "OAGene_AgriculturalEnthusiasm",
+            "Immunity_Strong",
+            "Instability_Mild",
+            "Aggression_Aggressive",
+            "Delicate",
+            "AptitudeRemarkable_Plants",
+            "AptitudePoor_Construction",
+            "ElongatedFingers"
+          ],
+          "inheritable": null,
+          "label": "Ratkin Biochemical Type II"
+        },
+        {
+          "defName": "OAGene_BiochemicalRatkinIII",
+          "file": "Ratkin\\1.6\\Defs\\GeneDefs\\Ratkin_XenotypeDefs.xml",
+          "loadRoot": {
+            "path": "Ratkin/1.6",
+            "conditions": {
+              "IfModActive": "Solaris.RatkinRaceMod"
+            },
+            "source": "LoadFolders.xml"
+          },
+          "conditions": {},
+          "genes": [
+            "RK_Gene_FragilePain",
+            "OAGene_ActiveNeuron",
+            "OAGene_UnrestrictedLearning",
+            "OAGene_FrailBone",
+            "Immunity_Weak",
+            "Delicate",
+            "Instability_Mild",
+            "AptitudeStrong_Plants",
+            "AptitudeStrong_Crafting",
+            "AptitudeRemarkable_Intellectual"
+          ],
+          "inheritable": null,
+          "label": "Ratkin Biochemical Type III"
+        },
+        {
+          "defName": "OAGene_BiochemicalRatkinIV",
+          "file": "Ratkin\\1.6\\Defs\\GeneDefs\\Ratkin_XenotypeDefs.xml",
+          "loadRoot": {
+            "path": "Ratkin/1.6",
+            "conditions": {
+              "IfModActive": "Solaris.RatkinRaceMod"
+            },
+            "source": "LoadFolders.xml"
+          },
+          "conditions": {},
+          "genes": [
+            "Immunity_Weak",
+            "OAGene_NaturalDiligence",
+            "OAGene_EfficientNeuron",
+            "PsychicAbility_Deaf",
+            "AptitudePoor_Shooting",
+            "AptitudeRemarkable_Construction",
+            "Instability_Mild",
+            "Aggression_Aggressive",
+            "Mood_Depressive",
+            "Sterile",
+            "Neversleep",
+            "ElongatedFingers",
+            "Pain_Reduced",
+            "WoundHealing_Fast"
+          ],
+          "inheritable": null,
+          "label": "Ratkin Biochemical Type IV"
+        },
+        {
+          "defName": "OAGene_RatkinBase",
+          "file": "Ratkin\\1.6\\Defs\\GeneDefs\\Ratkin_XenotypeDefs.xml",
+          "loadRoot": {
+            "path": "Ratkin/1.6",
+            "conditions": {
+              "IfModActive": "fxz.Solaris.RatkinRaceMod.odyssey"
+            },
+            "source": "LoadFolders.xml"
+          },
+          "conditions": {},
+          "genes": [
+            "RK_Gene_LargeEars"
+          ],
+          "inheritable": "true",
+          "label": "Tribe Ratkin"
+        },
+        {
+          "defName": "OAGene_PrimordialRatkin",
+          "file": "Ratkin\\1.6\\Defs\\GeneDefs\\Ratkin_XenotypeDefs.xml",
+          "loadRoot": {
+            "path": "Ratkin/1.6",
+            "conditions": {
+              "IfModActive": "fxz.Solaris.RatkinRaceMod.odyssey"
+            },
+            "source": "LoadFolders.xml"
+          },
+          "conditions": {},
+          "genes": [
+            "RK_Gene_LargeEars",
+            "RK_Gene_GoodGardening",
+            "RK_Gene_FragilePain",
+            "Hair_SnowWhite",
+            "AptitudeStrong_Plants",
+            "Fertile"
+          ],
+          "inheritable": null,
+          "label": "Initial Ratkin"
+        },
+        {
+          "defName": "OAGene_WhiteRatkin",
+          "file": "Ratkin\\1.6\\Defs\\GeneDefs\\Ratkin_XenotypeDefs.xml",
+          "loadRoot": {
+            "path": "Ratkin/1.6",
+            "conditions": {
+              "IfModActive": "fxz.Solaris.RatkinRaceMod.odyssey"
+            },
+            "source": "LoadFolders.xml"
+          },
+          "conditions": {},
+          "genes": [
+            "RK_Gene_LargeEars",
+            "RK_Gene_FragilePain",
+            "Hair_SnowWhite",
+            "OAGene_MonarchyBased",
+            "AptitudeStrong_Social",
+            "Beauty_Pretty",
+            "WoundHealing_Slow",
+            "OAGene_NormalEyesight",
+            "PsychicAbility_Enhanced",
+            "AptitudePoor_Plants",
+            "AptitudeTerrible_Mining",
+            "OAGene_ColdSleepy"
+          ],
+          "inheritable": null,
+          "label": "White Ratkin"
+        },
+        {
+          "defName": "OAGene_TravelRatkin",
+          "file": "Ratkin\\1.6\\Defs\\GeneDefs\\Ratkin_XenotypeDefs.xml",
+          "loadRoot": {
+            "path": "Ratkin/1.6",
+            "conditions": {
+              "IfModActive": "fxz.Solaris.RatkinRaceMod.odyssey"
+            },
+            "source": "LoadFolders.xml"
+          },
+          "conditions": {},
+          "genes": [
+            "RK_Gene_LargeEars",
+            "RK_Gene_GoodGardening",
+            "RK_Gene_FragilePain",
+            "AptitudeStrong_Plants",
+            "AptitudeStrong_Animals",
+            "AptitudeTerrible_Intellectual",
+            "Mood_Sanguine",
+            "Fertile",
+            "PsychicAbility_Dull",
+            "OAGene_ElasticGastricWall",
+            "OAGene_SurvivalInstinct"
+          ],
+          "inheritable": null,
+          "label": "Travel Ratkin"
+        },
+        {
+          "defName": "OAGene_RockRatkin",
+          "file": "Ratkin\\1.6\\Defs\\GeneDefs\\Ratkin_XenotypeDefs.xml",
+          "loadRoot": {
+            "path": "Ratkin/1.6",
+            "conditions": {
+              "IfModActive": "fxz.Solaris.RatkinRaceMod.odyssey"
+            },
+            "source": "LoadFolders.xml"
+          },
+          "conditions": {},
+          "genes": [
+            "OAGene_RockRatkinEar",
+            "Hair_DarkSaturatedReddish",
+            "Hair_ReddishBrown",
+            "OAGene_ExcellentPhysique",
+            "OAGene_ScarConstitution",
+            "OAGene_HardBone",
+            "OAGene_DeepSleep",
+            "OAGene_HardBoneShell",
+            "MinTemp_SmallIncrease",
+            "Aggression_Aggressive",
+            "Robust",
+            "WoundHealing_Fast",
+            "AptitudeStrong_Mining",
+            "AptitudePoor_Medicine"
+          ],
+          "inheritable": null,
+          "label": "Rock Ratkin"
+        },
+        {
+          "defName": "OAGene_SnowRatkin",
+          "file": "Ratkin\\1.6\\Defs\\GeneDefs\\Ratkin_XenotypeDefs.xml",
+          "loadRoot": {
+            "path": "Ratkin/1.6",
+            "conditions": {
+              "IfModActive": "fxz.Solaris.RatkinRaceMod.odyssey"
+            },
+            "source": "LoadFolders.xml"
+          },
+          "conditions": {},
+          "genes": [
+            "OAGene_SnowRatkinEar",
+            "MoveSpeed_VeryQuick",
+            "OAGene_AgilityAction",
+            "MinTemp_SmallDecrease",
+            "MaxTemp_SmallDecrease",
+            "OAGene_HeatSleepy",
+            "OAGene_SpecificHemogen",
+            "Hair_SnowWhite",
+            "Hair_Blonde",
+            "OAGene_Suspicious",
+            "OAGene_BloodCellsAutophagy",
+            "AptitudeRemarkable_Melee",
+            "AptitudePoor_Plants",
+            "AptitudePoor_Social"
+          ],
+          "inheritable": null,
+          "label": "Snow Ratkin"
+        },
+        {
+          "defName": "OAGene_LowlandRatkin",
+          "file": "Ratkin\\1.6\\Defs\\GeneDefs\\Ratkin_XenotypeDefs.xml",
+          "loadRoot": {
+            "path": "Ratkin/1.6",
+            "conditions": {
+              "IfModActive": "fxz.Solaris.RatkinRaceMod.odyssey"
+            },
+            "source": "LoadFolders.xml"
+          },
+          "conditions": {},
+          "genes": [
+            "OAGene_LowlandRatkinEar",
+            "RK_Gene_GoodGardening",
+            "RK_Gene_FragilePain",
+            "Hair_Blonde",
+            "Hair_LightOrange",
+            "MaxTemp_SmallDecrease",
+            "OAGene_BillInspiration",
+            "AptitudeStrong_Crafting",
+            "AptitudePoor_Melee",
+            "OAGene_NormalEyesight",
+            "OAGene_FragileOrgans",
+            "ElongatedFingers"
+          ],
+          "inheritable": null,
+          "label": "Lowland Ratkin"
+        },
+        {
+          "defName": "OAGene_BiochemicalRatkinI",
+          "file": "Ratkin\\1.6\\Defs\\GeneDefs\\Ratkin_XenotypeDefs.xml",
+          "loadRoot": {
+            "path": "Ratkin/1.6",
+            "conditions": {
+              "IfModActive": "fxz.Solaris.RatkinRaceMod.odyssey"
+            },
+            "source": "LoadFolders.xml"
+          },
+          "conditions": {},
+          "genes": [
+            "OAGene_EfficientNeuron",
+            "OAGene_Suspicious",
+            "OAGene_DenseMuscles",
+            "OAGene_MildNearsightedness",
+            "Sterile",
+            "Instability_Major",
+            "MeleeDamage_Strong",
+            "PsychicAbility_Deaf",
+            "Robust",
+            "Aggression_HyperAggressive",
+            "Pain_Reduced",
+            "AptitudeRemarkable_Melee",
+            "Unstoppable",
+            "KillThirst",
+            "MaxTemp_SmallIncrease"
+          ],
+          "inheritable": null,
+          "label": "Ratkin Biochemical Type I"
+        },
+        {
+          "defName": "OAGene_BiochemicalRatkinII",
+          "file": "Ratkin\\1.6\\Defs\\GeneDefs\\Ratkin_XenotypeDefs.xml",
+          "loadRoot": {
+            "path": "Ratkin/1.6",
+            "conditions": {
+              "IfModActive": "fxz.Solaris.RatkinRaceMod.odyssey"
+            },
+            "source": "LoadFolders.xml"
+          },
+          "conditions": {},
+          "genes": [
+            "RK_Gene_GoodGardening",
+            "OAGene_NaturalDiligence",
+            "OAGene_AgriculturalEnthusiasm",
+            "Immunity_Strong",
+            "Instability_Mild",
+            "Aggression_Aggressive",
+            "Delicate",
+            "AptitudeRemarkable_Plants",
+            "AptitudePoor_Construction",
+            "ElongatedFingers"
+          ],
+          "inheritable": null,
+          "label": "Ratkin Biochemical Type II"
+        },
+        {
+          "defName": "OAGene_BiochemicalRatkinIII",
+          "file": "Ratkin\\1.6\\Defs\\GeneDefs\\Ratkin_XenotypeDefs.xml",
+          "loadRoot": {
+            "path": "Ratkin/1.6",
+            "conditions": {
+              "IfModActive": "fxz.Solaris.RatkinRaceMod.odyssey"
+            },
+            "source": "LoadFolders.xml"
+          },
+          "conditions": {},
+          "genes": [
+            "RK_Gene_FragilePain",
+            "OAGene_ActiveNeuron",
+            "OAGene_UnrestrictedLearning",
+            "OAGene_FrailBone",
+            "Immunity_Weak",
+            "Delicate",
+            "Instability_Mild",
+            "AptitudeStrong_Plants",
+            "AptitudeStrong_Crafting",
+            "AptitudeRemarkable_Intellectual"
+          ],
+          "inheritable": null,
+          "label": "Ratkin Biochemical Type III"
+        },
+        {
+          "defName": "OAGene_BiochemicalRatkinIV",
+          "file": "Ratkin\\1.6\\Defs\\GeneDefs\\Ratkin_XenotypeDefs.xml",
+          "loadRoot": {
+            "path": "Ratkin/1.6",
+            "conditions": {
+              "IfModActive": "fxz.Solaris.RatkinRaceMod.odyssey"
+            },
+            "source": "LoadFolders.xml"
+          },
+          "conditions": {},
+          "genes": [
+            "Immunity_Weak",
+            "OAGene_NaturalDiligence",
+            "OAGene_EfficientNeuron",
+            "PsychicAbility_Deaf",
+            "AptitudePoor_Shooting",
+            "AptitudeRemarkable_Construction",
+            "Instability_Mild",
+            "Aggression_Aggressive",
+            "Mood_Depressive",
+            "Sterile",
+            "Neversleep",
+            "ElongatedFingers",
+            "Pain_Reduced",
+            "WoundHealing_Fast"
+          ],
+          "inheritable": null,
+          "label": "Ratkin Biochemical Type IV"
+        }
+      ],
+      "geneDefs": [
+        {
+          "defName": "OAGene_MeleeIntouchable",
+          "file": "1.6\\Defs\\GeneDefs\\GeneDefs_Archite.xml",
+          "loadRoot": {
+            "path": "1.6",
+            "conditions": {},
+            "source": "LoadFolders.xml"
+          },
+          "conditions": {},
+          "parentName": null,
+          "geneClass": null,
+          "canGenerateInGeneSet": null,
+          "biostatArc": "1",
+          "label": "刀剑无沾"
+        },
+        {
+          "defName": "OAGene_EfficientNeuron",
+          "file": "1.6\\Defs\\GeneDefs\\GeneDefs_Health.xml",
+          "loadRoot": {
+            "path": "1.6",
+            "conditions": {},
+            "source": "LoadFolders.xml"
+          },
+          "conditions": {},
+          "parentName": null,
+          "geneClass": "OberoniaAureaGene.Gene_GiveHediff",
+          "canGenerateInGeneSet": null,
+          "biostatArc": null,
+          "label": "Efficient nervous system"
+        },
+        {
+          "defName": "OAGene_ActiveNeuron",
+          "file": "1.6\\Defs\\GeneDefs\\GeneDefs_Health.xml",
+          "loadRoot": {
+            "path": "1.6",
+            "conditions": {},
+            "source": "LoadFolders.xml"
+          },
+          "conditions": {},
+          "parentName": null,
+          "geneClass": null,
+          "canGenerateInGeneSet": null,
+          "biostatArc": null,
+          "label": "Active nervous system"
+        },
+        {
+          "defName": "OAGene_UnrestrictedLearning",
+          "file": "1.6\\Defs\\GeneDefs\\GeneDefs_Health.xml",
+          "loadRoot": {
+            "path": "1.6",
+            "conditions": {},
+            "source": "LoadFolders.xml"
+          },
+          "conditions": {},
+          "parentName": null,
+          "geneClass": null,
+          "canGenerateInGeneSet": null,
+          "biostatArc": null,
+          "label": "Unrestricted learning"
+        },
+        {
+          "defName": "OAGene_UltraDenseMuscles",
+          "file": "1.6\\Defs\\GeneDefs\\GeneDefs_Health.xml",
+          "loadRoot": {
+            "path": "1.6",
+            "conditions": {},
+            "source": "LoadFolders.xml"
+          },
+          "conditions": {},
+          "parentName": "OAGene_MusclesBase",
+          "geneClass": null,
+          "canGenerateInGeneSet": null,
+          "biostatArc": "2",
+          "label": "Ultra dense muscle"
+        },
+        {
+          "defName": "OAGene_DenseMuscles",
+          "file": "1.6\\Defs\\GeneDefs\\GeneDefs_Health.xml",
+          "loadRoot": {
+            "path": "1.6",
+            "conditions": {},
+            "source": "LoadFolders.xml"
+          },
+          "conditions": {},
+          "parentName": "OAGene_MusclesBase",
+          "geneClass": null,
+          "canGenerateInGeneSet": null,
+          "biostatArc": null,
+          "label": "Tight muscles"
+        },
+        {
+          "defName": "OAGene_WeaknessMuscles",
+          "file": "1.6\\Defs\\GeneDefs\\GeneDefs_Health.xml",
+          "loadRoot": {
+            "path": "1.6",
+            "conditions": {},
+            "source": "LoadFolders.xml"
+          },
+          "conditions": {},
+          "parentName": "OAGene_MusclesBase",
+          "geneClass": null,
+          "canGenerateInGeneSet": null,
+          "biostatArc": null,
+          "label": "Weak muscles"
+        },
+        {
+          "defName": "OAGene_HardBone",
+          "file": "1.6\\Defs\\GeneDefs\\GeneDefs_Health.xml",
+          "loadRoot": {
+            "path": "1.6",
+            "conditions": {},
+            "source": "LoadFolders.xml"
+          },
+          "conditions": {},
+          "parentName": "OAGene_BonesBase",
+          "geneClass": "OberoniaAureaGene.Gene_PartIncomingDamageFactor",
+          "canGenerateInGeneSet": null,
+          "biostatArc": null,
+          "label": "Hard bone"
+        },
+        {
+          "defName": "OAGene_FrailBone",
+          "file": "1.6\\Defs\\GeneDefs\\GeneDefs_Health.xml",
+          "loadRoot": {
+            "path": "1.6",
+            "conditions": {},
+            "source": "LoadFolders.xml"
+          },
+          "conditions": {},
+          "parentName": "OAGene_BonesBase",
+          "geneClass": "OberoniaAureaGene.Gene_PartIncomingDamageFactor",
+          "canGenerateInGeneSet": null,
+          "biostatArc": null,
+          "label": "Frail Bone"
+        },
+        {
+          "defName": "OAGene_HardBoneShell",
+          "file": "1.6\\Defs\\GeneDefs\\GeneDefs_Health.xml",
+          "loadRoot": {
+            "path": "1.6",
+            "conditions": {},
+            "source": "LoadFolders.xml"
+          },
+          "conditions": {},
+          "parentName": null,
+          "geneClass": "OberoniaAureaGene.Gene_PartIncomingDamageFactor",
+          "canGenerateInGeneSet": null,
+          "biostatArc": null,
+          "label": "Hard bone shell"
+        },
+        {
+          "defName": "OAGene_FragileOrgans",
+          "file": "1.6\\Defs\\GeneDefs\\GeneDefs_Health.xml",
+          "loadRoot": {
+            "path": "1.6",
+            "conditions": {},
+            "source": "LoadFolders.xml"
+          },
+          "conditions": {},
+          "parentName": null,
+          "geneClass": "OberoniaAureaGene.Gene_PartIncomingDamageFactor",
+          "canGenerateInGeneSet": null,
+          "biostatArc": null,
+          "label": "Fragile organs"
+        },
+        {
+          "defName": "OAGene_ScarConstitution",
+          "file": "1.6\\Defs\\GeneDefs\\GeneDefs_Health.xml",
+          "loadRoot": {
+            "path": "1.6",
+            "conditions": {},
+            "source": "LoadFolders.xml"
+          },
+          "conditions": {},
+          "parentName": null,
+          "geneClass": "OberoniaAureaGene.Gene_PermanentChance",
+          "canGenerateInGeneSet": null,
+          "biostatArc": null,
+          "label": "Scar constitution"
+        },
+        {
+          "defName": "OAGene_NormalEyesight",
+          "file": "1.6\\Defs\\GeneDefs\\GeneDefs_Health.xml",
+          "loadRoot": {
+            "path": "1.6",
+            "conditions": {},
+            "source": "LoadFolders.xml"
+          },
+          "conditions": {},
+          "parentName": "OAGene_EyesightBase",
+          "geneClass": null,
+          "canGenerateInGeneSet": null,
+          "biostatArc": null,
+          "label": "Normal eyesight"
+        },
+        {
+          "defName": "OAGene_MildNearsightedness",
+          "file": "1.6\\Defs\\GeneDefs\\GeneDefs_Health.xml",
+          "loadRoot": {
+            "path": "1.6",
+            "conditions": {},
+            "source": "LoadFolders.xml"
+          },
+          "conditions": {},
+          "parentName": "OAGene_EyesightBase",
+          "geneClass": null,
+          "canGenerateInGeneSet": null,
+          "biostatArc": null,
+          "label": "Mild nearsightedness"
+        },
+        {
+          "defName": "OAGene_ElasticGastricWall",
+          "file": "1.6\\Defs\\GeneDefs\\GeneDefs_Health.xml",
+          "loadRoot": {
+            "path": "1.6",
+            "conditions": {},
+            "source": "LoadFolders.xml"
+          },
+          "conditions": {},
+          "parentName": null,
+          "geneClass": null,
+          "canGenerateInGeneSet": null,
+          "biostatArc": null,
+          "label": "Elastic stomach wall"
+        },
+        {
+          "defName": "OAGene_ExcellentPhysique",
+          "file": "1.6\\Defs\\GeneDefs\\GeneDefs_Health.xml",
+          "loadRoot": {
+            "path": "1.6",
+            "conditions": {},
+            "source": "LoadFolders.xml"
+          },
+          "conditions": {},
+          "parentName": "OAGene_PhysiqueBase",
+          "geneClass": "OberoniaAureaGene.Gene_IllnessFactor",
+          "canGenerateInGeneSet": null,
+          "biostatArc": null,
+          "label": "Excellent physique"
+        },
+        {
+          "defName": "OAGene_FrailPhysique",
+          "file": "1.6\\Defs\\GeneDefs\\GeneDefs_Health.xml",
+          "loadRoot": {
+            "path": "1.6",
+            "conditions": {},
+            "source": "LoadFolders.xml"
+          },
+          "conditions": {},
+          "parentName": "OAGene_PhysiqueBase",
+          "geneClass": "OberoniaAureaGene.Gene_FrailPhysique",
+          "canGenerateInGeneSet": null,
+          "biostatArc": null,
+          "label": "Frail physique"
+        },
+        {
+          "defName": "OAGene_DeepSleep",
+          "file": "1.6\\Defs\\GeneDefs\\GeneDefs_Health.xml",
+          "loadRoot": {
+            "path": "1.6",
+            "conditions": {},
+            "source": "LoadFolders.xml"
+          },
+          "conditions": {},
+          "parentName": null,
+          "geneClass": "OberoniaAureaGene.Gene_DeepSleep",
+          "canGenerateInGeneSet": null,
+          "biostatArc": null,
+          "label": "Deep Sleep"
+        },
+        {
+          "defName": "OAGene_AgilityAction",
+          "file": "1.6\\Defs\\GeneDefs\\GeneDefs_Health.xml",
+          "loadRoot": {
+            "path": "1.6",
+            "conditions": {},
+            "source": "LoadFolders.xml"
+          },
+          "conditions": {},
+          "parentName": null,
+          "geneClass": null,
+          "canGenerateInGeneSet": null,
+          "biostatArc": null,
+          "label": "Agility action"
+        },
+        {
+          "defName": "OAGene_BloodCellsAutophagy",
+          "file": "1.6\\Defs\\GeneDefs\\GeneDefs_Health.xml",
+          "loadRoot": {
+            "path": "1.6",
+            "conditions": {},
+            "source": "LoadFolders.xml"
+          },
+          "conditions": {},
+          "parentName": null,
+          "geneClass": "OberoniaAureaGene.Gene_BloodCellsAutophagy",
+          "canGenerateInGeneSet": null,
+          "biostatArc": null,
+          "label": "Autophagy of blood cells"
+        },
+        {
+          "defName": "OAGene_SpecificHemogen",
+          "file": "1.6\\Defs\\GeneDefs\\GeneDefs_Health.xml",
+          "loadRoot": {
+            "path": "1.6",
+            "conditions": {},
+            "source": "LoadFolders.xml"
+          },
+          "conditions": {},
+          "parentName": null,
+          "geneClass": null,
+          "canGenerateInGeneSet": null,
+          "biostatArc": null,
+          "label": "Specific Hemogen"
+        },
+        {
+          "defName": "OAGene_SurvivalInstinct",
+          "file": "1.6\\Defs\\GeneDefs\\GeneDefs_Misc.xml",
+          "loadRoot": {
+            "path": "1.6",
+            "conditions": {},
+            "source": "LoadFolders.xml"
+          },
+          "conditions": {},
+          "parentName": null,
+          "geneClass": "OberoniaAureaGene.Gene_SurivalInstic",
+          "canGenerateInGeneSet": null,
+          "biostatArc": null,
+          "label": "Survival Instinct"
+        },
+        {
+          "defName": "OAGene_AgriculturalEnthusiasm",
+          "file": "1.6\\Defs\\GeneDefs\\GeneDefs_Misc.xml",
+          "loadRoot": {
+            "path": "1.6",
+            "conditions": {},
+            "source": "LoadFolders.xml"
+          },
+          "conditions": {},
+          "parentName": null,
+          "geneClass": "OberoniaAureaGene.Gene_AgriculturalEnthusiasm",
+          "canGenerateInGeneSet": null,
+          "biostatArc": null,
+          "label": "Agricultural Passion"
+        },
+        {
+          "defName": "OAGene_NaturalDiligence",
+          "file": "1.6\\Defs\\GeneDefs\\GeneDefs_Misc.xml",
+          "loadRoot": {
+            "path": "1.6",
+            "conditions": {},
+            "source": "LoadFolders.xml"
+          },
+          "conditions": {},
+          "parentName": null,
+          "geneClass": null,
+          "canGenerateInGeneSet": null,
+          "biostatArc": null,
+          "label": "Diligent by nature"
+        },
+        {
+          "defName": "OAGene_AbnormalBodyStructure",
+          "file": "1.6\\Defs\\GeneDefs\\GeneDefs_Misc.xml",
+          "loadRoot": {
+            "path": "1.6",
+            "conditions": {},
+            "source": "LoadFolders.xml"
+          },
+          "conditions": {},
+          "parentName": null,
+          "geneClass": null,
+          "canGenerateInGeneSet": null,
+          "biostatArc": null,
+          "label": "Unconventional structure"
+        },
+        {
+          "defName": "OAGene_MonarchyBased",
+          "file": "1.6\\Defs\\GeneDefs\\GeneDefs_Misc.xml",
+          "loadRoot": {
+            "path": "1.6",
+            "conditions": {},
+            "source": "LoadFolders.xml"
+          },
+          "conditions": {},
+          "parentName": null,
+          "geneClass": null,
+          "canGenerateInGeneSet": null,
+          "biostatArc": null,
+          "label": "Monarchy based"
+        },
+        {
+          "defName": "OAGene_BillInspiration",
+          "file": "1.6\\Defs\\GeneDefs\\GeneDefs_Misc.xml",
+          "loadRoot": {
+            "path": "1.6",
+            "conditions": {},
+            "source": "LoadFolders.xml"
+          },
+          "conditions": {},
+          "parentName": null,
+          "geneClass": "OberoniaAureaGene.Gene_BillInspiration",
+          "canGenerateInGeneSet": null,
+          "biostatArc": null,
+          "label": "Inspiration inspires"
+        },
+        {
+          "defName": "OAGene_Suspicious",
+          "file": "1.6\\Defs\\GeneDefs\\GeneDefs_Misc.xml",
+          "loadRoot": {
+            "path": "1.6",
+            "conditions": {},
+            "source": "LoadFolders.xml"
+          },
+          "conditions": {},
+          "parentName": null,
+          "geneClass": null,
+          "canGenerateInGeneSet": null,
+          "biostatArc": null,
+          "label": "Oversensitive"
+        },
+        {
+          "defName": "OAGene_ObedientServitude",
+          "file": "1.6\\Defs\\GeneDefs\\GeneDefs_Misc.xml",
+          "loadRoot": {
+            "path": "1.6",
+            "conditions": {},
+            "source": "LoadFolders.xml"
+          },
+          "conditions": {},
+          "parentName": null,
+          "geneClass": "OberoniaAureaGene.Gene_ObeyOrderBase",
+          "canGenerateInGeneSet": null,
+          "biostatArc": null,
+          "label": "Enslavement and obedience"
+        },
+        {
+          "defName": "OAGene_ColdSleepy",
+          "file": "1.6\\Defs\\GeneDefs\\GeneDefs_Spectrum.xml",
+          "loadRoot": {
+            "path": "1.6",
+            "conditions": {},
+            "source": "LoadFolders.xml"
+          },
+          "conditions": {},
+          "parentName": null,
+          "geneClass": null,
+          "canGenerateInGeneSet": null,
+          "biostatArc": null,
+          "label": "Cold and drowsy"
+        },
+        {
+          "defName": "OAGene_HeatSleepy",
+          "file": "1.6\\Defs\\GeneDefs\\GeneDefs_Spectrum.xml",
+          "loadRoot": {
+            "path": "1.6",
+            "conditions": {},
+            "source": "LoadFolders.xml"
+          },
+          "conditions": {},
+          "parentName": null,
+          "geneClass": null,
+          "canGenerateInGeneSet": null,
+          "biostatArc": null,
+          "label": "Hot and drowsy"
+        },
+        {
+          "defName": "OAGene_LowlandRatkinEar",
+          "file": "Ratkin\\1.6\\Defs\\GeneDefs\\Ratkin_GeneDefs_Body.xml",
+          "loadRoot": {
+            "path": "Ratkin/1.6",
+            "conditions": {
+              "IfModActive": "Solaris.RatkinRaceMod"
+            },
+            "source": "LoadFolders.xml"
+          },
+          "conditions": {},
+          "parentName": "OAGene_AbstractBodyTypeBase",
+          "geneClass": null,
+          "canGenerateInGeneSet": null,
+          "biostatArc": null,
+          "label": "Lowland Ratkin Ear"
+        },
+        {
+          "defName": "OAGene_SnowRatkinEar",
+          "file": "Ratkin\\1.6\\Defs\\GeneDefs\\Ratkin_GeneDefs_Body.xml",
+          "loadRoot": {
+            "path": "Ratkin/1.6",
+            "conditions": {
+              "IfModActive": "Solaris.RatkinRaceMod"
+            },
+            "source": "LoadFolders.xml"
+          },
+          "conditions": {},
+          "parentName": "OAGene_AbstractBodyTypeBase",
+          "geneClass": null,
+          "canGenerateInGeneSet": null,
+          "biostatArc": null,
+          "label": "Snow Ratkin Ear"
+        },
+        {
+          "defName": "OAGene_RockRatkinEar",
+          "file": "Ratkin\\1.6\\Defs\\GeneDefs\\Ratkin_GeneDefs_Body.xml",
+          "loadRoot": {
+            "path": "Ratkin/1.6",
+            "conditions": {
+              "IfModActive": "Solaris.RatkinRaceMod"
+            },
+            "source": "LoadFolders.xml"
+          },
+          "conditions": {},
+          "parentName": "OAGene_AbstractBodyTypeBase",
+          "geneClass": "OberoniaAureaGene.Ratkin.Gene_RockRatkinEar",
+          "canGenerateInGeneSet": null,
+          "biostatArc": null,
+          "label": "Rock Ratkin Ear"
+        },
+        {
+          "defName": "OAGene_BatRatkinEar",
+          "file": "Ratkin\\1.6\\Defs\\GeneDefs\\Ratkin_GeneDefs_Body.xml",
+          "loadRoot": {
+            "path": "Ratkin/1.6",
+            "conditions": {
+              "IfModActive": "Solaris.RatkinRaceMod"
+            },
+            "source": "LoadFolders.xml"
+          },
+          "conditions": {},
+          "parentName": "OAGene_AbstractBodyTypeBase",
+          "geneClass": null,
+          "canGenerateInGeneSet": null,
+          "biostatArc": null,
+          "label": "Bat Ratkin Ear"
+        },
+        {
+          "defName": "OAGene_OAMetabolicGeneChain",
+          "file": "Ratkin\\1.6\\Defs\\GeneDefs\\Ratkin_GeneDefs_Misc.xml",
+          "loadRoot": {
+            "path": "Ratkin/1.6",
+            "conditions": {
+              "IfModActive": "Solaris.RatkinRaceMod"
+            },
+            "source": "LoadFolders.xml"
+          },
+          "conditions": {},
+          "parentName": null,
+          "geneClass": null,
+          "canGenerateInGeneSet": null,
+          "biostatArc": null,
+          "label": "Metabolic gene chain of Oberonia Aurea"
+        },
+        {
+          "defName": "OAGene_LowlandRatkinEar",
+          "file": "Ratkin\\1.6\\Defs\\GeneDefs\\Ratkin_GeneDefs_Body.xml",
+          "loadRoot": {
+            "path": "Ratkin/1.6",
+            "conditions": {
+              "IfModActive": "fxz.Solaris.RatkinRaceMod.odyssey"
+            },
+            "source": "LoadFolders.xml"
+          },
+          "conditions": {},
+          "parentName": "OAGene_AbstractBodyTypeBase",
+          "geneClass": null,
+          "canGenerateInGeneSet": null,
+          "biostatArc": null,
+          "label": "Lowland Ratkin Ear"
+        },
+        {
+          "defName": "OAGene_SnowRatkinEar",
+          "file": "Ratkin\\1.6\\Defs\\GeneDefs\\Ratkin_GeneDefs_Body.xml",
+          "loadRoot": {
+            "path": "Ratkin/1.6",
+            "conditions": {
+              "IfModActive": "fxz.Solaris.RatkinRaceMod.odyssey"
+            },
+            "source": "LoadFolders.xml"
+          },
+          "conditions": {},
+          "parentName": "OAGene_AbstractBodyTypeBase",
+          "geneClass": null,
+          "canGenerateInGeneSet": null,
+          "biostatArc": null,
+          "label": "Snow Ratkin Ear"
+        },
+        {
+          "defName": "OAGene_RockRatkinEar",
+          "file": "Ratkin\\1.6\\Defs\\GeneDefs\\Ratkin_GeneDefs_Body.xml",
+          "loadRoot": {
+            "path": "Ratkin/1.6",
+            "conditions": {
+              "IfModActive": "fxz.Solaris.RatkinRaceMod.odyssey"
+            },
+            "source": "LoadFolders.xml"
+          },
+          "conditions": {},
+          "parentName": "OAGene_AbstractBodyTypeBase",
+          "geneClass": "OberoniaAureaGene.Ratkin.Gene_RockRatkinEar",
+          "canGenerateInGeneSet": null,
+          "biostatArc": null,
+          "label": "Rock Ratkin Ear"
+        },
+        {
+          "defName": "OAGene_BatRatkinEar",
+          "file": "Ratkin\\1.6\\Defs\\GeneDefs\\Ratkin_GeneDefs_Body.xml",
+          "loadRoot": {
+            "path": "Ratkin/1.6",
+            "conditions": {
+              "IfModActive": "fxz.Solaris.RatkinRaceMod.odyssey"
+            },
+            "source": "LoadFolders.xml"
+          },
+          "conditions": {},
+          "parentName": "OAGene_AbstractBodyTypeBase",
+          "geneClass": null,
+          "canGenerateInGeneSet": null,
+          "biostatArc": null,
+          "label": "Bat Ratkin Ear"
+        },
+        {
+          "defName": "OAGene_OAMetabolicGeneChain",
+          "file": "Ratkin\\1.6\\Defs\\GeneDefs\\Ratkin_GeneDefs_Misc.xml",
+          "loadRoot": {
+            "path": "Ratkin/1.6",
+            "conditions": {
+              "IfModActive": "fxz.Solaris.RatkinRaceMod.odyssey"
+            },
+            "source": "LoadFolders.xml"
+          },
+          "conditions": {},
+          "parentName": null,
+          "geneClass": null,
+          "canGenerateInGeneSet": null,
+          "biostatArc": null,
+          "label": "Metabolic gene chain of Oberonia Aurea"
+        }
+      ],
+      "uniqueRaceDefNames": [],
+      "uniqueXenotypeDefNames": [
+        "OAGene_BiochemicalRatkinI",
+        "OAGene_BiochemicalRatkinII",
+        "OAGene_BiochemicalRatkinIII",
+        "OAGene_BiochemicalRatkinIV",
+        "OAGene_LowlandRatkin",
+        "OAGene_PrimordialRatkin",
+        "OAGene_RatkinBase",
+        "OAGene_RockRatkin",
+        "OAGene_SnowRatkin",
+        "OAGene_TravelRatkin",
+        "OAGene_WhiteRatkin"
+      ],
+      "uniqueGeneDefNames": [
+        "OAGene_AbnormalBodyStructure",
+        "OAGene_ActiveNeuron",
+        "OAGene_AgilityAction",
+        "OAGene_AgriculturalEnthusiasm",
+        "OAGene_BatRatkinEar",
+        "OAGene_BillInspiration",
+        "OAGene_BloodCellsAutophagy",
+        "OAGene_ColdSleepy",
+        "OAGene_DeepSleep",
+        "OAGene_DenseMuscles",
+        "OAGene_EfficientNeuron",
+        "OAGene_ElasticGastricWall",
+        "OAGene_ExcellentPhysique",
+        "OAGene_FragileOrgans",
+        "OAGene_FrailBone",
+        "OAGene_FrailPhysique",
+        "OAGene_HardBone",
+        "OAGene_HardBoneShell",
+        "OAGene_HeatSleepy",
+        "OAGene_LowlandRatkinEar",
+        "OAGene_MeleeIntouchable",
+        "OAGene_MildNearsightedness",
+        "OAGene_MonarchyBased",
+        "OAGene_NaturalDiligence",
+        "OAGene_NormalEyesight",
+        "OAGene_OAMetabolicGeneChain",
+        "OAGene_ObedientServitude",
+        "OAGene_RockRatkinEar",
+        "OAGene_ScarConstitution",
+        "OAGene_SnowRatkinEar",
+        "OAGene_SpecificHemogen",
+        "OAGene_SurvivalInstinct",
+        "OAGene_Suspicious",
+        "OAGene_UltraDenseMuscles",
+        "OAGene_UnrestrictedLearning",
+        "OAGene_WeaknessMuscles"
+      ],
+      "errors": []
+    },
+    {
+      "relativePath": "[SRC]Miho,Star Ring Corporation",
+      "name": "[SRC]Miho,Star Ring Corporation",
+      "packageId": "src.Core.markeazzyh",
+      "supportedVersions": [
+        "1.6"
+      ],
+      "loadRoots": [
+        {
+          "path": "1.6/AzWeaponLib",
+          "conditions": {
+            "IfModNotActive": "AzzyH.WeaponLibrary"
+          },
+          "source": "LoadFolders.xml"
+        },
+        {
+          "path": "1.6",
+          "conditions": {},
+          "source": "LoadFolders.xml"
+        },
+        {
+          "path": "Content",
+          "conditions": {},
+          "source": "LoadFolders.xml"
+        },
+        {
+          "path": "1.6/CE",
+          "conditions": {
+            "IfModActive": "CETeam.CombatExtended"
+          },
+          "source": "LoadFolders.xml"
+        },
+        {
+          "path": "1.6/CE/Dlib",
+          "conditions": {
+            "IfModActiveAll": "CETeam.CombatExtended, dws.functionalammunition.library"
+          },
+          "source": "LoadFolders.xml"
+        },
+        {
+          "path": "1.6/DMS",
+          "conditions": {
+            "IfModActive": "aoba.deadmanswitch.core"
+          },
+          "source": "LoadFolders.xml"
+        },
+        {
+          "path": "1.6/Milira/Milira",
+          "conditions": {
+            "IfModActive": "ancot.milirarace"
+          },
+          "source": "LoadFolders.xml"
+        },
+        {
+          "path": "1.6/Milira/Milira_I",
+          "conditions": {
+            "IfModActive": "ariandel.miliraimperium"
+          },
+          "source": "LoadFolders.xml"
+        }
+      ],
+      "raceDefs": [],
+      "xenotypeDefs": [],
+      "geneDefs": [],
+      "uniqueRaceDefNames": [],
+      "uniqueXenotypeDefNames": [],
+      "uniqueGeneDefNames": [],
+      "errors": []
+    },
+    {
+      "relativePath": "Epona Dynastic Rise",
+      "name": "Epona Dynastic Rise",
+      "packageId": "Epona.EponaDynasticRise",
+      "supportedVersions": [
+        "1.5",
+        "1.6"
+      ],
+      "loadRoots": [
+        {
+          "path": "1.6",
+          "conditions": {},
+          "source": "LoadFolders.xml"
+        },
+        {
+          "path": "Content",
+          "conditions": {},
+          "source": "LoadFolders.xml"
+        },
+        {
+          "path": "Royalty",
+          "conditions": {
+            "IfModActive": "Ludeon.Rimworld.Royalty"
+          },
+          "source": "LoadFolders.xml"
+        },
+        {
+          "path": "Seedsplease",
+          "conditions": {
+            "IfModActive": "Owlchemist.SeedsPleaseLite"
+          },
+          "source": "LoadFolders.xml"
+        },
+        {
+          "path": "RedSunTech",
+          "conditions": {
+            "IfModActive": "Ninedaylongbow.RedSunTech"
+          },
+          "source": "LoadFolders.xml"
+        },
+        {
+          "path": "Milira",
+          "conditions": {
+            "IfModActive": "Ancot.MiliraRaceGenePatch"
+          },
+          "source": "LoadFolders.xml"
+        },
+        {
+          "path": "MoeLotl",
+          "conditions": {
+            "IfModActive": "fxz.moelotlzombie.update"
+          },
+          "source": "LoadFolders.xml"
+        }
+      ],
+      "raceDefs": [
+        {
+          "defName": "Alien_Destrier",
+          "file": "1.6\\Defs\\ThingDefs_Races\\Race_Destrier.xml",
+          "loadRoot": {
+            "path": "1.6",
+            "conditions": {},
+            "source": "LoadFolders.xml"
+          },
+          "conditions": {},
+          "xmlTag": "AlienRace.ThingDef_AlienRace",
+          "raceGenes": [],
+          "xenotypeList": [
+            "Xeno_Destrier"
+          ],
+          "geneList": [
+            "Gene_EponaHorse"
+          ],
+          "blackGeneList": [
+            "Furskin"
+          ],
+          "label": "Destrier"
+        },
+        {
+          "defName": "Alien_Epona",
+          "file": "1.6\\Defs\\ThingDefs_Races\\Race_Epona.xml",
+          "loadRoot": {
+            "path": "1.6",
+            "conditions": {},
+            "source": "LoadFolders.xml"
+          },
+          "conditions": {},
+          "xmlTag": "AlienRace.ThingDef_AlienRace",
+          "raceGenes": [],
+          "xenotypeList": [
+            "Xeno_Epona"
+          ],
+          "geneList": [
+            "Gene_EponaHorse"
+          ],
+          "blackGeneList": [
+            "Furskin"
+          ],
+          "label": "Epona"
+        },
+        {
+          "defName": "Alien_Unicorn",
+          "file": "1.6\\Defs\\ThingDefs_Races\\Race_Unicorn.xml",
+          "loadRoot": {
+            "path": "1.6",
+            "conditions": {},
+            "source": "LoadFolders.xml"
+          },
+          "conditions": {},
+          "xmlTag": "AlienRace.ThingDef_AlienRace",
+          "raceGenes": [],
+          "xenotypeList": [
+            "Xeno_Unicorn"
+          ],
+          "geneList": [
+            "Gene_EponaHorse"
+          ],
+          "blackGeneList": [
+            "Furskin"
+          ],
+          "label": "Uniponen"
+        },
+        {
+          "defName": "Alien_Epona_Milira",
+          "file": "Milira\\Defs\\ThingDefs_Races\\Race_Epona_Milira.xml",
+          "loadRoot": {
+            "path": "Milira",
+            "conditions": {
+              "IfModActive": "Ancot.MiliraRaceGenePatch"
+            },
+            "source": "LoadFolders.xml"
+          },
+          "conditions": {},
+          "xmlTag": "AlienRace.ThingDef_AlienRace",
+          "raceGenes": [],
+          "xenotypeList": [],
+          "geneList": [],
+          "blackGeneList": [],
+          "label": "瓦尔基里"
+        },
+        {
+          "defName": "Alien_Unicorn_Milira",
+          "file": "Milira\\Defs\\ThingDefs_Races\\Race_Epona_Milira.xml",
+          "loadRoot": {
+            "path": "Milira",
+            "conditions": {
+              "IfModActive": "Ancot.MiliraRaceGenePatch"
+            },
+            "source": "LoadFolders.xml"
+          },
+          "conditions": {},
+          "xmlTag": "AlienRace.ThingDef_AlienRace",
+          "raceGenes": [],
+          "xenotypeList": [],
+          "geneList": [],
+          "blackGeneList": [],
+          "label": "派卡萨斯"
+        }
+      ],
+      "xenotypeDefs": [
+        {
+          "defName": "Xeno_Epona",
+          "file": "1.6\\Defs\\XenotypeDefs.xml",
+          "loadRoot": {
+            "path": "1.6",
+            "conditions": {},
+            "source": "LoadFolders.xml"
+          },
+          "conditions": {},
+          "genes": [
+            "Hair_ReddishBrown",
+            "Hair_DarkBrown",
+            "Hair_DarkSaturatedReddish",
+            "Hair_SandyBlonde",
+            "Hair_Epona_Black",
+            "Hair_Epona_LightBlue",
+            "Hair_Epona_DarkBrown",
+            "Hair_Epona_LightGreen",
+            "Hair_Epona_DarkOrange",
+            "Hair_Epona_LightPink",
+            "Hair_Epona_LightOrange",
+            "Hair_Epona_LightOliveGreen",
+            "Aggression_Aggressive",
+            "Gene_EponaHorse",
+            "AptitudePoor_Mining",
+            "Skin_SheerWhite"
+          ],
+          "inheritable": "true",
+          "label": "Epona"
+        },
+        {
+          "defName": "Xeno_Unicorn",
+          "file": "1.6\\Defs\\XenotypeDefs.xml",
+          "loadRoot": {
+            "path": "1.6",
+            "conditions": {},
+            "source": "LoadFolders.xml"
+          },
+          "conditions": {},
+          "genes": [
+            "Epona_healing",
+            "Libido_Low",
+            "Beauty_Pretty",
+            "KindInstinct",
+            "Gene_EponaHorse",
+            "AptitudePoor_Mining",
+            "Skin_SheerWhite"
+          ],
+          "inheritable": "true",
+          "label": "Unicorn"
+        },
+        {
+          "defName": "Xeno_Destrier",
+          "file": "1.6\\Defs\\XenotypeDefs.xml",
+          "loadRoot": {
+            "path": "1.6",
+            "conditions": {},
+            "source": "LoadFolders.xml"
+          },
+          "conditions": {},
+          "genes": [
+            "Hair_BrightRed",
+            "Hair_SandyBlonde",
+            "Hair_MidBlack",
+            "Hair_Gray",
+            "Hair_Epona_LightGray",
+            "Hair_Epona_VeryLightGray",
+            "Hair_Epona_LightPink",
+            "Hair_Epona_VeryLightGray_2",
+            "Hair_Epona_LightOrange",
+            "Epona_add",
+            "AptitudePoor_Intellectual",
+            "Aggression_Aggressive",
+            "Gene_EponaHorse",
+            "AptitudePoor_Mining",
+            "Skin_SheerWhite"
+          ],
+          "inheritable": "true",
+          "label": "Destrier"
+        },
+        {
+          "defName": "Xeno_EponaMilira",
+          "file": "Milira\\Defs\\MiliraXenotypeDefs.xml",
+          "loadRoot": {
+            "path": "Milira",
+            "conditions": {
+              "IfModActive": "Ancot.MiliraRaceGenePatch"
+            },
+            "source": "LoadFolders.xml"
+          },
+          "conditions": {},
+          "genes": [
+            "Hair_ReddishBrown",
+            "Hair_DarkBrown",
+            "Hair_DarkSaturatedReddish",
+            "Hair_SandyBlonde",
+            "Hair_Epona_Black",
+            "Hair_Epona_LightBlue",
+            "Hair_Epona_DarkBrown",
+            "Hair_Epona_LightGreen",
+            "Hair_Epona_DarkOrange",
+            "Hair_Epona_LightPink",
+            "Hair_Epona_LightOrange",
+            "Hair_Epona_LightOliveGreen",
+            "Aggression_Aggressive",
+            "Gene_EponaHorse",
+            "AptitudePoor_Mining",
+            "Skin_SheerWhite",
+            "AptitudeTerrible_Cooking",
+            "Milira_Knowledgeable",
+            "Milira_Ablutomania"
+          ],
+          "inheritable": "true",
+          "label": "瓦尔基里"
+        },
+        {
+          "defName": "Xeno_UnicornMilira",
+          "file": "Milira\\Defs\\MiliraXenotypeDefs.xml",
+          "loadRoot": {
+            "path": "Milira",
+            "conditions": {
+              "IfModActive": "Ancot.MiliraRaceGenePatch"
+            },
+            "source": "LoadFolders.xml"
+          },
+          "conditions": {},
+          "genes": [
+            "Epona_healing",
+            "Libido_Low",
+            "Beauty_Pretty",
+            "KindInstinct",
+            "Gene_EponaHorse",
+            "AptitudePoor_Mining",
+            "Skin_SheerWhite",
+            "Milira_Ablutomania",
+            "Milira_ProNegotiator"
+          ],
+          "inheritable": "true",
+          "label": "派卡萨斯"
+        }
+      ],
+      "geneDefs": [
+        {
+          "defName": "Gene_EponaHorse",
+          "file": "1.6\\Defs\\XenotypeDefs.xml",
+          "loadRoot": {
+            "path": "1.6",
+            "conditions": {},
+            "source": "LoadFolders.xml"
+          },
+          "conditions": {},
+          "parentName": null,
+          "geneClass": null,
+          "canGenerateInGeneSet": null,
+          "biostatArc": null,
+          "label": "Epona Gene"
+        },
+        {
+          "defName": "Epona_add",
+          "file": "1.6\\Defs\\XenotypeDefs.xml",
+          "loadRoot": {
+            "path": "1.6",
+            "conditions": {},
+            "source": "LoadFolders.xml"
+          },
+          "conditions": {},
+          "parentName": null,
+          "geneClass": null,
+          "canGenerateInGeneSet": null,
+          "biostatArc": null,
+          "label": "Warhorse Syndrome"
+        },
+        {
+          "defName": "Epona_healing",
+          "file": "1.6\\Defs\\XenotypeDefs.xml",
+          "loadRoot": {
+            "path": "1.6",
+            "conditions": {},
+            "source": "LoadFolders.xml"
+          },
+          "conditions": {},
+          "parentName": null,
+          "geneClass": null,
+          "canGenerateInGeneSet": null,
+          "biostatArc": null,
+          "label": "Goddess's Sacred Protection"
+        },
+        {
+          "defName": "Hair_Epona_Black",
+          "file": "1.6\\Defs\\XenotypeDefs.xml",
+          "loadRoot": {
+            "path": "1.6",
+            "conditions": {},
+            "source": "LoadFolders.xml"
+          },
+          "conditions": {},
+          "parentName": "GeneHairColorBase",
+          "geneClass": null,
+          "canGenerateInGeneSet": null,
+          "biostatArc": null,
+          "label": "Epona black hair"
+        },
+        {
+          "defName": "Hair_Epona_LightBlue",
+          "file": "1.6\\Defs\\XenotypeDefs.xml",
+          "loadRoot": {
+            "path": "1.6",
+            "conditions": {},
+            "source": "LoadFolders.xml"
+          },
+          "conditions": {},
+          "parentName": "GeneHairColorBase",
+          "geneClass": null,
+          "canGenerateInGeneSet": null,
+          "biostatArc": null,
+          "label": "Epona light blue hair"
+        },
+        {
+          "defName": "Hair_Epona_DarkBrown",
+          "file": "1.6\\Defs\\XenotypeDefs.xml",
+          "loadRoot": {
+            "path": "1.6",
+            "conditions": {},
+            "source": "LoadFolders.xml"
+          },
+          "conditions": {},
+          "parentName": "GeneHairColorBase",
+          "geneClass": null,
+          "canGenerateInGeneSet": null,
+          "biostatArc": null,
+          "label": "Epona dark brown hair"
+        },
+        {
+          "defName": "Hair_Epona_LightOliveGreen",
+          "file": "1.6\\Defs\\XenotypeDefs.xml",
+          "loadRoot": {
+            "path": "1.6",
+            "conditions": {},
+            "source": "LoadFolders.xml"
+          },
+          "conditions": {},
+          "parentName": "GeneHairColorBase",
+          "geneClass": null,
+          "canGenerateInGeneSet": null,
+          "biostatArc": null,
+          "label": "Epona Light Olive Green hair"
+        },
+        {
+          "defName": "Hair_Epona_LightGreen",
+          "file": "1.6\\Defs\\XenotypeDefs.xml",
+          "loadRoot": {
+            "path": "1.6",
+            "conditions": {},
+            "source": "LoadFolders.xml"
+          },
+          "conditions": {},
+          "parentName": "GeneHairColorBase",
+          "geneClass": null,
+          "canGenerateInGeneSet": null,
+          "biostatArc": null,
+          "label": "Epona light green hair"
+        },
+        {
+          "defName": "Hair_Epona_DarkOrange",
+          "file": "1.6\\Defs\\XenotypeDefs.xml",
+          "loadRoot": {
+            "path": "1.6",
+            "conditions": {},
+            "source": "LoadFolders.xml"
+          },
+          "conditions": {},
+          "parentName": "GeneHairColorBase",
+          "geneClass": null,
+          "canGenerateInGeneSet": null,
+          "biostatArc": null,
+          "label": "Epona dark orange hair"
+        },
+        {
+          "defName": "Hair_Epona_LightGray",
+          "file": "1.6\\Defs\\XenotypeDefs.xml",
+          "loadRoot": {
+            "path": "1.6",
+            "conditions": {},
+            "source": "LoadFolders.xml"
+          },
+          "conditions": {},
+          "parentName": "GeneHairColorBase",
+          "geneClass": null,
+          "canGenerateInGeneSet": null,
+          "biostatArc": null,
+          "label": "Epona light gray hair"
+        },
+        {
+          "defName": "Hair_Epona_VeryLightGray",
+          "file": "1.6\\Defs\\XenotypeDefs.xml",
+          "loadRoot": {
+            "path": "1.6",
+            "conditions": {},
+            "source": "LoadFolders.xml"
+          },
+          "conditions": {},
+          "parentName": "GeneHairColorBase",
+          "geneClass": null,
+          "canGenerateInGeneSet": null,
+          "biostatArc": null,
+          "label": "Epona very light gray hair"
+        },
+        {
+          "defName": "Hair_Epona_LightPink",
+          "file": "1.6\\Defs\\XenotypeDefs.xml",
+          "loadRoot": {
+            "path": "1.6",
+            "conditions": {},
+            "source": "LoadFolders.xml"
+          },
+          "conditions": {},
+          "parentName": "GeneHairColorBase",
+          "geneClass": null,
+          "canGenerateInGeneSet": null,
+          "biostatArc": null,
+          "label": "Epona light pink hair"
+        },
+        {
+          "defName": "Hair_Epona_VeryLightGray_2",
+          "file": "1.6\\Defs\\XenotypeDefs.xml",
+          "loadRoot": {
+            "path": "1.6",
+            "conditions": {},
+            "source": "LoadFolders.xml"
+          },
+          "conditions": {},
+          "parentName": "GeneHairColorBase",
+          "geneClass": null,
+          "canGenerateInGeneSet": null,
+          "biostatArc": null,
+          "label": "Epona very light gray hair"
+        },
+        {
+          "defName": "Hair_Epona_LightOrange",
+          "file": "1.6\\Defs\\XenotypeDefs.xml",
+          "loadRoot": {
+            "path": "1.6",
+            "conditions": {},
+            "source": "LoadFolders.xml"
+          },
+          "conditions": {},
+          "parentName": "GeneHairColorBase",
+          "geneClass": null,
+          "canGenerateInGeneSet": null,
+          "biostatArc": null,
+          "label": "Epona light orange hair"
+        }
+      ],
+      "uniqueRaceDefNames": [
+        "Alien_Destrier",
+        "Alien_Epona",
+        "Alien_Epona_Milira",
+        "Alien_Unicorn",
+        "Alien_Unicorn_Milira"
+      ],
+      "uniqueXenotypeDefNames": [
+        "Xeno_Destrier",
+        "Xeno_Epona",
+        "Xeno_EponaMilira",
+        "Xeno_Unicorn",
+        "Xeno_UnicornMilira"
+      ],
+      "uniqueGeneDefNames": [
+        "Epona_add",
+        "Epona_healing",
+        "Gene_EponaHorse",
+        "Hair_Epona_Black",
+        "Hair_Epona_DarkBrown",
+        "Hair_Epona_DarkOrange",
+        "Hair_Epona_LightBlue",
+        "Hair_Epona_LightGray",
+        "Hair_Epona_LightGreen",
+        "Hair_Epona_LightOliveGreen",
+        "Hair_Epona_LightOrange",
+        "Hair_Epona_LightPink",
+        "Hair_Epona_VeryLightGray",
+        "Hair_Epona_VeryLightGray_2"
+      ],
+      "errors": []
+    },
+    {
+      "relativePath": "Gloomy Dragonian race",
+      "name": "Gloomy Dragonian race",
+      "packageId": "RooAndGloomy.DragonianRaceMod",
+      "supportedVersions": [
+        "1.4",
+        "1.5",
+        "1.6"
+      ],
+      "loadRoots": [
+        {
+          "path": "1.6",
+          "conditions": {},
+          "source": "LoadFolders.xml"
+        },
+        {
+          "path": "cont",
+          "conditions": {},
+          "source": "LoadFolders.xml"
+        },
+        {
+          "path": "Compatibility/DLC/Royal1.6",
+          "conditions": {
+            "IfModActive": "Ludeon.Rimworld.Royalty"
+          },
+          "source": "LoadFolders.xml"
+        },
+        {
+          "path": "Compatibility/DLC/Bio1.6",
+          "conditions": {
+            "IfModActive": "Ludeon.RimWorld.Biotech"
+          },
+          "source": "LoadFolders.xml"
+        },
+        {
+          "path": "Compatibility/DLC/Anomaly1.6",
+          "conditions": {
+            "IfModActive": "Ludeon.RimWorld.Anomaly"
+          },
+          "source": "LoadFolders.xml"
+        }
+      ],
+      "raceDefs": [
+        {
+          "defName": "Dragonian_Race",
+          "file": "1.6\\Defs\\Dragonianlike\\GeneralRace.xml",
+          "loadRoot": {
+            "path": "1.6",
+            "conditions": {},
+            "source": "LoadFolders.xml"
+          },
+          "conditions": {},
+          "xmlTag": "AlienRace.ThingDef_AlienRace",
+          "raceGenes": [],
+          "xenotypeList": [
+            "DragonianXenotype",
+            "DragonianXenotypeBlack"
+          ],
+          "geneList": [],
+          "blackGeneList": [
+            "Furskin",
+            "Brow_Heavy",
+            "Hair_BaldOnly",
+            "Beard_Always",
+            "FacialRidges"
+          ],
+          "label": "Dragonian"
+        }
+      ],
+      "xenotypeDefs": [
+        {
+          "defName": "DragonianXenotype",
+          "file": "Compatibility\\DLC\\Bio1.6\\Defs\\DragonianBioTitle.xml",
+          "loadRoot": {
+            "path": "Compatibility/DLC/Bio1.6",
+            "conditions": {
+              "IfModActive": "Ludeon.RimWorld.Biotech"
+            },
+            "source": "LoadFolders.xml"
+          },
+          "conditions": {},
+          "genes": [
+            "MinTemp_SmallDecrease",
+            "MaxTemp_SmallIncrease",
+            "Robust",
+            "Libido_Low",
+            "AptitudeTerrible_Shooting",
+            "AptitudeTerrible_Intellectual",
+            "AptitudeTerrible_Medicine",
+            "Beauty_Beautiful",
+            "Dragonian_Dragonborn"
+          ],
+          "inheritable": "true",
+          "label": "Dragonian"
+        },
+        {
+          "defName": "DragonianXenotypeBlack",
+          "file": "Compatibility\\DLC\\Bio1.6\\Defs\\DragonianBioTitle.xml",
+          "loadRoot": {
+            "path": "Compatibility/DLC/Bio1.6",
+            "conditions": {
+              "IfModActive": "Ludeon.RimWorld.Biotech"
+            },
+            "source": "LoadFolders.xml"
+          },
+          "conditions": {},
+          "genes": [
+            "MinTemp_SmallDecrease",
+            "MaxTemp_SmallIncrease",
+            "Robust",
+            "Libido_Low",
+            "AptitudeTerrible_Shooting",
+            "AptitudeTerrible_Intellectual",
+            "AptitudeTerrible_Medicine",
+            "Beauty_Beautiful",
+            "Dragonian_Dragonborn_Black"
+          ],
+          "inheritable": "true",
+          "label": "Black-Dragonian"
+        }
+      ],
+      "geneDefs": [
+        {
+          "defName": "Dragonian_Dragonborn",
+          "file": "Compatibility\\DLC\\Bio1.6\\Defs\\DragonianBioTitle.xml",
+          "loadRoot": {
+            "path": "Compatibility/DLC/Bio1.6",
+            "conditions": {
+              "IfModActive": "Ludeon.RimWorld.Biotech"
+            },
+            "source": "LoadFolders.xml"
+          },
+          "conditions": {},
+          "parentName": "GeneHealingRateBase",
+          "geneClass": null,
+          "canGenerateInGeneSet": "false",
+          "biostatArc": null,
+          "label": "Dragonborn"
+        },
+        {
+          "defName": "Dragonian_Dragonborn_Black",
+          "file": "Compatibility\\DLC\\Bio1.6\\Defs\\DragonianBioTitle.xml",
+          "loadRoot": {
+            "path": "Compatibility/DLC/Bio1.6",
+            "conditions": {
+              "IfModActive": "Ludeon.RimWorld.Biotech"
+            },
+            "source": "LoadFolders.xml"
+          },
+          "conditions": {},
+          "parentName": "GeneHealingRateBase",
+          "geneClass": null,
+          "canGenerateInGeneSet": "false",
+          "biostatArc": null,
+          "label": "Black-Dragonborn"
+        }
+      ],
+      "uniqueRaceDefNames": [
+        "Dragonian_Race"
+      ],
+      "uniqueXenotypeDefNames": [
+        "DragonianXenotype",
+        "DragonianXenotypeBlack"
+      ],
+      "uniqueGeneDefNames": [
+        "Dragonian_Dragonborn",
+        "Dragonian_Dragonborn_Black"
+      ],
+      "errors": []
+    },
+    {
+      "relativePath": "Humanoid Alien Races",
+      "name": "Humanoid Alien Races",
+      "packageId": "erdelf.HumanoidAlienRaces",
+      "supportedVersions": [
+        "0.19",
+        "1.0",
+        "1.1",
+        "1.2",
+        "1.3",
+        "1.4",
+        "1.5",
+        "1.6"
+      ],
+      "loadRoots": [
+        {
+          "path": ".",
+          "conditions": {},
+          "source": "LoadFolders.xml"
+        },
+        {
+          "path": "1.6",
+          "conditions": {},
+          "source": "LoadFolders.xml"
+        },
+        {
+          "path": "1.6/Mods/Ideology",
+          "conditions": {
+            "IfModActive": "Ludeon.RimWorld.Ideology"
+          },
+          "source": "LoadFolders.xml"
+        },
+        {
+          "path": "1.6/Mods/Odyssey",
+          "conditions": {
+            "IfModActive": "Ludeon.RimWorld.Odyssey"
+          },
+          "source": "LoadFolders.xml"
+        }
+      ],
+      "raceDefs": [],
+      "xenotypeDefs": [],
+      "geneDefs": [],
+      "uniqueRaceDefNames": [],
+      "uniqueXenotypeDefNames": [],
+      "uniqueGeneDefNames": [],
+      "errors": []
+    },
+    {
+      "relativePath": "Kiiro Race",
+      "name": "Kiiro Race",
+      "packageId": "Ancot.KiiroRace",
+      "supportedVersions": [
+        "1.4",
+        "1.5",
+        "1.6"
+      ],
+      "loadRoots": [
+        {
+          "path": ".",
+          "conditions": {},
+          "source": "LoadFolders.xml"
+        },
+        {
+          "path": "1.6",
+          "conditions": {},
+          "source": "LoadFolders.xml"
+        },
+        {
+          "path": "1.6/Mods/Royalty",
+          "conditions": {
+            "IfModActive": "Ludeon.RimWorld.Royalty"
+          },
+          "source": "LoadFolders.xml"
+        },
+        {
+          "path": "1.6/Mods/Ideology",
+          "conditions": {
+            "IfModActive": "Ludeon.RimWorld.Ideology"
+          },
+          "source": "LoadFolders.xml"
+        },
+        {
+          "path": "1.6/Mods/Biotech",
+          "conditions": {
+            "IfModActive": "Ludeon.RimWorld.Biotech"
+          },
+          "source": "LoadFolders.xml"
+        },
+        {
+          "path": "1.6/Mods/Ancot.MiliraRace",
+          "conditions": {
+            "IfModActive": "Ancot.MiliraRace"
+          },
+          "source": "LoadFolders.xml"
+        }
+      ],
+      "raceDefs": [
+        {
+          "defName": "Kiiro_Race",
+          "file": "1.6\\Defs\\ThingDefs_Race\\Race_Kiiro.xml",
+          "loadRoot": {
+            "path": "1.6",
+            "conditions": {},
+            "source": "LoadFolders.xml"
+          },
+          "conditions": {},
+          "xmlTag": "AlienRace.ThingDef_AlienRace",
+          "raceGenes": [],
+          "xenotypeList": [],
+          "geneList": [],
+          "blackGeneList": [
+            "Furskin",
+            "Brow_Heavy",
+            "FacialRidges"
+          ],
+          "label": "kiiro race"
+        }
+      ],
+      "xenotypeDefs": [],
+      "geneDefs": [],
+      "uniqueRaceDefNames": [
+        "Kiiro_Race"
+      ],
+      "uniqueXenotypeDefNames": [],
+      "uniqueGeneDefNames": [],
+      "errors": []
+    },
+    {
+      "relativePath": "Kiiro Race - Maine Coon Xenotype (绮罗缅因异种)",
+      "name": "Kiiro Race - Maine Coon Xenotype (绮罗缅因异种)",
+      "packageId": "ZuoYao.KiiroMaineCoon",
+      "supportedVersions": [
+        "1.6"
+      ],
+      "loadRoots": [
+        {
+          "path": ".",
+          "conditions": {},
+          "source": "default-root"
+        }
+      ],
+      "raceDefs": [],
+      "xenotypeDefs": [
+        {
+          "defName": "KiiroXenotype_MaineCoon",
+          "file": "Defs\\XenotypeDefs\\Kiiro_MaineCoonXenotype.xml",
+          "loadRoot": {
+            "path": ".",
+            "conditions": {},
+            "source": "default-root"
+          },
+          "conditions": {},
+          "genes": [
+            "AptitudeStrong_Social",
+            "AptitudeStrong_Crafting",
+            "AptitudeStrong_Artistic",
+            "MinTemp_SmallIncrease",
+            "MaxTemp_SmallDecrease",
+            "Kiiro_MiningWeak",
+            "DarkVision",
+            "Kiiro_Lethargic",
+            "Kiiro_SocialCat",
+            "Kiiro_FineCook",
+            "Kiiro_MedicWeak",
+            "Kiiro_MechineWeak",
+            "Kiiro_NimbleCombat",
+            "Kiiro_PreciseAiming",
+            "Kiiro_GentleGiant",
+            "Kiiro_CatBoss"
+          ],
+          "inheritable": "true",
+          "label": "maine coon"
+        }
+      ],
+      "geneDefs": [
+        {
+          "defName": "Kiiro_GentleGiant",
+          "file": "Defs\\GeneDefs\\Kiiro_MaineCoonGenes.xml",
+          "loadRoot": {
+            "path": ".",
+            "conditions": {},
+            "source": "default-root"
+          },
+          "conditions": {},
+          "parentName": "KiiroGeneBase",
+          "geneClass": null,
+          "canGenerateInGeneSet": null,
+          "biostatArc": null,
+          "label": "gentle giant"
+        },
+        {
+          "defName": "Kiiro_CatBoss",
+          "file": "Defs\\GeneDefs\\Kiiro_MaineCoonGenes.xml",
+          "loadRoot": {
+            "path": ".",
+            "conditions": {},
+            "source": "default-root"
+          },
+          "conditions": {},
+          "parentName": "KiiroGeneBase",
+          "geneClass": null,
+          "canGenerateInGeneSet": null,
+          "biostatArc": null,
+          "label": "cat boss"
+        }
+      ],
+      "uniqueRaceDefNames": [],
+      "uniqueXenotypeDefNames": [
+        "KiiroXenotype_MaineCoon"
+      ],
+      "uniqueGeneDefNames": [
+        "Kiiro_CatBoss",
+        "Kiiro_GentleGiant"
+      ],
+      "errors": []
+    },
+    {
+      "relativePath": "Kiiro Race - Orange Cat Xenotype (绮罗橘猫异种)",
+      "name": "Kiiro Race - Orange Cat Xenotype (绮罗橘猫异种)",
+      "packageId": "ZuoYao.KiiroOrangeCat",
+      "supportedVersions": [
+        "1.6"
+      ],
+      "loadRoots": [
+        {
+          "path": ".",
+          "conditions": {},
+          "source": "default-root"
+        }
+      ],
+      "raceDefs": [],
+      "xenotypeDefs": [
+        {
+          "defName": "KiiroXenotype_OrangeCat",
+          "file": "Defs\\XenotypeDefs\\Kiiro_OrangeCatXenotype.xml",
+          "loadRoot": {
+            "path": ".",
+            "conditions": {},
+            "source": "default-root"
+          },
+          "conditions": {},
+          "genes": [
+            "AptitudeStrong_Social",
+            "AptitudeStrong_Crafting",
+            "AptitudeStrong_Artistic",
+            "MinTemp_SmallIncrease",
+            "MaxTemp_SmallDecrease",
+            "Kiiro_MiningWeak",
+            "DarkVision",
+            "Kiiro_Lethargic",
+            "Kiiro_SocialCat",
+            "Kiiro_FineCook",
+            "Kiiro_MedicWeak",
+            "Kiiro_MechineWeak",
+            "Kiiro_NimbleCombat",
+            "Kiiro_PreciseAiming",
+            "Kiiro_PainFearing",
+            "Kiiro_EatALittle",
+            "Kiiro_HeavyOrange"
+          ],
+          "inheritable": "true",
+          "label": "orange cat"
+        }
+      ],
+      "geneDefs": [
+        {
+          "defName": "Kiiro_EatALittle",
+          "file": "Defs\\GeneDefs\\Kiiro_OrangeCatGenes.xml",
+          "loadRoot": {
+            "path": ".",
+            "conditions": {},
+            "source": "default-root"
+          },
+          "conditions": {},
+          "parentName": "KiiroGeneBase",
+          "geneClass": null,
+          "canGenerateInGeneSet": null,
+          "biostatArc": null,
+          "label": "hello, I eat a little"
+        },
+        {
+          "defName": "Kiiro_HeavyOrange",
+          "file": "Defs\\GeneDefs\\Kiiro_OrangeCatGenes.xml",
+          "loadRoot": {
+            "path": ".",
+            "conditions": {},
+            "source": "default-root"
+          },
+          "conditions": {},
+          "parentName": "KiiroGeneBase",
+          "geneClass": null,
+          "canGenerateInGeneSet": null,
+          "biostatArc": null,
+          "label": "heavy orange"
+        }
+      ],
+      "uniqueRaceDefNames": [],
+      "uniqueXenotypeDefNames": [
+        "KiiroXenotype_OrangeCat"
+      ],
+      "uniqueGeneDefNames": [
+        "Kiiro_EatALittle",
+        "Kiiro_HeavyOrange"
+      ],
+      "errors": []
+    },
+    {
+      "relativePath": "Kiiro Race - Ragdoll Xenotype (绮罗布偶异种)",
+      "name": "Kiiro Race - Ragdoll Xenotype (绮罗布偶异种)",
+      "packageId": "ZuoYao.KiiroRagdoll",
+      "supportedVersions": [
+        "1.6"
+      ],
+      "loadRoots": [
+        {
+          "path": ".",
+          "conditions": {},
+          "source": "default-root"
+        }
+      ],
+      "raceDefs": [],
+      "xenotypeDefs": [
+        {
+          "defName": "KiiroXenotype_Ragdoll",
+          "file": "Defs\\XenotypeDefs\\Kiiro_RagdollXenotype.xml",
+          "loadRoot": {
+            "path": ".",
+            "conditions": {},
+            "source": "default-root"
+          },
+          "conditions": {},
+          "genes": [
+            "AptitudeStrong_Social",
+            "AptitudeStrong_Crafting",
+            "AptitudeStrong_Artistic",
+            "MinTemp_SmallIncrease",
+            "MaxTemp_SmallDecrease",
+            "Kiiro_MiningWeak",
+            "DarkVision",
+            "Kiiro_Lethargic",
+            "Kiiro_SocialCat",
+            "Kiiro_FineCook",
+            "Kiiro_MedicWeak",
+            "Kiiro_MechineWeak",
+            "Kiiro_NimbleCombat",
+            "Kiiro_PreciseAiming",
+            "Kiiro_CatFairy",
+            "Kiiro_GlassStomach",
+            "Eyes_RagdollBlue"
+          ],
+          "inheritable": "true",
+          "label": "布偶种"
+        }
+      ],
+      "geneDefs": [
+        {
+          "defName": "Kiiro_CatFairy",
+          "file": "Defs\\GeneDefs\\Kiiro_RagdollGenes.xml",
+          "loadRoot": {
+            "path": ".",
+            "conditions": {},
+            "source": "default-root"
+          },
+          "conditions": {},
+          "parentName": "KiiroGeneBase",
+          "geneClass": null,
+          "canGenerateInGeneSet": null,
+          "biostatArc": null,
+          "label": "猫咪仙女"
+        },
+        {
+          "defName": "Kiiro_GlassStomach",
+          "file": "Defs\\GeneDefs\\Kiiro_RagdollGenes.xml",
+          "loadRoot": {
+            "path": ".",
+            "conditions": {},
+            "source": "default-root"
+          },
+          "conditions": {},
+          "parentName": "KiiroGeneBase",
+          "geneClass": null,
+          "canGenerateInGeneSet": null,
+          "biostatArc": null,
+          "label": "玻璃胃"
+        },
+        {
+          "defName": "Eyes_RagdollBlue",
+          "file": "Defs\\GeneDefs\\Kiiro_RagdollGenes.xml",
+          "loadRoot": {
+            "path": ".",
+            "conditions": {},
+            "source": "default-root"
+          },
+          "conditions": {},
+          "parentName": "GeneEyeColor",
+          "geneClass": null,
+          "canGenerateInGeneSet": null,
+          "biostatArc": null,
+          "label": "布偶蓝眼"
+        }
+      ],
+      "uniqueRaceDefNames": [],
+      "uniqueXenotypeDefNames": [
+        "KiiroXenotype_Ragdoll"
+      ],
+      "uniqueGeneDefNames": [
+        "Eyes_RagdollBlue",
+        "Kiiro_CatFairy",
+        "Kiiro_GlassStomach"
+      ],
+      "errors": []
+    },
+    {
+      "relativePath": "Kiiro Race - Siamese Xenotype (绮罗暹罗异种)",
+      "name": "Kiiro Race - Siamese Xenotype (绮罗暹罗异种)",
+      "packageId": "ZuoYao.KiiroSiamese",
+      "supportedVersions": [
+        "1.6"
+      ],
+      "loadRoots": [
+        {
+          "path": ".",
+          "conditions": {},
+          "source": "default-root"
+        }
+      ],
+      "raceDefs": [],
+      "xenotypeDefs": [
+        {
+          "defName": "KiiroXenotype_Siamese",
+          "file": "Defs\\XenotypeDefs\\Kiiro_SiameseXenotype.xml",
+          "loadRoot": {
+            "path": ".",
+            "conditions": {},
+            "source": "default-root"
+          },
+          "conditions": {},
+          "genes": [
+            "AptitudeStrong_Social",
+            "AptitudeStrong_Crafting",
+            "AptitudeStrong_Artistic",
+            "DarkVision",
+            "Kiiro_Lethargic",
+            "Kiiro_SocialCat",
+            "Kiiro_FineCook",
+            "Kiiro_MedicWeak",
+            "Kiiro_MechineWeak",
+            "Kiiro_NimbleCombat",
+            "Kiiro_PreciseAiming",
+            "Kiiro_SiameseMiner",
+            "Kiiro_SiameseActiveSpirit",
+            "Eyes_SiameseBlue"
+          ],
+          "inheritable": "true",
+          "label": "siamese"
+        }
+      ],
+      "geneDefs": [
+        {
+          "defName": "Kiiro_SiameseMiner",
+          "file": "Defs\\GeneDefs\\Kiiro_SiameseGenes.xml",
+          "loadRoot": {
+            "path": ".",
+            "conditions": {},
+            "source": "default-root"
+          },
+          "conditions": {},
+          "parentName": "KiiroGeneBase",
+          "geneClass": null,
+          "canGenerateInGeneSet": null,
+          "biostatArc": null,
+          "label": "little dark-face miner"
+        },
+        {
+          "defName": "Kiiro_SiameseActiveSpirit",
+          "file": "Defs\\GeneDefs\\Kiiro_SiameseGenes.xml",
+          "loadRoot": {
+            "path": ".",
+            "conditions": {},
+            "source": "default-root"
+          },
+          "conditions": {},
+          "parentName": "KiiroGeneBase",
+          "geneClass": null,
+          "canGenerateInGeneSet": null,
+          "biostatArc": null,
+          "label": "lively outgoing sporty"
+        },
+        {
+          "defName": "Eyes_SiameseBlue",
+          "file": "Defs\\GeneDefs\\Kiiro_SiameseGenes.xml",
+          "loadRoot": {
+            "path": ".",
+            "conditions": {},
+            "source": "default-root"
+          },
+          "conditions": {},
+          "parentName": "GeneEyeColor",
+          "geneClass": null,
+          "canGenerateInGeneSet": null,
+          "biostatArc": null,
+          "label": "siamese blue eyes"
+        }
+      ],
+      "uniqueRaceDefNames": [],
+      "uniqueXenotypeDefNames": [
+        "KiiroXenotype_Siamese"
+      ],
+      "uniqueGeneDefNames": [
+        "Eyes_SiameseBlue",
+        "Kiiro_SiameseActiveSpirit",
+        "Kiiro_SiameseMiner"
+      ],
+      "errors": []
+    },
+    {
+      "relativePath": "Kiiro Race Gene Patch",
+      "name": "Kiiro Race Gene Patch",
+      "packageId": "Ancot.KiiroRaceGenePatch",
+      "supportedVersions": [
+        "1.4",
+        "1.5",
+        "1.6"
+      ],
+      "loadRoots": [
+        {
+          "path": "1.6",
+          "conditions": {},
+          "source": "default-version-folder"
+        }
+      ],
+      "raceDefs": [],
+      "xenotypeDefs": [
+        {
+          "defName": "KiiroXenotype",
+          "file": "1.6\\Defs\\KiiroXenotype.xml",
+          "loadRoot": {
+            "path": "1.6",
+            "conditions": {},
+            "source": "default-version-folder"
+          },
+          "conditions": {},
+          "genes": [
+            "AptitudeStrong_Social",
+            "AptitudeStrong_Crafting",
+            "AptitudeStrong_Artistic",
+            "MinTemp_SmallIncrease",
+            "MaxTemp_SmallDecrease",
+            "Kiiro_MiningWeak",
+            "DarkVision",
+            "Kiiro_Lethargic",
+            "Kiiro_SocialCat",
+            "Kiiro_FineCook",
+            "Kiiro_MedicWeak",
+            "Kiiro_MechineWeak",
+            "Kiiro_NimbleCombat",
+            "Kiiro_PreciseAiming",
+            "MoveSpeed_Quick",
+            "Kiiro_FragileHeart",
+            "Kiiro_PainFearing"
+          ],
+          "inheritable": "true",
+          "label": "kiiro"
+        }
+      ],
+      "geneDefs": [
+        {
+          "defName": "Kiiro_Lethargic",
+          "file": "1.6\\Defs\\KiiroGene.xml",
+          "loadRoot": {
+            "path": "1.6",
+            "conditions": {},
+            "source": "default-version-folder"
+          },
+          "conditions": {},
+          "parentName": "KiiroGeneBase",
+          "geneClass": null,
+          "canGenerateInGeneSet": null,
+          "biostatArc": null,
+          "label": "lethargic"
+        },
+        {
+          "defName": "Kiiro_SocialCat",
+          "file": "1.6\\Defs\\KiiroGene.xml",
+          "loadRoot": {
+            "path": "1.6",
+            "conditions": {},
+            "source": "default-version-folder"
+          },
+          "conditions": {},
+          "parentName": "KiiroGeneBase",
+          "geneClass": null,
+          "canGenerateInGeneSet": null,
+          "biostatArc": null,
+          "label": "social cat"
+        },
+        {
+          "defName": "Kiiro_FineCook",
+          "file": "1.6\\Defs\\KiiroGene.xml",
+          "loadRoot": {
+            "path": "1.6",
+            "conditions": {},
+            "source": "default-version-folder"
+          },
+          "conditions": {},
+          "parentName": "KiiroGeneBase",
+          "geneClass": null,
+          "canGenerateInGeneSet": null,
+          "biostatArc": null,
+          "label": "fine cook"
+        },
+        {
+          "defName": "Kiiro_MedicWeak",
+          "file": "1.6\\Defs\\KiiroGene.xml",
+          "loadRoot": {
+            "path": "1.6",
+            "conditions": {},
+            "source": "default-version-folder"
+          },
+          "conditions": {},
+          "parentName": "KiiroGeneBase",
+          "geneClass": null,
+          "canGenerateInGeneSet": null,
+          "biostatArc": null,
+          "label": "medic weakness"
+        },
+        {
+          "defName": "Kiiro_MechineWeak",
+          "file": "1.6\\Defs\\KiiroGene.xml",
+          "loadRoot": {
+            "path": "1.6",
+            "conditions": {},
+            "source": "default-version-folder"
+          },
+          "conditions": {},
+          "parentName": "KiiroGeneBase",
+          "geneClass": null,
+          "canGenerateInGeneSet": null,
+          "biostatArc": null,
+          "label": "machine weakness"
+        },
+        {
+          "defName": "Kiiro_PlantsWeak",
+          "file": "1.6\\Defs\\KiiroGene.xml",
+          "loadRoot": {
+            "path": "1.6",
+            "conditions": {},
+            "source": "default-version-folder"
+          },
+          "conditions": {},
+          "parentName": "KiiroGeneBase",
+          "geneClass": null,
+          "canGenerateInGeneSet": null,
+          "biostatArc": null,
+          "label": "plants weakness"
+        },
+        {
+          "defName": "Kiiro_MiningWeak",
+          "file": "1.6\\Defs\\KiiroGene.xml",
+          "loadRoot": {
+            "path": "1.6",
+            "conditions": {},
+            "source": "default-version-folder"
+          },
+          "conditions": {},
+          "parentName": "KiiroGeneBase",
+          "geneClass": null,
+          "canGenerateInGeneSet": null,
+          "biostatArc": null,
+          "label": "mining weakness"
+        },
+        {
+          "defName": "Kiiro_NimbleCombat",
+          "file": "1.6\\Defs\\KiiroGene.xml",
+          "loadRoot": {
+            "path": "1.6",
+            "conditions": {},
+            "source": "default-version-folder"
+          },
+          "conditions": {},
+          "parentName": "KiiroGeneBase",
+          "geneClass": null,
+          "canGenerateInGeneSet": null,
+          "biostatArc": null,
+          "label": "nimble combat"
+        },
+        {
+          "defName": "Kiiro_PreciseAiming",
+          "file": "1.6\\Defs\\KiiroGene.xml",
+          "loadRoot": {
+            "path": "1.6",
+            "conditions": {},
+            "source": "default-version-folder"
+          },
+          "conditions": {},
+          "parentName": "KiiroGeneBase",
+          "geneClass": null,
+          "canGenerateInGeneSet": null,
+          "biostatArc": null,
+          "label": "precise aiming"
+        },
+        {
+          "defName": "Kiiro_FragileHeart",
+          "file": "1.6\\Defs\\KiiroGene.xml",
+          "loadRoot": {
+            "path": "1.6",
+            "conditions": {},
+            "source": "default-version-folder"
+          },
+          "conditions": {},
+          "parentName": "KiiroGeneBase",
+          "geneClass": null,
+          "canGenerateInGeneSet": null,
+          "biostatArc": null,
+          "label": "fragile heart"
+        },
+        {
+          "defName": "Kiiro_PainFearing",
+          "file": "1.6\\Defs\\KiiroGene.xml",
+          "loadRoot": {
+            "path": "1.6",
+            "conditions": {},
+            "source": "default-version-folder"
+          },
+          "conditions": {},
+          "parentName": "KiiroGeneBase",
+          "geneClass": null,
+          "canGenerateInGeneSet": null,
+          "biostatArc": null,
+          "label": "pain fearing"
+        }
+      ],
+      "uniqueRaceDefNames": [],
+      "uniqueXenotypeDefNames": [
+        "KiiroXenotype"
+      ],
+      "uniqueGeneDefNames": [
+        "Kiiro_FineCook",
+        "Kiiro_FragileHeart",
+        "Kiiro_Lethargic",
+        "Kiiro_MechineWeak",
+        "Kiiro_MedicWeak",
+        "Kiiro_MiningWeak",
+        "Kiiro_NimbleCombat",
+        "Kiiro_PainFearing",
+        "Kiiro_PlantsWeak",
+        "Kiiro_PreciseAiming",
+        "Kiiro_SocialCat"
+      ],
+      "errors": []
+    },
+    {
+      "relativePath": "Kurin HAR Edition",
+      "name": "Kurin HAR Edition",
+      "packageId": "Seioch.Kurin.HAR",
+      "supportedVersions": [
+        "1.2",
+        "1.3",
+        "1.4",
+        "1.5",
+        "1.6"
+      ],
+      "loadRoots": [
+        {
+          "path": "1.6",
+          "conditions": {},
+          "source": "LoadFolders.xml"
+        },
+        {
+          "path": "Biotech",
+          "conditions": {
+            "IfModActive": "Ludeon.Rimworld.Biotech"
+          },
+          "source": "LoadFolders.xml"
+        },
+        {
+          "path": "1.6/Defs/BiotechScenarios",
+          "conditions": {
+            "IfModActive": "Ludeon.Rimworld.Biotech"
+          },
+          "source": "LoadFolders.xml"
+        },
+        {
+          "path": "Odyssey",
+          "conditions": {
+            "IfModActive": "Ludeon.Rimworld.Odyssey"
+          },
+          "source": "LoadFolders.xml"
+        },
+        {
+          "path": "Textures",
+          "conditions": {},
+          "source": "LoadFolders.xml"
+        }
+      ],
+      "raceDefs": [
+        {
+          "defName": "Kurin_Race",
+          "file": "1.6\\Defs\\Race\\Race.xml",
+          "loadRoot": {
+            "path": "1.6",
+            "conditions": {},
+            "source": "LoadFolders.xml"
+          },
+          "conditions": {},
+          "xmlTag": "AlienRace.ThingDef_AlienRace",
+          "raceGenes": [],
+          "xenotypeList": [],
+          "geneList": [],
+          "blackGeneList": [
+            "Hair_BaldOnly",
+            "Beard_Always",
+            "Hands_Pig",
+            "ElongatedFingers",
+            "VoicePig",
+            "VoiceRoar",
+            "Furskin",
+            "Brow_Heavy",
+            "Tail_Furry",
+            "Tail_Smooth",
+            "FacialRidges"
+          ],
+          "label": "Kurin"
+        }
+      ],
+      "xenotypeDefs": [],
+      "geneDefs": [],
+      "uniqueRaceDefNames": [
+        "Kurin_Race"
+      ],
+      "uniqueXenotypeDefNames": [],
+      "uniqueGeneDefNames": [],
+      "errors": []
+    },
+    {
+      "relativePath": "Milira Faction Milira Imperium",
+      "name": "Milira Faction: Milira Imperium",
+      "packageId": "Ariandel.MiliraImperium",
+      "supportedVersions": [
+        "1.6"
+      ],
+      "loadRoots": [
+        {
+          "path": "1.6",
+          "conditions": {},
+          "source": "LoadFolders.xml"
+        },
+        {
+          "path": "Content",
+          "conditions": {},
+          "source": "LoadFolders.xml"
+        },
+        {
+          "path": "1.6/Mods/Ideology",
+          "conditions": {
+            "IfModActive": "Ludeon.RimWorld.Ideology"
+          },
+          "source": "LoadFolders.xml"
+        },
+        {
+          "path": "1.6/Mods/Anomaly",
+          "conditions": {
+            "IfModActive": "Ludeon.RimWorld.Anomaly"
+          },
+          "source": "LoadFolders.xml"
+        },
+        {
+          "path": "1.6/Mods/Odyssey",
+          "conditions": {
+            "IfModActive": "Ludeon.RimWorld.Odyssey"
+          },
+          "source": "LoadFolders.xml"
+        },
+        {
+          "path": "1.6/Mods/Ancot.KiiroRace",
+          "conditions": {
+            "IfModActive": "Ancot.KiiroRace"
+          },
+          "source": "LoadFolders.xml"
+        },
+        {
+          "path": "1.6/Mods/Ancot.KiiroFacialAnimation",
+          "conditions": {
+            "IfModActive": "Ancot.KiiroFacialAnimation"
+          },
+          "source": "LoadFolders.xml"
+        },
+        {
+          "path": "1.6/Mods/Ancot.KiiroStoryEventsExpanded",
+          "conditions": {
+            "IfModActive": "Ancot.KiiroStoryEventsExpanded"
+          },
+          "source": "LoadFolders.xml"
+        },
+        {
+          "path": "1.6/Mods/Nals.FacialAnimation",
+          "conditions": {
+            "IfModActive": "Nals.FacialAnimation"
+          },
+          "source": "LoadFolders.xml"
+        },
+        {
+          "path": "1.6/Mods/Ancot.MilianModification",
+          "conditions": {
+            "IfModActive": "Ancot.MilianModification"
+          },
+          "source": "LoadFolders.xml"
+        },
+        {
+          "path": "1.6/Mods/MiliraSolarfuelUnofficialExpanded",
+          "conditions": {
+            "IfModActive": "Fen.MiliraSunlightfuel.UnofficialE"
+          },
+          "source": "LoadFolders.xml"
+        },
+        {
+          "path": "1.6/Mods/co.uk.epicguru.meleeanimation",
+          "conditions": {
+            "IfModActive": "co.uk.epicguru.meleeanimation"
+          },
+          "source": "LoadFolders.xml"
+        },
+        {
+          "path": "1.6/Mods/HenTaiLoliTeam.Axolotl",
+          "conditions": {
+            "IfModActive": "HenTaiLoliTeam.Axolotl"
+          },
+          "source": "LoadFolders.xml"
+        },
+        {
+          "path": "1.6/Mods/fxz.moelotlzombie.update",
+          "conditions": {
+            "IfModActive": "fxz.moelotlzombie.update"
+          },
+          "source": "LoadFolders.xml"
+        },
+        {
+          "path": "1.6/Mods/sleepycot.wingsofdemocracy",
+          "conditions": {
+            "IfModActive": "sleepycot.wingsofdemocracy"
+          },
+          "source": "LoadFolders.xml"
+        },
+        {
+          "path": "1.6/Mods/HenTaiLoliTeam.Axolotl.FactionExpand",
+          "conditions": {
+            "IfModActive": "HenTaiLoliTeam.Axolotl.FactionExpand"
+          },
+          "source": "LoadFolders.xml"
+        },
+        {
+          "path": "1.6/Mods/HenTaiLoliTeam.Axolotl.FA",
+          "conditions": {
+            "IfModActive": "HenTaiLoliTeam.Axolotl.FA"
+          },
+          "source": "LoadFolders.xml"
+        },
+        {
+          "path": "1.6/Mods/KindSeal.LOL",
+          "conditions": {
+            "IfModActive": "KindSeal.LOL"
+          },
+          "source": "LoadFolders.xml"
+        }
+      ],
+      "raceDefs": [],
+      "xenotypeDefs": [],
+      "geneDefs": [],
+      "uniqueRaceDefNames": [],
+      "uniqueXenotypeDefNames": [],
+      "uniqueGeneDefNames": [],
+      "errors": []
+    },
+    {
+      "relativePath": "Milira Race",
+      "name": "Milira Race",
+      "packageId": "Ancot.MiliraRace",
+      "supportedVersions": [
+        "1.5",
+        "1.6"
+      ],
+      "loadRoots": [
+        {
+          "path": "1.6",
+          "conditions": {},
+          "source": "LoadFolders.xml"
+        },
+        {
+          "path": "Content",
+          "conditions": {},
+          "source": "LoadFolders.xml"
+        },
+        {
+          "path": "1.6/Mods/Royalty",
+          "conditions": {
+            "IfModActive": "Ludeon.RimWorld.Royalty"
+          },
+          "source": "LoadFolders.xml"
+        },
+        {
+          "path": "1.6/Mods/Biotech",
+          "conditions": {
+            "IfModActive": "Ludeon.RimWorld.Biotech"
+          },
+          "source": "LoadFolders.xml"
+        },
+        {
+          "path": "1.6/Mods/Odyssey",
+          "conditions": {
+            "IfModActive": "Ludeon.RimWorld.Odyssey"
+          },
+          "source": "LoadFolders.xml"
+        },
+        {
+          "path": "1.6/Mods/Ancot.KiiroRace",
+          "conditions": {
+            "IfModActive": "Ancot.KiiroRace"
+          },
+          "source": "LoadFolders.xml"
+        },
+        {
+          "path": "1.6/Mods/Ancot.KiiroStoryEventsExpanded",
+          "conditions": {
+            "IfModActive": "Ancot.KiiroStoryEventsExpanded"
+          },
+          "source": "LoadFolders.xml"
+        }
+      ],
+      "raceDefs": [
+        {
+          "defName": "Milian_Race",
+          "file": "1.6\\Defs\\ThingDefs_Races\\Race_Milian.xml",
+          "loadRoot": {
+            "path": "1.6",
+            "conditions": {},
+            "source": "LoadFolders.xml"
+          },
+          "conditions": {},
+          "xmlTag": "AlienRace.ThingDef_AlienRace",
+          "raceGenes": [],
+          "xenotypeList": [],
+          "geneList": [],
+          "blackGeneList": [],
+          "label": "Milian"
+        },
+        {
+          "defName": "Milira_Race",
+          "file": "1.6\\Defs\\ThingDefs_Races\\Race_Milira.xml",
+          "loadRoot": {
+            "path": "1.6",
+            "conditions": {},
+            "source": "LoadFolders.xml"
+          },
+          "conditions": {},
+          "xmlTag": "AlienRace.ThingDef_AlienRace",
+          "raceGenes": [],
+          "xenotypeList": [],
+          "geneList": [],
+          "blackGeneList": [
+            "Furskin",
+            "Brow_Heavy",
+            "FacialRidges"
+          ],
+          "label": "Milira"
+        }
+      ],
+      "xenotypeDefs": [],
+      "geneDefs": [],
+      "uniqueRaceDefNames": [
+        "Milian_Race",
+        "Milira_Race"
+      ],
+      "uniqueXenotypeDefNames": [],
+      "uniqueGeneDefNames": [],
+      "errors": []
+    },
+    {
+      "relativePath": "Milira Race Gene Patch",
+      "name": "Milira Race Gene Patch",
+      "packageId": "Ancot.MiliraRaceGenePatch",
+      "supportedVersions": [
+        "1.5",
+        "1.6"
+      ],
+      "loadRoots": [
+        {
+          "path": "1.6",
+          "conditions": {},
+          "source": "default-version-folder"
+        }
+      ],
+      "raceDefs": [],
+      "xenotypeDefs": [
+        {
+          "defName": "MiliraXenotype",
+          "file": "1.6\\Defs\\MiliraXenotype.xml",
+          "loadRoot": {
+            "path": "1.6",
+            "conditions": {},
+            "source": "default-version-folder"
+          },
+          "conditions": {},
+          "genes": [
+            "Milira_Knowledgeable",
+            "Milira_ProNegotiator",
+            "Immunity_Strong",
+            "PsychicAbility_Enhanced",
+            "AptitudeRemarkable_Intellectual",
+            "AptitudeTerrible_Cooking",
+            "AptitudeTerrible_Animals",
+            "Libido_Low",
+            "Milira_Leisurely",
+            "Milira_Ablutomania",
+            "Milira_Mechining"
+          ],
+          "inheritable": "true",
+          "label": "milira"
+        }
+      ],
+      "geneDefs": [
+        {
+          "defName": "Milira_Knowledgeable",
+          "file": "1.6\\Defs\\MiliraGene.xml",
+          "loadRoot": {
+            "path": "1.6",
+            "conditions": {},
+            "source": "default-version-folder"
+          },
+          "conditions": {},
+          "parentName": "MiliraGeneBase",
+          "geneClass": null,
+          "canGenerateInGeneSet": null,
+          "biostatArc": null,
+          "label": "knowledgeable"
+        },
+        {
+          "defName": "Milira_ProNegotiator",
+          "file": "1.6\\Defs\\MiliraGene.xml",
+          "loadRoot": {
+            "path": "1.6",
+            "conditions": {},
+            "source": "default-version-folder"
+          },
+          "conditions": {},
+          "parentName": "MiliraGeneBase",
+          "geneClass": null,
+          "canGenerateInGeneSet": null,
+          "biostatArc": null,
+          "label": "pro negotiator"
+        },
+        {
+          "defName": "Milira_Leisurely",
+          "file": "1.6\\Defs\\MiliraGene.xml",
+          "loadRoot": {
+            "path": "1.6",
+            "conditions": {},
+            "source": "default-version-folder"
+          },
+          "conditions": {},
+          "parentName": "MiliraGeneBase",
+          "geneClass": null,
+          "canGenerateInGeneSet": null,
+          "biostatArc": null,
+          "label": "leisurely"
+        },
+        {
+          "defName": "Milira_Ablutomania",
+          "file": "1.6\\Defs\\MiliraGene.xml",
+          "loadRoot": {
+            "path": "1.6",
+            "conditions": {},
+            "source": "default-version-folder"
+          },
+          "conditions": {},
+          "parentName": "MiliraGeneBase",
+          "geneClass": null,
+          "canGenerateInGeneSet": null,
+          "biostatArc": null,
+          "label": "ablutomania"
+        },
+        {
+          "defName": "Milira_Mechining",
+          "file": "1.6\\Defs\\MiliraGene.xml",
+          "loadRoot": {
+            "path": "1.6",
+            "conditions": {},
+            "source": "default-version-folder"
+          },
+          "conditions": {},
+          "parentName": "MiliraGeneBase",
+          "geneClass": null,
+          "canGenerateInGeneSet": null,
+          "biostatArc": null,
+          "label": "mechining"
+        }
+      ],
+      "uniqueRaceDefNames": [],
+      "uniqueXenotypeDefNames": [
+        "MiliraXenotype"
+      ],
+      "uniqueGeneDefNames": [
+        "Milira_Ablutomania",
+        "Milira_Knowledgeable",
+        "Milira_Leisurely",
+        "Milira_Mechining",
+        "Milira_ProNegotiator"
+      ],
+      "errors": []
+    },
+    {
+      "relativePath": "MiliraWings of Democracy",
+      "name": "Milira:Wings of Democracy",
+      "packageId": "sleepycot.wingsofdemocracy",
+      "supportedVersions": [
+        "1.6"
+      ],
+      "loadRoots": [
+        {
+          "path": ".",
+          "conditions": {},
+          "source": "LoadFolders.xml"
+        },
+        {
+          "path": "1.6",
+          "conditions": {},
+          "source": "LoadFolders.xml"
+        },
+        {
+          "path": "1.6/Mods/Anomaly",
+          "conditions": {
+            "IfModActive": "Ludeon.RimWorld.Anomaly"
+          },
+          "source": "LoadFolders.xml"
+        },
+        {
+          "path": "1.6/Mods/Odyssey",
+          "conditions": {
+            "IfModActive": "Ludeon.RimWorld.Odyssey"
+          },
+          "source": "LoadFolders.xml"
+        },
+        {
+          "path": "1.6/Mods/Ancot.MilianModification",
+          "conditions": {
+            "IfModActive": "Ancot.MilianModification"
+          },
+          "source": "LoadFolders.xml"
+        }
+      ],
+      "raceDefs": [],
+      "xenotypeDefs": [],
+      "geneDefs": [],
+      "uniqueRaceDefNames": [],
+      "uniqueXenotypeDefNames": [],
+      "uniqueGeneDefNames": [],
+      "errors": []
+    },
+    {
+      "relativePath": "MoeLotl Faction Expand",
+      "name": "MoeLotl Faction Expand",
+      "packageId": "HenTaiLoliTeam.Axolotl.FactionExpand",
+      "supportedVersions": [
+        "1.5",
+        "1.6"
+      ],
+      "loadRoots": [
+        {
+          "path": "1.6",
+          "conditions": {},
+          "source": "default-version-folder"
+        }
+      ],
+      "raceDefs": [],
+      "xenotypeDefs": [],
+      "geneDefs": [],
+      "uniqueRaceDefNames": [],
+      "uniqueXenotypeDefNames": [],
+      "uniqueGeneDefNames": [],
+      "errors": []
+    },
+    {
+      "relativePath": "MoeLotl Race",
+      "name": "MoeLotl Race",
+      "packageId": "HenTaiLoliTeam.Axolotl",
+      "supportedVersions": [
+        "1.5",
+        "1.6"
+      ],
+      "loadRoots": [
+        {
+          "path": "1.6",
+          "conditions": {},
+          "source": "default-version-folder"
+        }
+      ],
+      "raceDefs": [
+        {
+          "defName": "Axolotl",
+          "file": "1.6\\Defs\\Axolotl_PawnDefs\\Axolotl_PawnSetDefs\\Races_Axolotllike.xml",
+          "loadRoot": {
+            "path": "1.6",
+            "conditions": {},
+            "source": "default-version-folder"
+          },
+          "conditions": {},
+          "xmlTag": "AlienRace.ThingDef_AlienRace",
+          "raceGenes": [],
+          "xenotypeList": [],
+          "geneList": [],
+          "blackGeneList": [
+            "Furskin",
+            "Brow_Heavy"
+          ],
+          "label": "MoeLotl"
+        }
+      ],
+      "xenotypeDefs": [
+        {
+          "defName": "Axolotl_Xenotype_MoeLotlBase",
+          "file": "1.6\\Defs\\Axolotl_GeneDefs\\Axolotl_XenotypeDefs.xml",
+          "loadRoot": {
+            "path": "1.6",
+            "conditions": {},
+            "source": "default-version-folder"
+          },
+          "conditions": {
+            "MayRequire": "Ludeon.RimWorld.Biotech"
+          },
+          "genes": [
+            "Body_Thin",
+            "Skin_SheerWhite",
+            "Hands_Human",
+            "Superclotting",
+            "WoundHealing_Fast",
+            "MinTemp_SmallIncrease",
+            "MaxTemp_SmallDecrease",
+            "Axolotl_Research_Slow"
+          ],
+          "inheritable": "true",
+          "label": "moelotl"
+        }
+      ],
+      "geneDefs": [
+        {
+          "defName": "Axolotl_Research_Slow",
+          "file": "1.6\\Defs\\Axolotl_GeneDefs\\Axolotl_GeneDefs.xml",
+          "loadRoot": {
+            "path": "1.6",
+            "conditions": {},
+            "source": "default-version-folder"
+          },
+          "conditions": {
+            "MayRequire": "Ludeon.RimWorld.Biotech"
+          },
+          "parentName": null,
+          "geneClass": null,
+          "canGenerateInGeneSet": null,
+          "biostatArc": null,
+          "label": "slow researcher"
+        }
+      ],
+      "uniqueRaceDefNames": [
+        "Axolotl"
+      ],
+      "uniqueXenotypeDefNames": [
+        "Axolotl_Xenotype_MoeLotlBase"
+      ],
+      "uniqueGeneDefNames": [
+        "Axolotl_Research_Slow"
+      ],
+      "errors": []
+    },
+    {
+      "relativePath": "Moosesian race",
+      "name": "Moosesian race",
+      "packageId": "WaffelF.MoosesianRace",
+      "supportedVersions": [
+        "1.1",
+        "1.2",
+        "1.3",
+        "1.4",
+        "1.5",
+        "1.6"
+      ],
+      "loadRoots": [
+        {
+          "path": "1.6",
+          "conditions": {},
+          "source": "default-version-folder"
+        },
+        {
+          "path": ".",
+          "conditions": {},
+          "source": "default-root"
+        }
+      ],
+      "raceDefs": [
+        {
+          "defName": "Moosesian",
+          "file": "1.6\\Defs\\ThingDefs_Races\\GeneralRaceSetting.xml",
+          "loadRoot": {
+            "path": "1.6",
+            "conditions": {},
+            "source": "default-version-folder"
+          },
+          "conditions": {},
+          "xmlTag": "AlienRace.ThingDef_AlienRace",
+          "raceGenes": [],
+          "xenotypeList": [],
+          "geneList": [],
+          "blackGeneList": [],
+          "label": "Moosesian"
+        }
+      ],
+      "xenotypeDefs": [],
+      "geneDefs": [],
+      "uniqueRaceDefNames": [
+        "Moosesian"
+      ],
+      "uniqueXenotypeDefNames": [],
+      "uniqueGeneDefNames": [],
+      "errors": []
+    },
+    {
+      "relativePath": "NewRatkinPlus",
+      "name": "NewRatkinPlus",
+      "packageId": "Solaris.RatkinRaceMod",
+      "supportedVersions": [
+        "1.5",
+        "1.6"
+      ],
+      "loadRoots": [
+        {
+          "path": ".",
+          "conditions": {},
+          "source": "LoadFolders.xml"
+        },
+        {
+          "path": "1.6",
+          "conditions": {},
+          "source": "LoadFolders.xml"
+        },
+        {
+          "path": "Contents",
+          "conditions": {},
+          "source": "LoadFolders.xml"
+        },
+        {
+          "path": "Royalty",
+          "conditions": {
+            "IfModActive": "Ludeon.RimWorld.Royalty"
+          },
+          "source": "LoadFolders.xml"
+        },
+        {
+          "path": "Ideology",
+          "conditions": {
+            "IfModActive": "Ludeon.RimWorld.Ideology"
+          },
+          "source": "LoadFolders.xml"
+        },
+        {
+          "path": "Anomaly",
+          "conditions": {
+            "IfModActive": "Ludeon.RimWorld.Anomaly"
+          },
+          "source": "LoadFolders.xml"
+        },
+        {
+          "path": "Biotech",
+          "conditions": {
+            "IfModActive": "Ludeon.RimWorld.Biotech"
+          },
+          "source": "LoadFolders.xml"
+        },
+        {
+          "path": "Odyssey",
+          "conditions": {
+            "IfModActive": "Ludeon.RimWorld.Odyssey"
+          },
+          "source": "LoadFolders.xml"
+        }
+      ],
+      "raceDefs": [
+        {
+          "defName": "Ratkin",
+          "file": "1.6\\Defs\\ThingDefs_Races\\Races_Rakinlike.xml",
+          "loadRoot": {
+            "path": "1.6",
+            "conditions": {},
+            "source": "LoadFolders.xml"
+          },
+          "conditions": {},
+          "xmlTag": "AlienRace.ThingDef_AlienRace",
+          "raceGenes": [],
+          "xenotypeList": [],
+          "geneList": [],
+          "blackGeneList": [],
+          "label": "Ratkin"
+        }
+      ],
+      "xenotypeDefs": [
+        {
+          "defName": "RK_XenoType_Ratkin",
+          "file": "Biotech\\Defs\\GeneDefs\\XenotypeDefs.xml",
+          "loadRoot": {
+            "path": "Biotech",
+            "conditions": {
+              "IfModActive": "Ludeon.RimWorld.Biotech"
+            },
+            "source": "LoadFolders.xml"
+          },
+          "conditions": {},
+          "genes": [
+            "RK_Gene_SmallBody",
+            "RK_Gene_Nimble",
+            "RK_Gene_PoorEyesight",
+            "RK_Gene_FragilePain",
+            "AptitudeStrong_Mining",
+            "AptitudeStrong_Plants",
+            "RK_Gene_GoodGardening",
+            "Skin_SheerWhite",
+            "Beard_NoBeardOnly",
+            "RK_Gene_LargeEars",
+            "RK_Gene_ThinTail",
+            "RK_Gene_CuteFace"
+          ],
+          "inheritable": "true",
+          "label": "ratkin"
+        }
+      ],
+      "geneDefs": [
+        {
+          "defName": "RK_Gene_SmallBody",
+          "file": "Biotech\\Defs\\GeneDefs\\CustomGeneDefs.xml",
+          "loadRoot": {
+            "path": "Biotech",
+            "conditions": {
+              "IfModActive": "Ludeon.RimWorld.Biotech"
+            },
+            "source": "LoadFolders.xml"
+          },
+          "conditions": {},
+          "parentName": null,
+          "geneClass": null,
+          "canGenerateInGeneSet": null,
+          "biostatArc": null,
+          "label": "small body"
+        },
+        {
+          "defName": "RK_Gene_Nimble",
+          "file": "Biotech\\Defs\\GeneDefs\\CustomGeneDefs.xml",
+          "loadRoot": {
+            "path": "Biotech",
+            "conditions": {
+              "IfModActive": "Ludeon.RimWorld.Biotech"
+            },
+            "source": "LoadFolders.xml"
+          },
+          "conditions": {},
+          "parentName": null,
+          "geneClass": null,
+          "canGenerateInGeneSet": null,
+          "biostatArc": null,
+          "label": "nimble"
+        },
+        {
+          "defName": "RK_Gene_PoorEyesight",
+          "file": "Biotech\\Defs\\GeneDefs\\CustomGeneDefs.xml",
+          "loadRoot": {
+            "path": "Biotech",
+            "conditions": {
+              "IfModActive": "Ludeon.RimWorld.Biotech"
+            },
+            "source": "LoadFolders.xml"
+          },
+          "conditions": {},
+          "parentName": null,
+          "geneClass": null,
+          "canGenerateInGeneSet": null,
+          "biostatArc": null,
+          "label": "poor eyesight"
+        },
+        {
+          "defName": "RK_Gene_FragilePain",
+          "file": "Biotech\\Defs\\GeneDefs\\CustomGeneDefs.xml",
+          "loadRoot": {
+            "path": "Biotech",
+            "conditions": {
+              "IfModActive": "Ludeon.RimWorld.Biotech"
+            },
+            "source": "LoadFolders.xml"
+          },
+          "conditions": {},
+          "parentName": null,
+          "geneClass": null,
+          "canGenerateInGeneSet": null,
+          "biostatArc": null,
+          "label": "fragile pain threshold"
+        },
+        {
+          "defName": "RK_Gene_GoodGardening",
+          "file": "Biotech\\Defs\\GeneDefs\\CustomGeneDefs.xml",
+          "loadRoot": {
+            "path": "Biotech",
+            "conditions": {
+              "IfModActive": "Ludeon.RimWorld.Biotech"
+            },
+            "source": "LoadFolders.xml"
+          },
+          "conditions": {},
+          "parentName": null,
+          "geneClass": null,
+          "canGenerateInGeneSet": null,
+          "biostatArc": null,
+          "label": "good gardening"
+        },
+        {
+          "defName": "RK_Skin_PureWhite",
+          "file": "Biotech\\Defs\\GeneDefs\\CustomGeneDefs.xml",
+          "loadRoot": {
+            "path": "Biotech",
+            "conditions": {
+              "IfModActive": "Ludeon.RimWorld.Biotech"
+            },
+            "source": "LoadFolders.xml"
+          },
+          "conditions": {
+            "MayRequire": "Ludeon.RimWorld.Biotech"
+          },
+          "parentName": "GeneSkinColorOverride",
+          "geneClass": null,
+          "canGenerateInGeneSet": null,
+          "biostatArc": null,
+          "label": "pure white skin"
+        },
+        {
+          "defName": "RK_Gene_LargeEars",
+          "file": "Biotech\\Defs\\GeneDefs\\CustomGeneDefs.xml",
+          "loadRoot": {
+            "path": "Biotech",
+            "conditions": {
+              "IfModActive": "Ludeon.RimWorld.Biotech"
+            },
+            "source": "LoadFolders.xml"
+          },
+          "conditions": {},
+          "parentName": null,
+          "geneClass": null,
+          "canGenerateInGeneSet": null,
+          "biostatArc": null,
+          "label": "large round ears"
+        },
+        {
+          "defName": "RK_Gene_ThinTail",
+          "file": "Biotech\\Defs\\GeneDefs\\CustomGeneDefs.xml",
+          "loadRoot": {
+            "path": "Biotech",
+            "conditions": {
+              "IfModActive": "Ludeon.RimWorld.Biotech"
+            },
+            "source": "LoadFolders.xml"
+          },
+          "conditions": {},
+          "parentName": null,
+          "geneClass": null,
+          "canGenerateInGeneSet": null,
+          "biostatArc": null,
+          "label": "thin tail"
+        },
+        {
+          "defName": "RK_Gene_CuteFace",
+          "file": "Biotech\\Defs\\GeneDefs\\CustomGeneDefs.xml",
+          "loadRoot": {
+            "path": "Biotech",
+            "conditions": {
+              "IfModActive": "Ludeon.RimWorld.Biotech"
+            },
+            "source": "LoadFolders.xml"
+          },
+          "conditions": {},
+          "parentName": null,
+          "geneClass": null,
+          "canGenerateInGeneSet": null,
+          "biostatArc": null,
+          "label": "cute face"
+        }
+      ],
+      "uniqueRaceDefNames": [
+        "Ratkin"
+      ],
+      "uniqueXenotypeDefNames": [
+        "RK_XenoType_Ratkin"
+      ],
+      "uniqueGeneDefNames": [
+        "RK_Gene_CuteFace",
+        "RK_Gene_FragilePain",
+        "RK_Gene_GoodGardening",
+        "RK_Gene_LargeEars",
+        "RK_Gene_Nimble",
+        "RK_Gene_PoorEyesight",
+        "RK_Gene_SmallBody",
+        "RK_Gene_ThinTail",
+        "RK_Skin_PureWhite"
+      ],
+      "errors": []
+    },
+    {
+      "relativePath": "Nivarian Race",
+      "name": "Nivarian Race",
+      "packageId": "keeptpa.NivarianRace",
+      "supportedVersions": [
+        "1.6"
+      ],
+      "loadRoots": [
+        {
+          "path": "Content",
+          "conditions": {},
+          "source": "LoadFolders.xml"
+        },
+        {
+          "path": "1.6",
+          "conditions": {},
+          "source": "LoadFolders.xml"
+        },
+        {
+          "path": "LumiParticle1.6",
+          "conditions": {
+            "IfModNotActive": "keeptpa.NivarianRace.LumiParticle"
+          },
+          "source": "LoadFolders.xml"
+        },
+        {
+          "path": "EponaDynasticRise1.6",
+          "conditions": {
+            "IfModActive": "Epona.EponaDynasticRise"
+          },
+          "source": "LoadFolders.xml"
+        },
+        {
+          "path": "Odyssey1.6",
+          "conditions": {
+            "IfModActive": "Ludeon.RimWorld.Odyssey"
+          },
+          "source": "LoadFolders.xml"
+        },
+        {
+          "path": "Biotech1.6",
+          "conditions": {
+            "IfModActive": "Ludeon.RimWorld.Biotech"
+          },
+          "source": "LoadFolders.xml"
+        },
+        {
+          "path": "Royalty1.6",
+          "conditions": {
+            "IfModActive": "Ludeon.RimWorld.Royalty"
+          },
+          "source": "LoadFolders.xml"
+        },
+        {
+          "path": "Ideology1.6",
+          "conditions": {
+            "IfModActive": "Ludeon.RimWorld.Ideology"
+          },
+          "source": "LoadFolders.xml"
+        },
+        {
+          "path": "FacialAnimation",
+          "conditions": {
+            "IfModActive": "Nals.FacialAnimation",
+            "IfModNotActive": "keeptpa.NivarianRace.Face1"
+          },
+          "source": "LoadFolders.xml"
+        },
+        {
+          "path": "BetterSliderFix",
+          "conditions": {
+            "IfModNotActive": "keeptpa.BetterSliderFix",
+            "IfModActive": "sirrandoo.bettersliders"
+          },
+          "source": "LoadFolders.xml"
+        },
+        {
+          "path": "SearchAndDestroy1.6",
+          "conditions": {
+            "IfModActive": "MemeGoddess.SearchAndDestroy"
+          },
+          "source": "LoadFolders.xml"
+        }
+      ],
+      "raceDefs": [
+        {
+          "defName": "NivarianRace_Pawn",
+          "file": "1.6\\Defs\\RaceDefs\\NivarianRace.xml",
+          "loadRoot": {
+            "path": "1.6",
+            "conditions": {},
+            "source": "LoadFolders.xml"
+          },
+          "conditions": {},
+          "xmlTag": "AlienRace.ThingDef_AlienRace",
+          "raceGenes": [],
+          "xenotypeList": [],
+          "geneList": [],
+          "blackGeneList": [],
+          "label": "Nivarian"
+        }
+      ],
+      "xenotypeDefs": [
+        {
+          "defName": "LuminNivarian",
+          "file": "Biotech1.6\\Defs\\XenotypeDefs\\NivarianXenotypes.xml",
+          "loadRoot": {
+            "path": "Biotech1.6",
+            "conditions": {
+              "IfModActive": "Ludeon.RimWorld.Biotech"
+            },
+            "source": "LoadFolders.xml"
+          },
+          "conditions": {},
+          "genes": [
+            "Nivarian_Lumin_PsychicProgression",
+            "AptitudeStrong_Plants",
+            "AptitudeStrong_Animals",
+            "PsychicBonding",
+            "Body_Thin",
+            "Nivarian_Scale_Cover",
+            "DarkVision",
+            "MeleeDamage_Weak",
+            "AptitudePoor_Melee"
+          ],
+          "inheritable": "true",
+          "label": "Nivari Luminis"
+        },
+        {
+          "defName": "PulsarNivarian",
+          "file": "Biotech1.6\\Defs\\XenotypeDefs\\NivarianXenotypes.xml",
+          "loadRoot": {
+            "path": "Biotech1.6",
+            "conditions": {
+              "IfModActive": "Ludeon.RimWorld.Biotech"
+            },
+            "source": "LoadFolders.xml"
+          },
+          "conditions": {},
+          "genes": [
+            "AptitudeStrong_Intellectual",
+            "AptitudeStrong_Crafting",
+            "AptitudeStrong_Cooking",
+            "Nivarian_Artifex_Machinery",
+            "Body_Thin",
+            "Nivarian_Scale_Cover",
+            "DarkVision",
+            "Aggression_DeadCalm",
+            "AptitudeTerrible_Plants"
+          ],
+          "inheritable": "true",
+          "label": "Nivari Artifex"
+        },
+        {
+          "defName": "AegisNivarian",
+          "file": "Biotech1.6\\Defs\\XenotypeDefs\\NivarianXenotypes.xml",
+          "loadRoot": {
+            "path": "Biotech1.6",
+            "conditions": {
+              "IfModActive": "Ludeon.RimWorld.Biotech"
+            },
+            "source": "LoadFolders.xml"
+          },
+          "conditions": {},
+          "genes": [
+            "AptitudeStrong_Shooting",
+            "AptitudeStrong_Melee",
+            "AptitudeStrong_Mining",
+            "Robust",
+            "Nivarian_Custos_UnyieldingFocus",
+            "DarkVision",
+            "Body_Thin",
+            "Nivarian_Scale_Cover",
+            "Aggression_DeadCalm",
+            "PsychicAbility_Dull",
+            "AptitudePoor_Intellectual",
+            "AptitudePoor_Social"
+          ],
+          "inheritable": "true",
+          "label": "Nivari Custos"
+        }
+      ],
+      "geneDefs": [
+        {
+          "defName": "Nivarian_Lumin_PsychicProgression",
+          "file": "Biotech1.6\\Defs\\GeneDefs\\NivarianGenes.xml",
+          "loadRoot": {
+            "path": "Biotech1.6",
+            "conditions": {
+              "IfModActive": "Ludeon.RimWorld.Biotech"
+            },
+            "source": "LoadFolders.xml"
+          },
+          "conditions": {},
+          "parentName": null,
+          "geneClass": "Nivarian.Gene_PsychicProgression",
+          "canGenerateInGeneSet": null,
+          "biostatArc": null,
+          "label": "lumin psychic potential"
+        },
+        {
+          "defName": "Nivarian_Custos_UnyieldingFocus",
+          "file": "Biotech1.6\\Defs\\GeneDefs\\NivarianGenes.xml",
+          "loadRoot": {
+            "path": "Biotech1.6",
+            "conditions": {
+              "IfModActive": "Ludeon.RimWorld.Biotech"
+            },
+            "source": "LoadFolders.xml"
+          },
+          "conditions": {},
+          "parentName": null,
+          "geneClass": "Nivarian.Gene_UnyieldingFocus",
+          "canGenerateInGeneSet": null,
+          "biostatArc": null,
+          "label": "unyielding focus"
+        },
+        {
+          "defName": "Nivarian_Artifex_Machinery",
+          "file": "Biotech1.6\\Defs\\GeneDefs\\NivarianGenes.xml",
+          "loadRoot": {
+            "path": "Biotech1.6",
+            "conditions": {
+              "IfModActive": "Ludeon.RimWorld.Biotech"
+            },
+            "source": "LoadFolders.xml"
+          },
+          "conditions": {},
+          "parentName": null,
+          "geneClass": null,
+          "canGenerateInGeneSet": null,
+          "biostatArc": null,
+          "label": "Machinery Capabilities"
+        },
+        {
+          "defName": "Nivarian_Scale_Cover",
+          "file": "Biotech1.6\\Defs\\GeneDefs\\NivarianGenes.xml",
+          "loadRoot": {
+            "path": "Biotech1.6",
+            "conditions": {
+              "IfModActive": "Ludeon.RimWorld.Biotech"
+            },
+            "source": "LoadFolders.xml"
+          },
+          "conditions": {},
+          "parentName": null,
+          "geneClass": "Nivarian.Gene_ScaleCover",
+          "canGenerateInGeneSet": null,
+          "biostatArc": null,
+          "label": "scale cover"
+        }
+      ],
+      "uniqueRaceDefNames": [
+        "NivarianRace_Pawn"
+      ],
+      "uniqueXenotypeDefNames": [
+        "AegisNivarian",
+        "LuminNivarian",
+        "PulsarNivarian"
+      ],
+      "uniqueGeneDefNames": [
+        "Nivarian_Artifex_Machinery",
+        "Nivarian_Custos_UnyieldingFocus",
+        "Nivarian_Lumin_PsychicProgression",
+        "Nivarian_Scale_Cover"
+      ],
+      "errors": []
+    },
+    {
+      "relativePath": "Ratkin Faction+",
+      "name": "Ratkin Faction+",
+      "packageId": "fxz.ratkinfaction",
+      "supportedVersions": [
+        "1.4",
+        "1.5",
+        "1.6"
+      ],
+      "loadRoots": [
+        {
+          "path": "1.6",
+          "conditions": {},
+          "source": "LoadFolders.xml"
+        },
+        {
+          "path": "Cont",
+          "conditions": {},
+          "source": "LoadFolders.xml"
+        },
+        {
+          "path": "CE",
+          "conditions": {
+            "IfModActive": "CETeam.CombatExtended"
+          },
+          "source": "LoadFolders.xml"
+        }
+      ],
+      "raceDefs": [],
+      "xenotypeDefs": [],
+      "geneDefs": [],
+      "uniqueRaceDefNames": [],
+      "uniqueXenotypeDefNames": [],
+      "uniqueGeneDefNames": [],
+      "errors": []
+    },
+    {
+      "relativePath": "Ratkin Gene Expanded",
+      "name": "Ratkin Gene Expanded",
+      "packageId": "EoralMilk.RatkinGeneExpanded",
+      "supportedVersions": [
+        "1.4",
+        "1.5",
+        "1.6"
+      ],
+      "loadRoots": [
+        {
+          "path": ".",
+          "conditions": {},
+          "source": "LoadFolders.xml"
+        },
+        {
+          "path": "1.6_unofficial",
+          "conditions": {
+            "IfModActive": "fxz.Solaris.RatkinRaceMod.odyssey"
+          },
+          "source": "LoadFolders.xml"
+        },
+        {
+          "path": "1.6_unofficial/Common",
+          "conditions": {
+            "IfModActive": "fxz.Solaris.RatkinRaceMod.odyssey"
+          },
+          "source": "LoadFolders.xml"
+        },
+        {
+          "path": "1.6_unofficial/EXT_Modern",
+          "conditions": {
+            "IfModActive": "fxz.Solaris.RatkinRaceMod.odyssey"
+          },
+          "source": "LoadFolders.xml"
+        },
+        {
+          "path": "1.6",
+          "conditions": {
+            "IfModActive": "Solaris.RatkinRaceMod"
+          },
+          "source": "LoadFolders.xml"
+        },
+        {
+          "path": "1.6/Common",
+          "conditions": {
+            "IfModActive": "Solaris.RatkinRaceMod"
+          },
+          "source": "LoadFolders.xml"
+        },
+        {
+          "path": "1.6/EXT_Modern",
+          "conditions": {
+            "IfModActive": "Solaris.RatkinRaceMod"
+          },
+          "source": "LoadFolders.xml"
+        }
+      ],
+      "raceDefs": [],
+      "xenotypeDefs": [
+        {
+          "defName": "Ratkin_Waster",
+          "file": "1.6_unofficial\\Common\\Defs\\GeneDefs\\RKMD_XenotypeDefs.xml",
+          "loadRoot": {
+            "path": "1.6_unofficial/Common",
+            "conditions": {
+              "IfModActive": "fxz.Solaris.RatkinRaceMod.odyssey"
+            },
+            "source": "LoadFolders.xml"
+          },
+          "conditions": {},
+          "genes": [
+            "Ratkin_WRTail",
+            "Ratkin_WREars",
+            "Immunity_Strong",
+            "MoveSpeed_Quick",
+            "Mood_Pessimist",
+            "ToxicEnvironmentResistance_Partial",
+            "Aggression_Aggressive",
+            "LowSleep",
+            "Pain_Increased",
+            "Ratkin_ShoShoShot",
+            "Ratkin_Sassy",
+            "Beard_NoBeardOnly",
+            "Body_Thin",
+            "Hair_Blonde",
+            "Hair_Pink",
+            "Hair_LightPurple",
+            "Hair_BrightRed",
+            "Skin_SheerWhite",
+            "PollutionRush",
+            "AptitudeStrong_Shooting",
+            "AptitudeTerrible_Social"
+          ],
+          "inheritable": "true",
+          "label": "Waste Rat"
+        },
+        {
+          "defName": "Ratkin_HouseMouse",
+          "file": "1.6_unofficial\\Common\\Defs\\GeneDefs\\RKXenotypeDefs.xml",
+          "loadRoot": {
+            "path": "1.6_unofficial/Common",
+            "conditions": {
+              "IfModActive": "fxz.Solaris.RatkinRaceMod.odyssey"
+            },
+            "source": "LoadFolders.xml"
+          },
+          "conditions": {},
+          "genes": [
+            "PsychicAbility_Dull",
+            "Mood_Optimist",
+            "Beard_NoBeardOnly",
+            "Body_Thin",
+            "Hair_Gray",
+            "Hair_DarkSaturatedReddish",
+            "Hair_MidBlack",
+            "Hair_DarkBlack",
+            "AptitudeStrong_Construction",
+            "AptitudeStrong_Cooking",
+            "AptitudeTerrible_Animals",
+            "AptitudeStrong_Crafting",
+            "AptitudePoor_Intellectual",
+            "Skin_SheerWhite",
+            "Ratkin_Ears",
+            "Ratkin_Tail"
+          ],
+          "inheritable": "true",
+          "label": "House Mouse"
+        },
+        {
+          "defName": "Ratkin_Mole",
+          "file": "1.6_unofficial\\Common\\Defs\\GeneDefs\\RKXenotypeDefs.xml",
+          "loadRoot": {
+            "path": "1.6_unofficial/Common",
+            "conditions": {
+              "IfModActive": "fxz.Solaris.RatkinRaceMod.odyssey"
+            },
+            "source": "LoadFolders.xml"
+          },
+          "conditions": {},
+          "genes": [
+            "PsychicAbility_Deaf",
+            "Mood_Sanguine",
+            "UVSensitivity_Mild",
+            "MeleeDamage_Strong",
+            "LowSleep",
+            "Pain_Reduced",
+            "Beard_NoBeardOnly",
+            "Body_Thin",
+            "Hair_SandyBlonde",
+            "Hair_ReddishBrown",
+            "Hair_DarkBrown",
+            "Hair_DarkSaturatedReddish",
+            "Skin_SheerWhite",
+            "StrongStomach",
+            "Learning_Slow",
+            "Nearsighted",
+            "DarkVision",
+            "ElongatedFingers",
+            "AptitudeTerrible_Shooting",
+            "AptitudeStrong_Melee",
+            "AptitudeRemarkable_Mining",
+            "AptitudeTerrible_Animals",
+            "AptitudePoor_Artistic",
+            "AptitudeTerrible_Social",
+            "AptitudePoor_Intellectual",
+            "Ratkin_MoleEars",
+            "Ratkin_MoleTail"
+          ],
+          "inheritable": "true",
+          "label": "Mole"
+        },
+        {
+          "defName": "Ratkin_LabRat",
+          "file": "1.6_unofficial\\Common\\Defs\\GeneDefs\\RKXenotypeDefs.xml",
+          "loadRoot": {
+            "path": "1.6_unofficial/Common",
+            "conditions": {
+              "IfModActive": "fxz.Solaris.RatkinRaceMod.odyssey"
+            },
+            "source": "LoadFolders.xml"
+          },
+          "conditions": {},
+          "genes": [
+            "PsychicAbility_Enhanced",
+            "Aggression_DeadCalm",
+            "Beauty_Pretty",
+            "Beard_NoBeardOnly",
+            "Body_Thin",
+            "Hair_SnowWhite",
+            "Skin_SheerWhite",
+            "Instability_Mild",
+            "AptitudePoor_Melee",
+            "AptitudeTerrible_Construction",
+            "AptitudeTerrible_Mining",
+            "AptitudeTerrible_Artistic",
+            "AptitudeRemarkable_Medicine",
+            "AptitudeStrong_Social",
+            "AptitudeStrong_Intellectual",
+            "Ratkin_LabRatEars",
+            "Ratkin_Tail"
+          ],
+          "inheritable": "true",
+          "label": "Lab Rat"
+        },
+        {
+          "defName": "Ratkin_Hamster",
+          "file": "1.6_unofficial\\Common\\Defs\\GeneDefs\\RKXenotypeDefs.xml",
+          "loadRoot": {
+            "path": "1.6_unofficial/Common",
+            "conditions": {
+              "IfModActive": "fxz.Solaris.RatkinRaceMod.odyssey"
+            },
+            "source": "LoadFolders.xml"
+          },
+          "conditions": {},
+          "genes": [
+            "WoundHealing_SuperFast",
+            "Superclotting",
+            "PsychicAbility_Deaf",
+            "MoveSpeed_VeryQuick",
+            "Mood_Sanguine",
+            "Aggression_Aggressive",
+            "MeleeDamage_Strong",
+            "Sleepy",
+            "Robust",
+            "Pain_Reduced",
+            "Beard_NoBeardOnly",
+            "Body_Thin",
+            "Hair_Blonde",
+            "Hair_LightOrange",
+            "Learning_Slow",
+            "Unstoppable",
+            "AptitudeStrong_Melee",
+            "AptitudePoor_Construction",
+            "AptitudeTerrible_Plants",
+            "AptitudeTerrible_Animals",
+            "AptitudeTerrible_Crafting",
+            "AptitudeTerrible_Social",
+            "AptitudeTerrible_Intellectual",
+            "Ratkin_HamsterEars",
+            "Skin_SheerWhite"
+          ],
+          "inheritable": "true",
+          "label": "Hamster"
+        },
+        {
+          "defName": "Ratkin_Squirrel",
+          "file": "1.6_unofficial\\Common\\Defs\\GeneDefs\\RKXenotypeDefs.xml",
+          "loadRoot": {
+            "path": "1.6_unofficial/Common",
+            "conditions": {
+              "IfModActive": "fxz.Solaris.RatkinRaceMod.odyssey"
+            },
+            "source": "LoadFolders.xml"
+          },
+          "conditions": {},
+          "genes": [
+            "Ratkin_SquirrelTail",
+            "Ratkin_SquirrelEars",
+            "MoveSpeed_Quick",
+            "Mood_Optimist",
+            "KindInstinct",
+            "Beard_NoBeardOnly",
+            "Body_Thin",
+            "Hair_LightOrange",
+            "Hair_ReddishBrown",
+            "Hair_BrightRed",
+            "AptitudeStrong_Melee",
+            "AptitudeTerrible_Mining",
+            "AptitudeRemarkable_Plants",
+            "AptitudeTerrible_Animals",
+            "AptitudeTerrible_Artistic",
+            "AptitudeTerrible_Intellectual",
+            "Ratkin_FastTalking",
+            "Skin_SheerWhite"
+          ],
+          "inheritable": "true",
+          "label": "Squirrel"
+        },
+        {
+          "defName": "Ratkin_Vole",
+          "file": "1.6_unofficial\\Common\\Defs\\GeneDefs\\RKXenotypeDefs.xml",
+          "loadRoot": {
+            "path": "1.6_unofficial/Common",
+            "conditions": {
+              "IfModActive": "fxz.Solaris.RatkinRaceMod.odyssey"
+            },
+            "source": "LoadFolders.xml"
+          },
+          "conditions": {},
+          "genes": [
+            "Beard_NoBeardOnly",
+            "Body_Thin",
+            "Hair_DarkSaturatedReddish",
+            "Hair_MidBlack",
+            "Hair_DarkBlack",
+            "Ratkin_VoleEars",
+            "Ratkin_Tail",
+            "Ratkin_YunDanFengQing",
+            "Skin_SheerWhite"
+          ],
+          "inheritable": "true",
+          "label": "Vole"
+        },
+        {
+          "defName": "Ratkin_VolePrototype",
+          "file": "1.6_unofficial\\Common\\Defs\\GeneDefs\\RKXenotypeDefs.xml",
+          "loadRoot": {
+            "path": "1.6_unofficial/Common",
+            "conditions": {
+              "IfModActive": "fxz.Solaris.RatkinRaceMod.odyssey"
+            },
+            "source": "LoadFolders.xml"
+          },
+          "conditions": {},
+          "genes": [
+            "Beard_NoBeardOnly",
+            "Body_Thin",
+            "Hair_SnowWhite",
+            "Ratkin_Prototype_Vole_Ears",
+            "Ratkin_Prototype_Vole_Tail",
+            "Ratkin_YunDanFengQing",
+            "PsychicAbility_Enhanced",
+            "AptitudeStrong_Melee",
+            "AptitudeStrong_Shooting",
+            "MoveSpeed_VeryQuick",
+            "Unstoppable",
+            "TotalHealing",
+            "DiseaseFree",
+            "StrongStomach",
+            "Skin_SheerWhite"
+          ],
+          "inheritable": "true",
+          "label": "Vole Protorattus"
+        },
+        {
+          "defName": "Ratkin_Waster",
+          "file": "1.6\\Common\\Defs\\GeneDefs\\RKMD_XenotypeDefs.xml",
+          "loadRoot": {
+            "path": "1.6/Common",
+            "conditions": {
+              "IfModActive": "Solaris.RatkinRaceMod"
+            },
+            "source": "LoadFolders.xml"
+          },
+          "conditions": {},
+          "genes": [
+            "Ratkin_WRTail",
+            "Ratkin_WREars",
+            "Immunity_Strong",
+            "MoveSpeed_Quick",
+            "Mood_Pessimist",
+            "ToxicEnvironmentResistance_Partial",
+            "Aggression_Aggressive",
+            "LowSleep",
+            "Pain_Increased",
+            "Ratkin_ShoShoShot",
+            "Ratkin_Sassy",
+            "Beard_NoBeardOnly",
+            "Hair_Blonde",
+            "Hair_Pink",
+            "Hair_LightPurple",
+            "Hair_BrightRed",
+            "PollutionRush",
+            "AptitudeStrong_Shooting",
+            "AptitudeTerrible_Social",
+            "RK_Gene_PoorEyesight"
+          ],
+          "inheritable": "true",
+          "label": "Waste Rat"
+        },
+        {
+          "defName": "Ratkin_HouseMouse",
+          "file": "1.6\\Common\\Defs\\GeneDefs\\RKXenotypeDefs.xml",
+          "loadRoot": {
+            "path": "1.6/Common",
+            "conditions": {
+              "IfModActive": "Solaris.RatkinRaceMod"
+            },
+            "source": "LoadFolders.xml"
+          },
+          "conditions": {},
+          "genes": [
+            "PsychicAbility_Dull",
+            "Mood_Optimist",
+            "Beard_NoBeardOnly",
+            "Hair_Gray",
+            "Hair_DarkSaturatedReddish",
+            "Hair_MidBlack",
+            "Hair_DarkBlack",
+            "AptitudeStrong_Cooking",
+            "AptitudeStrong_Mining",
+            "AptitudePoor_Animals",
+            "AptitudeStrong_Crafting",
+            "AptitudePoor_Intellectual",
+            "Ratkin_Ears",
+            "Ratkin_Tail",
+            "RK_Gene_Nimble",
+            "RK_Gene_PoorEyesight",
+            "RK_Gene_FragilePain"
+          ],
+          "inheritable": "true",
+          "label": "House Mouse"
+        },
+        {
+          "defName": "Ratkin_Mole",
+          "file": "1.6\\Common\\Defs\\GeneDefs\\RKXenotypeDefs.xml",
+          "loadRoot": {
+            "path": "1.6/Common",
+            "conditions": {
+              "IfModActive": "Solaris.RatkinRaceMod"
+            },
+            "source": "LoadFolders.xml"
+          },
+          "conditions": {},
+          "genes": [
+            "PsychicAbility_Deaf",
+            "Mood_Sanguine",
+            "UVSensitivity_Mild",
+            "MeleeDamage_Strong",
+            "LowSleep",
+            "Pain_Reduced",
+            "Beard_NoBeardOnly",
+            "Hair_SandyBlonde",
+            "Hair_ReddishBrown",
+            "Hair_DarkBrown",
+            "Hair_DarkSaturatedReddish",
+            "StrongStomach",
+            "Learning_Slow",
+            "Nearsighted",
+            "DarkVision",
+            "ElongatedFingers",
+            "AptitudeTerrible_Shooting",
+            "AptitudeStrong_Melee",
+            "AptitudeRemarkable_Mining",
+            "AptitudeTerrible_Animals",
+            "AptitudePoor_Artistic",
+            "AptitudeTerrible_Social",
+            "AptitudePoor_Intellectual",
+            "Ratkin_MoleEars",
+            "Ratkin_MoleTail",
+            "RK_Gene_Nimble",
+            "RK_Gene_PoorEyesight"
+          ],
+          "inheritable": "true",
+          "label": "Mole"
+        },
+        {
+          "defName": "Ratkin_LabRat",
+          "file": "1.6\\Common\\Defs\\GeneDefs\\RKXenotypeDefs.xml",
+          "loadRoot": {
+            "path": "1.6/Common",
+            "conditions": {
+              "IfModActive": "Solaris.RatkinRaceMod"
+            },
+            "source": "LoadFolders.xml"
+          },
+          "conditions": {},
+          "genes": [
+            "PsychicAbility_Enhanced",
+            "Aggression_DeadCalm",
+            "Beauty_Pretty",
+            "Beard_NoBeardOnly",
+            "Hair_SnowWhite",
+            "Instability_Mild",
+            "AptitudePoor_Melee",
+            "AptitudeTerrible_Construction",
+            "AptitudeTerrible_Mining",
+            "AptitudeRemarkable_Medicine",
+            "AptitudeStrong_Social",
+            "AptitudeStrong_Intellectual",
+            "Ratkin_LabRatEars",
+            "Ratkin_Tail",
+            "RK_Gene_FragilePain",
+            "RK_Gene_PoorEyesight"
+          ],
+          "inheritable": "true",
+          "label": "Lab Rat"
+        },
+        {
+          "defName": "Ratkin_Hamster",
+          "file": "1.6\\Common\\Defs\\GeneDefs\\RKXenotypeDefs.xml",
+          "loadRoot": {
+            "path": "1.6/Common",
+            "conditions": {
+              "IfModActive": "Solaris.RatkinRaceMod"
+            },
+            "source": "LoadFolders.xml"
+          },
+          "conditions": {},
+          "genes": [
+            "WoundHealing_SuperFast",
+            "Superclotting",
+            "PsychicAbility_Deaf",
+            "MoveSpeed_VeryQuick",
+            "Mood_Sanguine",
+            "Aggression_Aggressive",
+            "MeleeDamage_Strong",
+            "Sleepy",
+            "Robust",
+            "Pain_Reduced",
+            "Beard_NoBeardOnly",
+            "Hair_Blonde",
+            "Hair_LightOrange",
+            "Learning_Slow",
+            "Unstoppable",
+            "AptitudeStrong_Melee",
+            "AptitudeTerrible_Construction",
+            "AptitudeTerrible_Plants",
+            "AptitudeTerrible_Crafting",
+            "AptitudeTerrible_Social",
+            "AptitudeTerrible_Intellectual",
+            "Ratkin_HamsterEars",
+            "RK_Gene_Nimble",
+            "RK_Gene_PoorEyesight"
+          ],
+          "inheritable": "true",
+          "label": "Hamster"
+        },
+        {
+          "defName": "Ratkin_Squirrel",
+          "file": "1.6\\Common\\Defs\\GeneDefs\\RKXenotypeDefs.xml",
+          "loadRoot": {
+            "path": "1.6/Common",
+            "conditions": {
+              "IfModActive": "Solaris.RatkinRaceMod"
+            },
+            "source": "LoadFolders.xml"
+          },
+          "conditions": {},
+          "genes": [
+            "Mood_Optimist",
+            "RK_Gene_Nimble",
+            "KindInstinct",
+            "Beard_NoBeardOnly",
+            "Ratkin_SquirrelEars",
+            "Hair_LightOrange",
+            "Hair_ReddishBrown",
+            "Hair_BrightRed",
+            "Ratkin_FastTalking",
+            "Ratkin_SquirrelTail",
+            "AptitudeTerrible_Mining",
+            "AptitudeRemarkable_Plants",
+            "AptitudePoor_Animals",
+            "AptitudeTerrible_Artistic",
+            "RK_Gene_GoodGardening",
+            "AptitudeTerrible_Intellectual",
+            "Ratkin_Hyperactivity"
+          ],
+          "inheritable": "true",
+          "label": "Squirrel"
+        },
+        {
+          "defName": "Ratkin_Vole",
+          "file": "1.6\\Common\\Defs\\GeneDefs\\RKXenotypeDefs.xml",
+          "loadRoot": {
+            "path": "1.6/Common",
+            "conditions": {
+              "IfModActive": "Solaris.RatkinRaceMod"
+            },
+            "source": "LoadFolders.xml"
+          },
+          "conditions": {},
+          "genes": [
+            "Beard_NoBeardOnly",
+            "Hair_DarkSaturatedReddish",
+            "Hair_MidBlack",
+            "Hair_DarkBlack",
+            "Ratkin_VoleEars",
+            "Ratkin_Tail",
+            "Ratkin_YunDanFengQing",
+            "RK_Gene_Nimble",
+            "RK_Gene_PoorEyesight"
+          ],
+          "inheritable": "true",
+          "label": "Vole"
+        },
+        {
+          "defName": "Ratkin_VolePrototype",
+          "file": "1.6\\Common\\Defs\\GeneDefs\\RKXenotypeDefs.xml",
+          "loadRoot": {
+            "path": "1.6/Common",
+            "conditions": {
+              "IfModActive": "Solaris.RatkinRaceMod"
+            },
+            "source": "LoadFolders.xml"
+          },
+          "conditions": {},
+          "genes": [
+            "Beard_NoBeardOnly",
+            "Hair_SnowWhite",
+            "Ratkin_Prototype_Vole_Ears",
+            "Ratkin_Prototype_Vole_Tail",
+            "Ratkin_YunDanFengQing",
+            "PsychicAbility_Enhanced",
+            "AptitudeStrong_Melee",
+            "AptitudeStrong_Shooting",
+            "MoveSpeed_VeryQuick",
+            "Unstoppable",
+            "TotalHealing",
+            "DiseaseFree",
+            "StrongStomach",
+            "RK_Gene_Nimble",
+            "RK_Gene_PoorEyesight"
+          ],
+          "inheritable": "true",
+          "label": "Vole Protorattus"
+        }
+      ],
+      "geneDefs": [
+        {
+          "defName": "Ratkin_Ears",
+          "file": "1.6_unofficial\\Common\\Defs\\GeneDefs\\GeneDefs_Ratkin.xml",
+          "loadRoot": {
+            "path": "1.6_unofficial/Common",
+            "conditions": {
+              "IfModActive": "fxz.Solaris.RatkinRaceMod.odyssey"
+            },
+            "source": "LoadFolders.xml"
+          },
+          "conditions": {},
+          "parentName": "RatkinGeneEarsBase",
+          "geneClass": null,
+          "canGenerateInGeneSet": null,
+          "biostatArc": null,
+          "label": "Mouse ears"
+        },
+        {
+          "defName": "Ratkin_Tail",
+          "file": "1.6_unofficial\\Common\\Defs\\GeneDefs\\GeneDefs_Ratkin.xml",
+          "loadRoot": {
+            "path": "1.6_unofficial/Common",
+            "conditions": {
+              "IfModActive": "fxz.Solaris.RatkinRaceMod.odyssey"
+            },
+            "source": "LoadFolders.xml"
+          },
+          "conditions": {},
+          "parentName": "RatkinGeneTailBase",
+          "geneClass": null,
+          "canGenerateInGeneSet": null,
+          "biostatArc": null,
+          "label": "Mouse tail"
+        },
+        {
+          "defName": "Ratkin_HamsterEars",
+          "file": "1.6_unofficial\\Common\\Defs\\GeneDefs\\GeneDefs_Ratkin.xml",
+          "loadRoot": {
+            "path": "1.6_unofficial/Common",
+            "conditions": {
+              "IfModActive": "fxz.Solaris.RatkinRaceMod.odyssey"
+            },
+            "source": "LoadFolders.xml"
+          },
+          "conditions": {},
+          "parentName": "RatkinGeneEarsBase",
+          "geneClass": null,
+          "canGenerateInGeneSet": null,
+          "biostatArc": null,
+          "label": "Hamster ears"
+        },
+        {
+          "defName": "Ratkin_SquirrelEars",
+          "file": "1.6_unofficial\\Common\\Defs\\GeneDefs\\GeneDefs_Ratkin.xml",
+          "loadRoot": {
+            "path": "1.6_unofficial/Common",
+            "conditions": {
+              "IfModActive": "fxz.Solaris.RatkinRaceMod.odyssey"
+            },
+            "source": "LoadFolders.xml"
+          },
+          "conditions": {},
+          "parentName": "RatkinGeneEarsBase",
+          "geneClass": null,
+          "canGenerateInGeneSet": null,
+          "biostatArc": null,
+          "label": "Squirrel ears"
+        },
+        {
+          "defName": "Ratkin_SquirrelTail",
+          "file": "1.6_unofficial\\Common\\Defs\\GeneDefs\\GeneDefs_Ratkin.xml",
+          "loadRoot": {
+            "path": "1.6_unofficial/Common",
+            "conditions": {
+              "IfModActive": "fxz.Solaris.RatkinRaceMod.odyssey"
+            },
+            "source": "LoadFolders.xml"
+          },
+          "conditions": {},
+          "parentName": "RatkinGeneTailBase",
+          "geneClass": null,
+          "canGenerateInGeneSet": null,
+          "biostatArc": null,
+          "label": "Squirrel tail"
+        },
+        {
+          "defName": "Ratkin_LabRatEars",
+          "file": "1.6_unofficial\\Common\\Defs\\GeneDefs\\GeneDefs_Ratkin.xml",
+          "loadRoot": {
+            "path": "1.6_unofficial/Common",
+            "conditions": {
+              "IfModActive": "fxz.Solaris.RatkinRaceMod.odyssey"
+            },
+            "source": "LoadFolders.xml"
+          },
+          "conditions": {},
+          "parentName": "RatkinGeneEarsBase",
+          "geneClass": null,
+          "canGenerateInGeneSet": null,
+          "biostatArc": null,
+          "label": "LabRat ears"
+        },
+        {
+          "defName": "Ratkin_MoleEars",
+          "file": "1.6_unofficial\\Common\\Defs\\GeneDefs\\GeneDefs_Ratkin.xml",
+          "loadRoot": {
+            "path": "1.6_unofficial/Common",
+            "conditions": {
+              "IfModActive": "fxz.Solaris.RatkinRaceMod.odyssey"
+            },
+            "source": "LoadFolders.xml"
+          },
+          "conditions": {},
+          "parentName": "RatkinGeneEarsBase",
+          "geneClass": null,
+          "canGenerateInGeneSet": null,
+          "biostatArc": null,
+          "label": "Mole ears"
+        },
+        {
+          "defName": "Ratkin_MoleTail",
+          "file": "1.6_unofficial\\Common\\Defs\\GeneDefs\\GeneDefs_Ratkin.xml",
+          "loadRoot": {
+            "path": "1.6_unofficial/Common",
+            "conditions": {
+              "IfModActive": "fxz.Solaris.RatkinRaceMod.odyssey"
+            },
+            "source": "LoadFolders.xml"
+          },
+          "conditions": {},
+          "parentName": "RatkinGeneTailBase",
+          "geneClass": null,
+          "canGenerateInGeneSet": null,
+          "biostatArc": null,
+          "label": "Mole tail"
+        },
+        {
+          "defName": "Ratkin_VoleEars",
+          "file": "1.6_unofficial\\Common\\Defs\\GeneDefs\\GeneDefs_Ratkin.xml",
+          "loadRoot": {
+            "path": "1.6_unofficial/Common",
+            "conditions": {
+              "IfModActive": "fxz.Solaris.RatkinRaceMod.odyssey"
+            },
+            "source": "LoadFolders.xml"
+          },
+          "conditions": {},
+          "parentName": "RatkinGeneEarsBase",
+          "geneClass": null,
+          "canGenerateInGeneSet": null,
+          "biostatArc": null,
+          "label": "Vole ears"
+        },
+        {
+          "defName": "Ratkin_WREars",
+          "file": "1.6_unofficial\\Common\\Defs\\GeneDefs\\GeneDefs_Ratkin.xml",
+          "loadRoot": {
+            "path": "1.6_unofficial/Common",
+            "conditions": {
+              "IfModActive": "fxz.Solaris.RatkinRaceMod.odyssey"
+            },
+            "source": "LoadFolders.xml"
+          },
+          "conditions": {},
+          "parentName": "RatkinGeneEarsBase",
+          "geneClass": null,
+          "canGenerateInGeneSet": null,
+          "biostatArc": null,
+          "label": "Waste rat ears"
+        },
+        {
+          "defName": "Ratkin_WRTail",
+          "file": "1.6_unofficial\\Common\\Defs\\GeneDefs\\GeneDefs_Ratkin.xml",
+          "loadRoot": {
+            "path": "1.6_unofficial/Common",
+            "conditions": {
+              "IfModActive": "fxz.Solaris.RatkinRaceMod.odyssey"
+            },
+            "source": "LoadFolders.xml"
+          },
+          "conditions": {},
+          "parentName": "RatkinGeneTailBase",
+          "geneClass": null,
+          "canGenerateInGeneSet": null,
+          "biostatArc": null,
+          "label": "Waste rat tail"
+        },
+        {
+          "defName": "Ratkin_YunDanFengQing",
+          "file": "1.6_unofficial\\Common\\Defs\\GeneDefs\\GeneDefs_Ratkin.xml",
+          "loadRoot": {
+            "path": "1.6_unofficial/Common",
+            "conditions": {
+              "IfModActive": "fxz.Solaris.RatkinRaceMod.odyssey"
+            },
+            "source": "LoadFolders.xml"
+          },
+          "conditions": {},
+          "parentName": null,
+          "geneClass": null,
+          "canGenerateInGeneSet": null,
+          "biostatArc": null,
+          "label": "Take it easy"
+        },
+        {
+          "defName": "Ratkin_Prototype_Vole_Ears",
+          "file": "1.6_unofficial\\Common\\Defs\\GeneDefs\\GeneDefs_Ratkin.xml",
+          "loadRoot": {
+            "path": "1.6_unofficial/Common",
+            "conditions": {
+              "IfModActive": "fxz.Solaris.RatkinRaceMod.odyssey"
+            },
+            "source": "LoadFolders.xml"
+          },
+          "conditions": {},
+          "parentName": "RatkinGeneEarsBase",
+          "geneClass": null,
+          "canGenerateInGeneSet": null,
+          "biostatArc": null,
+          "label": "Prototype Vole ears"
+        },
+        {
+          "defName": "Ratkin_Prototype_Vole_Tail",
+          "file": "1.6_unofficial\\Common\\Defs\\GeneDefs\\GeneDefs_Ratkin.xml",
+          "loadRoot": {
+            "path": "1.6_unofficial/Common",
+            "conditions": {
+              "IfModActive": "fxz.Solaris.RatkinRaceMod.odyssey"
+            },
+            "source": "LoadFolders.xml"
+          },
+          "conditions": {},
+          "parentName": "RatkinGeneTailBase",
+          "geneClass": null,
+          "canGenerateInGeneSet": null,
+          "biostatArc": null,
+          "label": "Prototype Vole tail"
+        },
+        {
+          "defName": "Pain_Increased",
+          "file": "1.6_unofficial\\Common\\Defs\\GeneDefs\\GeneDefs_Ratkin.xml",
+          "loadRoot": {
+            "path": "1.6_unofficial/Common",
+            "conditions": {
+              "IfModActive": "fxz.Solaris.RatkinRaceMod.odyssey"
+            },
+            "source": "LoadFolders.xml"
+          },
+          "conditions": {},
+          "parentName": "GenePainBase",
+          "geneClass": null,
+          "canGenerateInGeneSet": null,
+          "biostatArc": null,
+          "label": "increased pain"
+        },
+        {
+          "defName": "Ratkin_ShoShoShot",
+          "file": "1.6_unofficial\\Common\\Defs\\GeneDefs\\GeneDefs_Ratkin.xml",
+          "loadRoot": {
+            "path": "1.6_unofficial/Common",
+            "conditions": {
+              "IfModActive": "fxz.Solaris.RatkinRaceMod.odyssey"
+            },
+            "source": "LoadFolders.xml"
+          },
+          "conditions": {},
+          "parentName": null,
+          "geneClass": null,
+          "canGenerateInGeneSet": null,
+          "biostatArc": null,
+          "label": "trigger-happy"
+        },
+        {
+          "defName": "Ratkin_Sassy",
+          "file": "1.6_unofficial\\Common\\Defs\\GeneDefs\\GeneDefs_Ratkin.xml",
+          "loadRoot": {
+            "path": "1.6_unofficial/Common",
+            "conditions": {
+              "IfModActive": "fxz.Solaris.RatkinRaceMod.odyssey"
+            },
+            "source": "LoadFolders.xml"
+          },
+          "conditions": {},
+          "parentName": null,
+          "geneClass": null,
+          "canGenerateInGeneSet": null,
+          "biostatArc": null,
+          "label": "Sassy"
+        },
+        {
+          "defName": "Ratkin_FastTalking",
+          "file": "1.6_unofficial\\Common\\Defs\\GeneDefs\\GeneDefs_Ratkin.xml",
+          "loadRoot": {
+            "path": "1.6_unofficial/Common",
+            "conditions": {
+              "IfModActive": "fxz.Solaris.RatkinRaceMod.odyssey"
+            },
+            "source": "LoadFolders.xml"
+          },
+          "conditions": {},
+          "parentName": null,
+          "geneClass": null,
+          "canGenerateInGeneSet": null,
+          "biostatArc": null,
+          "label": "Fast Talking"
+        },
+        {
+          "defName": "Ratkin_Ears",
+          "file": "1.6\\Common\\Defs\\GeneDefs\\GeneDefs_Ratkin.xml",
+          "loadRoot": {
+            "path": "1.6/Common",
+            "conditions": {
+              "IfModActive": "Solaris.RatkinRaceMod"
+            },
+            "source": "LoadFolders.xml"
+          },
+          "conditions": {},
+          "parentName": "RatkinGeneEarsBase",
+          "geneClass": null,
+          "canGenerateInGeneSet": null,
+          "biostatArc": null,
+          "label": "Mouse ears"
+        },
+        {
+          "defName": "Ratkin_Tail",
+          "file": "1.6\\Common\\Defs\\GeneDefs\\GeneDefs_Ratkin.xml",
+          "loadRoot": {
+            "path": "1.6/Common",
+            "conditions": {
+              "IfModActive": "Solaris.RatkinRaceMod"
+            },
+            "source": "LoadFolders.xml"
+          },
+          "conditions": {},
+          "parentName": "RatkinGeneTailBase",
+          "geneClass": null,
+          "canGenerateInGeneSet": null,
+          "biostatArc": null,
+          "label": "Mouse tail"
+        },
+        {
+          "defName": "Ratkin_HamsterEars",
+          "file": "1.6\\Common\\Defs\\GeneDefs\\GeneDefs_Ratkin.xml",
+          "loadRoot": {
+            "path": "1.6/Common",
+            "conditions": {
+              "IfModActive": "Solaris.RatkinRaceMod"
+            },
+            "source": "LoadFolders.xml"
+          },
+          "conditions": {},
+          "parentName": "RatkinGeneEarsBase",
+          "geneClass": null,
+          "canGenerateInGeneSet": null,
+          "biostatArc": null,
+          "label": "Hamster ears"
+        },
+        {
+          "defName": "Ratkin_SquirrelEars",
+          "file": "1.6\\Common\\Defs\\GeneDefs\\GeneDefs_Ratkin.xml",
+          "loadRoot": {
+            "path": "1.6/Common",
+            "conditions": {
+              "IfModActive": "Solaris.RatkinRaceMod"
+            },
+            "source": "LoadFolders.xml"
+          },
+          "conditions": {},
+          "parentName": "RatkinGeneEarsBase",
+          "geneClass": null,
+          "canGenerateInGeneSet": null,
+          "biostatArc": null,
+          "label": "Squirrel ears"
+        },
+        {
+          "defName": "Ratkin_SquirrelTail",
+          "file": "1.6\\Common\\Defs\\GeneDefs\\GeneDefs_Ratkin.xml",
+          "loadRoot": {
+            "path": "1.6/Common",
+            "conditions": {
+              "IfModActive": "Solaris.RatkinRaceMod"
+            },
+            "source": "LoadFolders.xml"
+          },
+          "conditions": {},
+          "parentName": "RatkinGeneTailBase",
+          "geneClass": null,
+          "canGenerateInGeneSet": null,
+          "biostatArc": null,
+          "label": "Squirrel tail"
+        },
+        {
+          "defName": "Ratkin_LabRatEars",
+          "file": "1.6\\Common\\Defs\\GeneDefs\\GeneDefs_Ratkin.xml",
+          "loadRoot": {
+            "path": "1.6/Common",
+            "conditions": {
+              "IfModActive": "Solaris.RatkinRaceMod"
+            },
+            "source": "LoadFolders.xml"
+          },
+          "conditions": {},
+          "parentName": "RatkinGeneEarsBase",
+          "geneClass": null,
+          "canGenerateInGeneSet": null,
+          "biostatArc": null,
+          "label": "LabRat ears"
+        },
+        {
+          "defName": "Ratkin_MoleEars",
+          "file": "1.6\\Common\\Defs\\GeneDefs\\GeneDefs_Ratkin.xml",
+          "loadRoot": {
+            "path": "1.6/Common",
+            "conditions": {
+              "IfModActive": "Solaris.RatkinRaceMod"
+            },
+            "source": "LoadFolders.xml"
+          },
+          "conditions": {},
+          "parentName": "RatkinGeneEarsBase",
+          "geneClass": null,
+          "canGenerateInGeneSet": null,
+          "biostatArc": null,
+          "label": "Mole ears"
+        },
+        {
+          "defName": "Ratkin_MoleTail",
+          "file": "1.6\\Common\\Defs\\GeneDefs\\GeneDefs_Ratkin.xml",
+          "loadRoot": {
+            "path": "1.6/Common",
+            "conditions": {
+              "IfModActive": "Solaris.RatkinRaceMod"
+            },
+            "source": "LoadFolders.xml"
+          },
+          "conditions": {},
+          "parentName": "RatkinGeneTailBase",
+          "geneClass": null,
+          "canGenerateInGeneSet": null,
+          "biostatArc": null,
+          "label": "Mole tail"
+        },
+        {
+          "defName": "Ratkin_VoleEars",
+          "file": "1.6\\Common\\Defs\\GeneDefs\\GeneDefs_Ratkin.xml",
+          "loadRoot": {
+            "path": "1.6/Common",
+            "conditions": {
+              "IfModActive": "Solaris.RatkinRaceMod"
+            },
+            "source": "LoadFolders.xml"
+          },
+          "conditions": {},
+          "parentName": "RatkinGeneEarsBase",
+          "geneClass": null,
+          "canGenerateInGeneSet": null,
+          "biostatArc": null,
+          "label": "Vole ears"
+        },
+        {
+          "defName": "Ratkin_WREars",
+          "file": "1.6\\Common\\Defs\\GeneDefs\\GeneDefs_Ratkin.xml",
+          "loadRoot": {
+            "path": "1.6/Common",
+            "conditions": {
+              "IfModActive": "Solaris.RatkinRaceMod"
+            },
+            "source": "LoadFolders.xml"
+          },
+          "conditions": {},
+          "parentName": "RatkinGeneEarsBase",
+          "geneClass": null,
+          "canGenerateInGeneSet": null,
+          "biostatArc": null,
+          "label": "Waste rat ears"
+        },
+        {
+          "defName": "Ratkin_WRTail",
+          "file": "1.6\\Common\\Defs\\GeneDefs\\GeneDefs_Ratkin.xml",
+          "loadRoot": {
+            "path": "1.6/Common",
+            "conditions": {
+              "IfModActive": "Solaris.RatkinRaceMod"
+            },
+            "source": "LoadFolders.xml"
+          },
+          "conditions": {},
+          "parentName": "RatkinGeneTailBase",
+          "geneClass": null,
+          "canGenerateInGeneSet": null,
+          "biostatArc": null,
+          "label": "Waste rat tail"
+        },
+        {
+          "defName": "Ratkin_YunDanFengQing",
+          "file": "1.6\\Common\\Defs\\GeneDefs\\GeneDefs_Ratkin.xml",
+          "loadRoot": {
+            "path": "1.6/Common",
+            "conditions": {
+              "IfModActive": "Solaris.RatkinRaceMod"
+            },
+            "source": "LoadFolders.xml"
+          },
+          "conditions": {},
+          "parentName": null,
+          "geneClass": null,
+          "canGenerateInGeneSet": null,
+          "biostatArc": null,
+          "label": "Take it easy"
+        },
+        {
+          "defName": "Ratkin_Prototype_Vole_Ears",
+          "file": "1.6\\Common\\Defs\\GeneDefs\\GeneDefs_Ratkin.xml",
+          "loadRoot": {
+            "path": "1.6/Common",
+            "conditions": {
+              "IfModActive": "Solaris.RatkinRaceMod"
+            },
+            "source": "LoadFolders.xml"
+          },
+          "conditions": {},
+          "parentName": "RatkinGeneEarsBase",
+          "geneClass": null,
+          "canGenerateInGeneSet": null,
+          "biostatArc": null,
+          "label": "Prototype Vole ears"
+        },
+        {
+          "defName": "Ratkin_Prototype_Vole_Tail",
+          "file": "1.6\\Common\\Defs\\GeneDefs\\GeneDefs_Ratkin.xml",
+          "loadRoot": {
+            "path": "1.6/Common",
+            "conditions": {
+              "IfModActive": "Solaris.RatkinRaceMod"
+            },
+            "source": "LoadFolders.xml"
+          },
+          "conditions": {},
+          "parentName": "RatkinGeneTailBase",
+          "geneClass": null,
+          "canGenerateInGeneSet": null,
+          "biostatArc": null,
+          "label": "Prototype Vole tail"
+        },
+        {
+          "defName": "Pain_Increased",
+          "file": "1.6\\Common\\Defs\\GeneDefs\\GeneDefs_Ratkin.xml",
+          "loadRoot": {
+            "path": "1.6/Common",
+            "conditions": {
+              "IfModActive": "Solaris.RatkinRaceMod"
+            },
+            "source": "LoadFolders.xml"
+          },
+          "conditions": {},
+          "parentName": "GenePainBase",
+          "geneClass": null,
+          "canGenerateInGeneSet": null,
+          "biostatArc": null,
+          "label": "increased pain"
+        },
+        {
+          "defName": "Ratkin_ShoShoShot",
+          "file": "1.6\\Common\\Defs\\GeneDefs\\GeneDefs_Ratkin.xml",
+          "loadRoot": {
+            "path": "1.6/Common",
+            "conditions": {
+              "IfModActive": "Solaris.RatkinRaceMod"
+            },
+            "source": "LoadFolders.xml"
+          },
+          "conditions": {},
+          "parentName": null,
+          "geneClass": null,
+          "canGenerateInGeneSet": null,
+          "biostatArc": null,
+          "label": "trigger-happy"
+        },
+        {
+          "defName": "Ratkin_Sassy",
+          "file": "1.6\\Common\\Defs\\GeneDefs\\GeneDefs_Ratkin.xml",
+          "loadRoot": {
+            "path": "1.6/Common",
+            "conditions": {
+              "IfModActive": "Solaris.RatkinRaceMod"
+            },
+            "source": "LoadFolders.xml"
+          },
+          "conditions": {},
+          "parentName": null,
+          "geneClass": null,
+          "canGenerateInGeneSet": null,
+          "biostatArc": null,
+          "label": "Sassy"
+        },
+        {
+          "defName": "Ratkin_Hyperactivity",
+          "file": "1.6\\Common\\Defs\\GeneDefs\\GeneDefs_Ratkin.xml",
+          "loadRoot": {
+            "path": "1.6/Common",
+            "conditions": {
+              "IfModActive": "Solaris.RatkinRaceMod"
+            },
+            "source": "LoadFolders.xml"
+          },
+          "conditions": {},
+          "parentName": "GenePainBase",
+          "geneClass": null,
+          "canGenerateInGeneSet": null,
+          "biostatArc": null,
+          "label": "hyperactivity"
+        },
+        {
+          "defName": "Ratkin_FastTalking",
+          "file": "1.6\\Common\\Defs\\GeneDefs\\GeneDefs_Ratkin.xml",
+          "loadRoot": {
+            "path": "1.6/Common",
+            "conditions": {
+              "IfModActive": "Solaris.RatkinRaceMod"
+            },
+            "source": "LoadFolders.xml"
+          },
+          "conditions": {},
+          "parentName": null,
+          "geneClass": null,
+          "canGenerateInGeneSet": null,
+          "biostatArc": null,
+          "label": "Fast Talking"
+        }
+      ],
+      "uniqueRaceDefNames": [],
+      "uniqueXenotypeDefNames": [
+        "Ratkin_Hamster",
+        "Ratkin_HouseMouse",
+        "Ratkin_LabRat",
+        "Ratkin_Mole",
+        "Ratkin_Squirrel",
+        "Ratkin_Vole",
+        "Ratkin_VolePrototype",
+        "Ratkin_Waster"
+      ],
+      "uniqueGeneDefNames": [
+        "Pain_Increased",
+        "Ratkin_Ears",
+        "Ratkin_FastTalking",
+        "Ratkin_HamsterEars",
+        "Ratkin_Hyperactivity",
+        "Ratkin_LabRatEars",
+        "Ratkin_MoleEars",
+        "Ratkin_MoleTail",
+        "Ratkin_Prototype_Vole_Ears",
+        "Ratkin_Prototype_Vole_Tail",
+        "Ratkin_Sassy",
+        "Ratkin_ShoShoShot",
+        "Ratkin_SquirrelEars",
+        "Ratkin_SquirrelTail",
+        "Ratkin_Tail",
+        "Ratkin_VoleEars",
+        "Ratkin_WREars",
+        "Ratkin_WRTail",
+        "Ratkin_YunDanFengQing"
+      ],
+      "errors": []
+    },
+    {
+      "relativePath": "Ratkin Knights+",
+      "name": "Ratkin Knights+",
+      "packageId": "RKK.RatKnights.Core",
+      "supportedVersions": [
+        "1.5",
+        "1.6"
+      ],
+      "loadRoots": [
+        {
+          "path": ".",
+          "conditions": {},
+          "source": "LoadFolders.xml"
+        },
+        {
+          "path": "1.6",
+          "conditions": {},
+          "source": "LoadFolders.xml"
+        },
+        {
+          "path": "1.6/Mod/RKA",
+          "conditions": {
+            "IfModActive": "fxz.ratkinanomaly.update"
+          },
+          "source": "LoadFolders.xml"
+        },
+        {
+          "path": "1.6/Mod/DMS",
+          "conditions": {
+            "IfModActive": "Aoba.DeadManSwitch.MobileDragoon"
+          },
+          "source": "LoadFolders.xml"
+        },
+        {
+          "path": "1.6/Mod/CRE",
+          "conditions": {
+            "IfModActive": "CursedRatkinarmor.g1Flag"
+          },
+          "source": "LoadFolders.xml"
+        },
+        {
+          "path": "1.6/Mod/JUN",
+          "conditions": {
+            "IfModActive": "ICEorANGE.RKKjunfu"
+          },
+          "source": "LoadFolders.xml"
+        }
+      ],
+      "raceDefs": [],
+      "xenotypeDefs": [],
+      "geneDefs": [],
+      "uniqueRaceDefNames": [],
+      "uniqueXenotypeDefNames": [],
+      "uniqueGeneDefNames": [],
+      "errors": []
+    },
+    {
+      "relativePath": "Ratkin Promised land Ruleless Moustate",
+      "name": "Ratkin: Promised land Ruleless Moustate",
+      "packageId": "EoralMilk.RatkinMoustate",
+      "supportedVersions": [
+        "1.4",
+        "1.5",
+        "1.6"
+      ],
+      "loadRoots": [
+        {
+          "path": ".",
+          "conditions": {},
+          "source": "LoadFolders.xml"
+        },
+        {
+          "path": "1.6/Common",
+          "conditions": {},
+          "source": "LoadFolders.xml"
+        },
+        {
+          "path": "RKWE",
+          "conditions": {
+            "IfModActive": "bbb.ratkinweapon.morefailure"
+          },
+          "source": "LoadFolders.xml"
+        }
+      ],
+      "raceDefs": [],
+      "xenotypeDefs": [],
+      "geneDefs": [],
+      "uniqueRaceDefNames": [],
+      "uniqueXenotypeDefNames": [],
+      "uniqueGeneDefNames": [],
+      "errors": []
+    },
+    {
+      "relativePath": "Ratkin Underground+",
+      "name": "Ratkin Underground+",
+      "packageId": "RKU.RatkinUnderground",
+      "supportedVersions": [
+        "1.6"
+      ],
+      "loadRoots": [
+        {
+          "path": ".",
+          "conditions": {},
+          "source": "LoadFolders.xml"
+        },
+        {
+          "path": "1.6",
+          "conditions": {},
+          "source": "LoadFolders.xml"
+        },
+        {
+          "path": "1.6/Mod/RKA",
+          "conditions": {
+            "IfModActive": "fxz.ratkinanomaly.update"
+          },
+          "source": "LoadFolders.xml"
+        },
+        {
+          "path": "1.6/Patches/Conditional/fxz_ratkinfaction",
+          "conditions": {
+            "IfModActive": "fxz.ratkinfaction"
+          },
+          "source": "LoadFolders.xml"
+        },
+        {
+          "path": "1.6/Patches/Conditional/bbb_ratkinweapon_morefailure",
+          "conditions": {
+            "IfModActive": "bbb.ratkinweapon.morefailure"
+          },
+          "source": "LoadFolders.xml"
+        },
+        {
+          "path": "1.6/Patches/Conditional/fxz_ratkinanomaly_update",
+          "conditions": {
+            "IfModActive": "fxz.ratkinanomaly.update"
+          },
+          "source": "LoadFolders.xml"
+        }
+      ],
+      "raceDefs": [],
+      "xenotypeDefs": [],
+      "geneDefs": [],
+      "uniqueRaceDefNames": [],
+      "uniqueXenotypeDefNames": [],
+      "uniqueGeneDefNames": [],
+      "errors": []
+    },
+    {
+      "relativePath": "Wolfein Race",
+      "name": "Wolfein Race",
+      "packageId": "MelonDove.WolfeinRace",
+      "supportedVersions": [
+        "1.5",
+        "1.6"
+      ],
+      "loadRoots": [
+        {
+          "path": "1.6",
+          "conditions": {},
+          "source": "LoadFolders.xml"
+        },
+        {
+          "path": "Content",
+          "conditions": {},
+          "source": "LoadFolders.xml"
+        },
+        {
+          "path": "1.6/Mods/Biotech",
+          "conditions": {
+            "IfModActive": "Ludeon.RimWorld.Biotech"
+          },
+          "source": "LoadFolders.xml"
+        },
+        {
+          "path": "1.6/Mods/Royalty",
+          "conditions": {
+            "IfModActive": "Ludeon.RimWorld.Royalty"
+          },
+          "source": "LoadFolders.xml"
+        },
+        {
+          "path": "1.6/Mods/Anomaly",
+          "conditions": {
+            "IfModActive": "Ludeon.RimWorld.Anomaly"
+          },
+          "source": "LoadFolders.xml"
+        },
+        {
+          "path": "1.6/Mods/Odyssey",
+          "conditions": {
+            "IfModActive": "Ludeon.RimWorld.Odyssey"
+          },
+          "source": "LoadFolders.xml"
+        }
+      ],
+      "raceDefs": [
+        {
+          "defName": "Wolfein_Race",
+          "file": "1.6\\Defs\\ThingDefs_Race\\Race_Wolfein.xml",
+          "loadRoot": {
+            "path": "1.6",
+            "conditions": {},
+            "source": "LoadFolders.xml"
+          },
+          "conditions": {},
+          "xmlTag": "AlienRace.ThingDef_AlienRace",
+          "raceGenes": [],
+          "xenotypeList": [],
+          "geneList": [],
+          "blackGeneList": [
+            "Furskin",
+            "Brow_Heavy",
+            "FacialRidges"
+          ],
+          "label": "Wolfein race"
+        }
+      ],
+      "xenotypeDefs": [],
+      "geneDefs": [],
+      "uniqueRaceDefNames": [
+        "Wolfein_Race"
+      ],
+      "uniqueXenotypeDefNames": [],
+      "uniqueGeneDefNames": [],
+      "errors": []
+    },
+    {
+      "relativePath": "Wolfein Race Gene Patch",
+      "name": "Wolfein Race Gene Patch",
+      "packageId": "Ancot.WolfeinRaceGenePatch",
+      "supportedVersions": [
+        "1.5",
+        "1.6"
+      ],
+      "loadRoots": [
+        {
+          "path": "1.6",
+          "conditions": {},
+          "source": "default-version-folder"
+        }
+      ],
+      "raceDefs": [],
+      "xenotypeDefs": [
+        {
+          "defName": "Wolfein_Xenotype",
+          "file": "1.6\\Defs\\WofleinXenotype.xml",
+          "loadRoot": {
+            "path": "1.6",
+            "conditions": {},
+            "source": "default-version-folder"
+          },
+          "conditions": {},
+          "genes": [
+            "Wolfein_MeatLover",
+            "Wolfein_MoonPhase",
+            "Wolfein_NightAdaptation",
+            "MoveSpeed_Quick",
+            "AptitudePoor_Plants",
+            "PsychicAbility_Dull",
+            "MaxTemp_SmallDecrease",
+            "MinTemp_SmallDecrease",
+            "Wolfein_JungleLaw",
+            "DarkVision",
+            "Wolfein_FireWeakness",
+            "Wolfein_ToxicEnvironmentResistance_Weak"
+          ],
+          "inheritable": "true",
+          "label": "Wolfein"
+        },
+        {
+          "defName": "Wolfein_Xenotype_PureBlood",
+          "file": "1.6\\Defs\\WofleinXenotype.xml",
+          "loadRoot": {
+            "path": "1.6",
+            "conditions": {},
+            "source": "default-version-folder"
+          },
+          "conditions": {},
+          "genes": [
+            "Wolfein_PureBlood",
+            "Wolfein_MeatLover",
+            "Wolfein_MoonPhase",
+            "Wolfein_NightAdaptation",
+            "MoveSpeed_Quick",
+            "AptitudePoor_Plants",
+            "AptitudePoor_Medicine",
+            "AptitudePoor_Artistic",
+            "MaxTemp_SmallDecrease",
+            "MinTemp_SmallDecrease",
+            "Wolfein_JungleLaw",
+            "DarkVision",
+            "Wolfein_FireWeakness",
+            "Wolfein_ToxicEnvironmentResistance_Weak",
+            "Wolfein_Instinct"
+          ],
+          "inheritable": null,
+          "label": "Pure Wolfein"
+        }
+      ],
+      "geneDefs": [
+        {
+          "defName": "Wolfein_PureBlood",
+          "file": "1.6\\Defs\\WofleinGene.xml",
+          "loadRoot": {
+            "path": "1.6",
+            "conditions": {},
+            "source": "default-version-folder"
+          },
+          "conditions": {},
+          "parentName": "WolfeinGeneBase",
+          "geneClass": null,
+          "canGenerateInGeneSet": null,
+          "biostatArc": null,
+          "label": "Pureblood"
+        },
+        {
+          "defName": "Wolfein_MeatLover",
+          "file": "1.6\\Defs\\WofleinGene.xml",
+          "loadRoot": {
+            "path": "1.6",
+            "conditions": {},
+            "source": "default-version-folder"
+          },
+          "conditions": {},
+          "parentName": "WolfeinGeneBase",
+          "geneClass": "Wolfein.Gene_MeatLover",
+          "canGenerateInGeneSet": null,
+          "biostatArc": null,
+          "label": "Meat lover"
+        },
+        {
+          "defName": "Wolfein_MoonPhase",
+          "file": "1.6\\Defs\\WofleinGene.xml",
+          "loadRoot": {
+            "path": "1.6",
+            "conditions": {},
+            "source": "default-version-folder"
+          },
+          "conditions": {},
+          "parentName": "WolfeinGeneBase",
+          "geneClass": "Wolfein.Gene_MoonPhase",
+          "canGenerateInGeneSet": null,
+          "biostatArc": null,
+          "label": "Moon phase"
+        },
+        {
+          "defName": "Wolfein_NightAdaptation",
+          "file": "1.6\\Defs\\WofleinGene.xml",
+          "loadRoot": {
+            "path": "1.6",
+            "conditions": {},
+            "source": "default-version-folder"
+          },
+          "conditions": {},
+          "parentName": "WolfeinGeneBase",
+          "geneClass": "Wolfein.Gene_NightAdaptation",
+          "canGenerateInGeneSet": null,
+          "biostatArc": null,
+          "label": "Night adaptation"
+        },
+        {
+          "defName": "Wolfein_ToxicEnvironmentResistance_Weak",
+          "file": "1.6\\Defs\\WofleinGene.xml",
+          "loadRoot": {
+            "path": "1.6",
+            "conditions": {},
+            "source": "default-version-folder"
+          },
+          "conditions": {},
+          "parentName": "WolfeinGeneBase",
+          "geneClass": null,
+          "canGenerateInGeneSet": null,
+          "biostatArc": null,
+          "label": "Toxic environment resistance weak"
+        },
+        {
+          "defName": "Wolfein_FireWeakness",
+          "file": "1.6\\Defs\\WofleinGene.xml",
+          "loadRoot": {
+            "path": "1.6",
+            "conditions": {},
+            "source": "default-version-folder"
+          },
+          "conditions": {},
+          "parentName": "WolfeinGeneBase",
+          "geneClass": null,
+          "canGenerateInGeneSet": null,
+          "biostatArc": null,
+          "label": "Fire weakness"
+        },
+        {
+          "defName": "Wolfein_JungleLaw",
+          "file": "1.6\\Defs\\WofleinGene.xml",
+          "loadRoot": {
+            "path": "1.6",
+            "conditions": {},
+            "source": "default-version-folder"
+          },
+          "conditions": {},
+          "parentName": "WolfeinGeneBase",
+          "geneClass": null,
+          "canGenerateInGeneSet": null,
+          "biostatArc": null,
+          "label": "Jungle law"
+        },
+        {
+          "defName": "Wolfein_Instinct",
+          "file": "1.6\\Defs\\WofleinGene.xml",
+          "loadRoot": {
+            "path": "1.6",
+            "conditions": {},
+            "source": "default-version-folder"
+          },
+          "conditions": {},
+          "parentName": "WolfeinGeneBase",
+          "geneClass": "AncotLibrary.Gene_GainHediff_UnderHealthPct",
+          "canGenerateInGeneSet": null,
+          "biostatArc": null,
+          "label": "Wild instinct"
+        }
+      ],
+      "uniqueRaceDefNames": [],
+      "uniqueXenotypeDefNames": [
+        "Wolfein_Xenotype",
+        "Wolfein_Xenotype_PureBlood"
+      ],
+      "uniqueGeneDefNames": [
+        "Wolfein_FireWeakness",
+        "Wolfein_Instinct",
+        "Wolfein_JungleLaw",
+        "Wolfein_MeatLover",
+        "Wolfein_MoonPhase",
+        "Wolfein_NightAdaptation",
+        "Wolfein_PureBlood",
+        "Wolfein_ToxicEnvironmentResistance_Weak"
+      ],
+      "errors": []
+    },
+    {
+      "relativePath": "Wolfein Race GFI Expand",
+      "name": "Wolfein Race GFI Expand",
+      "packageId": "JL.WolfeinGFIExpanded",
+      "supportedVersions": [
+        "1.6"
+      ],
+      "loadRoots": [
+        {
+          "path": ".",
+          "conditions": {},
+          "source": "default-root"
+        }
+      ],
+      "raceDefs": [],
+      "xenotypeDefs": [],
+      "geneDefs": [],
+      "uniqueRaceDefNames": [],
+      "uniqueXenotypeDefNames": [],
+      "uniqueGeneDefNames": [],
+      "errors": []
+    },
+    {
+      "relativePath": "Yuran race",
+      "name": "Yuran race",
+      "packageId": "RooAndGloomy.YuranRaceMod",
+      "supportedVersions": [
+        "1.3",
+        "1.4",
+        "1.5",
+        "1.6"
+      ],
+      "loadRoots": [
+        {
+          "path": "1.6",
+          "conditions": {},
+          "source": "LoadFolders.xml"
+        },
+        {
+          "path": "Compatibility/DLC/Bio1.6",
+          "conditions": {
+            "IfModActive": "Ludeon.RimWorld.Biotech"
+          },
+          "source": "LoadFolders.xml"
+        },
+        {
+          "path": "Compatibility/DLC/Royal1.6",
+          "conditions": {
+            "IfModActive": "Ludeon.Rimworld.Royalty"
+          },
+          "source": "LoadFolders.xml"
+        },
+        {
+          "path": "Compatibility/DLC/Ideo1.6",
+          "conditions": {
+            "IfModActive": "Ludeon.RimWorld.Ideology"
+          },
+          "source": "LoadFolders.xml"
+        },
+        {
+          "path": "Compatibility/DLC/Anomaly1.6",
+          "conditions": {
+            "IfModActive": "Ludeon.RimWorld.Anomaly"
+          },
+          "source": "LoadFolders.xml"
+        },
+        {
+          "path": "cont",
+          "conditions": {},
+          "source": "LoadFolders.xml"
+        },
+        {
+          "path": "Compatibility/Mods/RimLanguages",
+          "conditions": {
+            "IfModActive": "DimonSever000.FactionLanguages"
+          },
+          "source": "LoadFolders.xml"
+        }
+      ],
+      "raceDefs": [
+        {
+          "defName": "Yuran_Race",
+          "file": "1.6\\Defs\\Yuranlike\\GeneralRace.xml",
+          "loadRoot": {
+            "path": "1.6",
+            "conditions": {},
+            "source": "LoadFolders.xml"
+          },
+          "conditions": {},
+          "xmlTag": "AlienRace.ThingDef_AlienRace",
+          "raceGenes": [
+            "AptitudeStrong_Social",
+            "MinTemp_SmallDecrease",
+            "MaxTemp_SmallDecrease",
+            "AptitudeTerrible_Mining",
+            "AptitudePoor_Intellectual",
+            "FireWeakness",
+            "ToxicEnvironmentResistance_Partial",
+            "ToxResist_Partial",
+            "Fertile",
+            "Libido_High",
+            "Beauty_Pretty"
+          ],
+          "xenotypeList": [
+            "YuranXenotype"
+          ],
+          "geneList": [],
+          "blackGeneList": [
+            "Furskin",
+            "Brow_Heavy",
+            "Hair_BaldOnly",
+            "Beard_Always",
+            "FacialRidges"
+          ],
+          "label": "Yuran"
+        },
+        {
+          "defName": "Yuran_Race_Miko",
+          "file": "1.6\\Defs\\Yuranlike\\GeneralRace.xml",
+          "loadRoot": {
+            "path": "1.6",
+            "conditions": {},
+            "source": "LoadFolders.xml"
+          },
+          "conditions": {},
+          "xmlTag": "AlienRace.ThingDef_AlienRace",
+          "raceGenes": [],
+          "xenotypeList": [],
+          "geneList": [],
+          "blackGeneList": [],
+          "label": "Yuran Miko"
+        },
+        {
+          "defName": "Yuran_Race_Miko_BlackSnake",
+          "file": "1.6\\Defs\\Yuranlike\\GeneralRace_Snake.xml",
+          "loadRoot": {
+            "path": "1.6",
+            "conditions": {},
+            "source": "LoadFolders.xml"
+          },
+          "conditions": {},
+          "xmlTag": "AlienRace.ThingDef_AlienRace",
+          "raceGenes": [
+            "AptitudeStrong_Social",
+            "MinTemp_SmallDecrease",
+            "MaxTemp_SmallDecrease",
+            "AptitudeTerrible_Mining",
+            "AptitudeTerrible_Melee",
+            "AptitudeTerrible_Animals",
+            "AptitudeRemarkable_Intellectual",
+            "MeleeDamage_Weak",
+            "DarkVision",
+            "FireWeakness",
+            "ToxicEnvironmentResistance_Partial",
+            "ToxResist_Partial",
+            "Sterile",
+            "Libido_High",
+            "Beauty_Beautiful",
+            "AddictionResistant_Alcohol",
+            "AddictionImmune_Smokeleaf",
+            "Ageless",
+            "ArchiteMetabolism"
+          ],
+          "xenotypeList": [
+            "YuranXenotypeBlackSnake"
+          ],
+          "geneList": [],
+          "blackGeneList": [],
+          "label": "Yuran BlackSnake"
+        }
+      ],
+      "xenotypeDefs": [
+        {
+          "defName": "YuranXenotype",
+          "file": "Compatibility\\DLC\\Bio1.6\\Defs\\YuranBioTitle.xml",
+          "loadRoot": {
+            "path": "Compatibility/DLC/Bio1.6",
+            "conditions": {
+              "IfModActive": "Ludeon.RimWorld.Biotech"
+            },
+            "source": "LoadFolders.xml"
+          },
+          "conditions": {},
+          "genes": [
+            "AptitudeStrong_Social",
+            "MinTemp_SmallDecrease",
+            "MaxTemp_SmallDecrease",
+            "AptitudeTerrible_Mining",
+            "AptitudePoor_Intellectual",
+            "FireWeakness",
+            "ToxicEnvironmentResistance_Partial",
+            "ToxResist_Partial",
+            "Fertile",
+            "Libido_High",
+            "Beauty_Pretty"
+          ],
+          "inheritable": "true",
+          "label": "Yuran"
+        },
+        {
+          "defName": "YuranXenotypeBlackSnake",
+          "file": "Compatibility\\DLC\\Bio1.6\\Defs\\YuranBioTitle.xml",
+          "loadRoot": {
+            "path": "Compatibility/DLC/Bio1.6",
+            "conditions": {
+              "IfModActive": "Ludeon.RimWorld.Biotech"
+            },
+            "source": "LoadFolders.xml"
+          },
+          "conditions": {},
+          "genes": [
+            "AptitudeStrong_Social",
+            "MinTemp_SmallDecrease",
+            "MaxTemp_SmallDecrease",
+            "AptitudeTerrible_Mining",
+            "AptitudeTerrible_Melee",
+            "AptitudeTerrible_Animals",
+            "AptitudeRemarkable_Intellectual",
+            "MeleeDamage_Weak",
+            "DarkVision",
+            "FireWeakness",
+            "ToxicEnvironmentResistance_Partial",
+            "ToxResist_Partial",
+            "Sterile",
+            "Libido_High",
+            "Beauty_Beautiful",
+            "AddictionResistant_Alcohol",
+            "AddictionImmune_Smokeleaf",
+            "Ageless",
+            "ArchiteMetabolism"
+          ],
+          "inheritable": "true",
+          "label": "Yuran BlackSnake"
+        }
+      ],
+      "geneDefs": [],
+      "uniqueRaceDefNames": [
+        "Yuran_Race",
+        "Yuran_Race_Miko",
+        "Yuran_Race_Miko_BlackSnake"
+      ],
+      "uniqueXenotypeDefNames": [
+        "YuranXenotype",
+        "YuranXenotypeBlackSnake"
+      ],
+      "uniqueGeneDefNames": [],
+      "errors": []
+    }
+  ]
+}

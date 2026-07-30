@@ -1,0 +1,45 @@
+schema_version: 2
+workspace:
+  config: "D:\\RimWorldModding\\workspace.yaml"
+project:
+  id: "yyyyy_GeneticDiversity"
+  package_id: "yyyyy.geneticdiversity"
+  kind: "mixed"
+  game_version: "1.6"
+paths:
+  dev_root: "D:\\RimWorldModding\\projects\\yyyyy_GeneticDiversity"
+  runtime_root: "D:\\steam\\steamapps\\common\\RimWorld\\Mods\\yyyyy_GeneticDiversity"
+  csproj: "Source\\GeneticDiversity\\GeneticDiversity.csproj"
+  assemblies_output: "1.6\\Assemblies"
+metadata:
+  about_xml: "About\\About.xml"
+  load_folders: null
+build:
+  type: "dotnet"
+  configuration: "Release"
+  command: null
+  outputs:
+    - "1.6\\Assemblies\\GeneticDiversity.dll"
+wiki:
+  enabled: true
+  mode: "mixed"
+  output: "Wiki"
+  allow_missing_translations: false
+sync:
+  required:
+    - "About"
+    - "1.6"
+  optional: []
+  exclude:
+    - "**/*.pdb"
+    - "**/*.log"
+    - "**/Source/**"
+    - "**/bin/**"
+    - "**/obj/**"
+acceptance:
+  require_game_load: true
+  required_package_ids:
+    - "yyyyy.geneticdiversity"
+  error_patterns: []
+git:
+  enabled: false

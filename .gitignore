@@ -1,0 +1,22 @@
+# Visual Studio
+.vs/
+.idea/
+*.user
+*.suo
+
+# Build outputs
+Source/**/bin/
+Source/**/obj/
+*.pdb
+*.log
+
+# RimWorld mod working files
+*.cache
+
+# Test logs
+测试/**/*.log
+测试/**/*.txt
+
+# OS files
+Thumbs.db
+.DS_Store

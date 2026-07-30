@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <GeneticDiversity.GD_RaceGeneCompatibilityDef MayRequire="Ancot.KiiroRaceGenePatch">
+    <defName>GD_Compat_Kiiro</defName>
+    <label>Kiiro precise gene compatibility</label>
+    <description>Defines the exact native xenotype and propagation boundary for Kiiro Race Gene Patch.</description>
+    <sourcePackageIds><li>Ancot.KiiroRaceGenePatch</li></sourcePackageIds>
+    <raceDefName>Kiiro_Race</raceDefName>
+    <nativeXenotypeDefNames><li>KiiroXenotype</li></nativeXenotypeDefNames>
+    <sameRaceOnlySourceCustomGenes>true</sameRaceOnlySourceCustomGenes>
+    <sameRaceOnlySourceStructuralGenes>true</sameRaceOnlySourceStructuralGenes>
+  </GeneticDiversity.GD_RaceGeneCompatibilityDef>
+
+  <GeneticDiversity.GD_RaceGeneCompatibilityDef MayRequire="Ancot.MiliraRaceGenePatch">
+    <defName>GD_Compat_Milira</defName>
+    <label>Milira precise gene compatibility</label>
+    <description>Defines the exact native xenotype and propagation boundary for Milira Race Gene Patch.</description>
+    <sourcePackageIds><li>Ancot.MiliraRaceGenePatch</li></sourcePackageIds>
+    <raceDefName>Milira_Race</raceDefName>
+    <nativeXenotypeDefNames><li>MiliraXenotype</li></nativeXenotypeDefNames>
+    <sameRaceOnlySourceCustomGenes>true</sameRaceOnlySourceCustomGenes>
+    <sameRaceOnlySourceStructuralGenes>true</sameRaceOnlySourceStructuralGenes>
+  </GeneticDiversity.GD_RaceGeneCompatibilityDef>
+
+  <GeneticDiversity.GD_RaceGeneCompatibilityDef MayRequire="Ancot.WolfeinRaceGenePatch">
+    <defName>GD_Compat_Wolfein</defName>
+    <label>Wolfein precise gene compatibility</label>
+    <description>Uses only the inheritable Wolfein xenotype as fallback and keeps custom Wolfein gene classes inside Wolfein.</description>
+    <sourcePackageIds><li>Ancot.WolfeinRaceGenePatch</li></sourcePackageIds>
+    <raceDefName>Wolfein_Race</raceDefName>
+    <nativeXenotypeDefNames><li>Wolfein_Xenotype</li></nativeXenotypeDefNames>
+    <excludedGeneDefNames><li>Wolfein_PureBlood</li></excludedGeneDefNames>
+    <sameRaceOnlyGeneDefNames>
+      <li>Wolfein_MeatLover</li>
+      <li>Wolfein_MoonPhase</li>
+      <li>Wolfein_NightAdaptation</li>
+      <li>Wolfein_Instinct</li>
+    </sameRaceOnlyGeneDefNames>
+    <sameRaceOnlySourceCustomGenes>true</sameRaceOnlySourceCustomGenes>
+    <sameRaceOnlySourceStructuralGenes>true</sameRaceOnlySourceStructuralGenes>
+  </GeneticDiversity.GD_RaceGeneCompatibilityDef>
+
+  <GeneticDiversity.GD_RaceGeneCompatibilityDef MayRequire="EoralMilk.RatkinGeneExpanded">
+    <defName>GD_Compat_RatkinGeneExpanded</defName>
+    <label>Ratkin Gene Expanded precise compatibility</label>
+    <description>Uses only the active RimWorld 1.6 Ratkin xenotypes and keeps Ratkin body and appearance genes inside Ratkin.</description>
+    <sourcePackageIds><li>EoralMilk.RatkinGeneExpanded</li></sourcePackageIds>
+    <raceDefName>Ratkin</raceDefName>
+    <nativeXenotypeDefNames>
+      <li>Ratkin_Waster</li>
+      <li>Ratkin_HouseMouse</li>
+      <li>Ratkin_Mole</li>
+      <li>Ratkin_LabRat</li>
+      <li>Ratkin_Hamster</li>
+      <li>Ratkin_Squirrel</li>
+      <li>Ratkin_Vole</li>
+      <li>Ratkin_VolePrototype</li>
+    </nativeXenotypeDefNames>
+    <sameRaceOnlySourceCustomGenes>true</sameRaceOnlySourceCustomGenes>
+    <sameRaceOnlySourceStructuralGenes>true</sameRaceOnlySourceStructuralGenes>
+  </GeneticDiversity.GD_RaceGeneCompatibilityDef>
+
+  <GeneticDiversity.GD_RaceGeneCompatibilityDef MayRequire="OARK.RatkinFaction.GeneExpand">
+    <defName>GD_Compat_OARatkinGeneExpand</defName>
+    <label>OA Ratkin Gene Expand precise compatibility</label>
+    <description>Keeps OA custom and body-dependent Ratkin genes inside Ratkin and uses the inheritable OA Ratkin xenotypes as fallback sources while excluding biochemical non-inheritable lines.</description>
+    <sourcePackageIds><li>OARK.RatkinFaction.GeneExpand</li></sourcePackageIds>
+    <raceDefName>Ratkin</raceDefName>
+    <nativeXenotypeDefNames>
+      <li>OAGene_RatkinBase</li>
+      <li>OAGene_PrimordialRatkin</li>
+      <li>OAGene_WhiteRatkin</li>
+      <li>OAGene_TravelRatkin</li>
+      <li>OAGene_RockRatkin</li>
+      <li>OAGene_SnowRatkin</li>
+      <li>OAGene_LowlandRatkin</li>
+    </nativeXenotypeDefNames>
+    <sameRaceOnlyGeneDefNames>
+      <li>OAGene_RockRatkinEar</li>
+      <li>OAGene_SnowRatkinEar</li>
+      <li>OAGene_LowlandRatkinEar</li>
+    </sameRaceOnlyGeneDefNames>
+    <sameRaceOnlySourceCustomGenes>true</sameRaceOnlySourceCustomGenes>
+    <sameRaceOnlySourceStructuralGenes>true</sameRaceOnlySourceStructuralGenes>
+  </GeneticDiversity.GD_RaceGeneCompatibilityDef>
+</Defs>
+

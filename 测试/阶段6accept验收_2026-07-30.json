@@ -1,0 +1,263 @@
+{
+  "schema": 1,
+  "scope": "project",
+  "captured_utc": "2026-07-30T09:23:48.248865+00:00",
+  "same_session": true,
+  "session": {
+    "boundary": {
+      "start_line": 1,
+      "end_line": 388,
+      "start_marker": null,
+      "end_marker": null
+    },
+    "accepted_package_ids": [
+      "yyyyy.geneticdiversity"
+    ],
+    "missing_package_ids": [],
+    "package_hits": {
+      "yyyyy.geneticdiversity": [
+        62
+      ]
+    },
+    "errors": [
+      {
+        "line": 31,
+        "text": "Fallback handler could not load library D:/steam/steamapps/common/RimWorld/RimWorldWin64_Data/MonoBleedingEdge/data-0000023856E80960.dll",
+        "related_package_ids": []
+      },
+      {
+        "line": 32,
+        "text": "Fallback handler could not load library D:/steam/steamapps/common/RimWorld/RimWorldWin64_Data/MonoBleedingEdge/data-00000238579AF6B0.dll",
+        "related_package_ids": []
+      }
+    ],
+    "related_errors": [],
+    "passed": true,
+    "log_path": "C:\\Users\\123456\\AppData\\LocalLow\\Ludeon Studios\\RimWorld by Ludeon Studios\\Player.log",
+    "log_sha256": "E714CDB503427B5EE25FDB258C0A96B8086AE8CA6CCBC8DEB24A18A0289CAE1F",
+    "log_size": 18311,
+    "log_created_utc": "2025-05-17T04:46:21.532165+00:00",
+    "log_modified_utc": "2026-07-30T09:21:55.983150+00:00",
+    "session_identity": "93568361BA6DF94E348B1DD8301F5DE0AD456B8898262582EB3E7478EC6E2160",
+    "freshness": {
+      "requested": true,
+      "passed": true,
+      "not_before_utc": "2026-07-30T09:17:36+00:00",
+      "log_modified_utc": "2026-07-30T09:21:55.983150+00:00"
+    },
+    "same_session_proof": {
+      "passed": true,
+      "method": "all required packageIds parsed once from one Player.log SHA and one shared line boundary",
+      "log_sha256": "E714CDB503427B5EE25FDB258C0A96B8086AE8CA6CCBC8DEB24A18A0289CAE1F",
+      "boundary": {
+        "start_line": 1,
+        "end_line": 388,
+        "start_marker": null,
+        "end_marker": null
+      }
+    }
+  },
+  "rimworld": {
+    "path": "C:\\Users\\123456\\AppData\\LocalLow\\Ludeon Studios\\RimWorld by Ludeon Studios\\Config\\ModsConfig.xml",
+    "sha256": "A77A26DB1468CF454C4C30B7532E4DE6CBC3701D23F73F02C46AB59B6BCA8BBA",
+    "size": 2464,
+    "modified_utc": "2026-07-27T17:22:19.331702+00:00",
+    "rimworld_version": "1.6.4871 rev591",
+    "active_mods": [
+      "brrainz.harmony",
+      "ludeon.rimworld",
+      "ludeon.rimworld.royalty",
+      "ludeon.rimworld.ideology",
+      "ludeon.rimworld.biotech",
+      "ludeon.rimworld.anomaly",
+      "ludeon.rimworld.odyssey",
+      "oskarpotocki.vanillafactionsexpanded.core",
+      "ancot.ancotlibrary",
+      "void.charactereditor",
+      "ray1203.simplecamerasetting",
+      "nals.facialanimation",
+      "nals.facialanimationexperimentals",
+      "erdelf.humanoidalienraces",
+      "oark.oberoniaaurea.framework",
+      "dtrndg.haranimate",
+      "epona.eponadynasticrise",
+      "ancot.kiirorace",
+      "keeptpa.nivarianrace",
+      "ancot.milirarace",
+      "miho.fortifiedoutremer",
+      "hentailoliteam.axolotl",
+      "solaris.ratkinracemod",
+      "melondove.wolfeinrace",
+      "ancot.kiiroracegenepatch",
+      "ancot.wolfeinracegenepatch",
+      "oark.ratkinfaction.geneexpand",
+      "ancot.miliraracegenepatch",
+      "zuoyao.kiiroorangecat",
+      "zuoyao.kiiromainecoon",
+      "zuoyao.kiirosiamese",
+      "zuoyao.kiiroragdoll",
+      "aota.ratkin.ear.tail.animation",
+      "dtrndg.milirabodypartanimate",
+      "aota.wolfein.ear.tail.animation",
+      "aota.kiiro.ear.tail.animation.plus",
+      "aota.moelotl.gills.tail.animation",
+      "melondove.wolfeinrace.fa",
+      "hentailoliteam.axolotl.fa",
+      "talos.miho.face.fa",
+      "fxz.ratkin.facialanimation",
+      "epona.eponadynasticrisefacial",
+      "ancot.kiirofacialanimation",
+      "ancot.miliraracefacialanimation",
+      "ancot.kiirostoryeventsexpanded",
+      "src.core.markeazzyh",
+      "oark.ratkinfaction.oberoniaaurea",
+      "yyyyy.mixedpeoplesfactions",
+      "rwzh.chinesepack.humanoidalienraces",
+      "zh.new.solaris.ratkinracemod",
+      "zh.miho.fortifiedoutremer",
+      "rpowder.ratkinhairplus",
+      "momanacha.rkhairexpanded",
+      "rwzh.chinesepack.vanillafactionsexpandedcore"
+    ],
+    "dlc": [
+      "ludeon.rimworld.royalty",
+      "ludeon.rimworld.ideology",
+      "ludeon.rimworld.biotech",
+      "ludeon.rimworld.anomaly",
+      "ludeon.rimworld.odyssey"
+    ]
+  },
+  "required_package_ids": [
+    "yyyyy.geneticdiversity"
+  ],
+  "inactive_required_package_ids": [
+    "yyyyy.geneticdiversity"
+  ],
+  "game_checks": [],
+  "evidence_files": [],
+  "missing_evidence_files": [],
+  "projects": [
+    {
+      "config": "D:\\RimWorldModding\\projects\\yyyyy_GeneticDiversity\\project.yaml",
+      "project": "yyyyy_GeneticDiversity",
+      "package_id": "yyyyy.geneticdiversity",
+      "required_package_ids": [
+        "yyyyy.geneticdiversity"
+      ],
+      "validate_strict": {
+        "passed": true,
+        "issues": [],
+        "summary": {
+          "project": "yyyyy_GeneticDiversity",
+          "dev_root": "D:\\RimWorldModding\\projects\\yyyyy_GeneticDiversity",
+          "runtime_root": "D:\\steam\\steamapps\\common\\RimWorld\\Mods\\yyyyy_GeneticDiversity",
+          "project_kind": "mixed",
+          "inferred_kind": "mixed",
+          "build_type": "dotnet",
+          "build_outputs": [
+            "D:\\RimWorldModding\\projects\\yyyyy_GeneticDiversity\\1.6\\Assemblies\\GeneticDiversity.dll"
+          ],
+          "about": {
+            "name": "????? (Genetic Diversity)",
+            "package_id": "yyyyy.geneticdiversity",
+            "supported_versions": [
+              "1.6"
+            ],
+            "mod_dependencies": [
+              "ludeon.rimworld.biotech",
+              "brrainz.harmony"
+            ],
+            "load_after": [
+              "brrainz.harmony",
+              "erdelf.HumanoidAlienRaces",
+              "Ancot.KiiroRaceGenePatch",
+              "Ancot.MiliraRaceGenePatch",
+              "Ancot.WolfeinRaceGenePatch",
+              "EoralMilk.RatkinGeneExpanded",
+              "OARK.RatkinFaction.GeneExpand",
+              "Epona.EponaDynasticRise",
+              "keeptpa.NivarianRace",
+              "Solaris.RatkinRaceMod",
+              "OARK.RatkinFaction.OberoniaAurea",
+              "ZuoYao.KiiroOrangeCat",
+              "ZuoYao.KiiroMaineCoon",
+              "ZuoYao.KiiroSiamese",
+              "ZuoYao.KiiroRagdoll",
+              "RooAndGloomy.DragonianRaceMod",
+              "HenTaiLoliTeam.Axolotl",
+              "RooAndGloomy.YuranRaceMod",
+              "miho.fortifiedoutremer",
+              "src.Core.markeazzyh",
+              "yyyyy.mixedpeoplesfactions",
+              "yyyyy.factionculturaldiversity"
+            ],
+            "load_before": []
+          }
+        }
+      },
+      "build_outputs": {
+        "passed": true,
+        "build_type": "dotnet",
+        "outputs": [
+          {
+            "path": "D:\\RimWorldModding\\projects\\yyyyy_GeneticDiversity\\1.6\\Assemblies\\GeneticDiversity.dll",
+            "exists": true,
+            "sha256": "B2E7D8B2180BE4F52157646D29EC36FA7BBB70225EF6F316143D807A4F864233"
+          }
+        ]
+      },
+      "wiki": {
+        "passed": true,
+        "mode": "mixed",
+        "status": "ok",
+        "validation_path": "D:\\RimWorldModding\\projects\\yyyyy_GeneticDiversity\\Wiki\\_工作台Wiki校验.json",
+        "validation_sha256": "98235ADAB4DAF7E28FAD7CDFC2CACBFEF381BB03634F50E217DD18200CB098F1",
+        "errors": [],
+        "warnings": [],
+        "counts": {
+          "def_files": 3,
+          "def_entries": 22,
+          "translation_entries": 44,
+          "definjected_entries": 44,
+          "keyed_entries": 0,
+          "duplicate_records": 0,
+          "empty_records": 0,
+          "conflict_records": 0,
+          "matched_targets": 44,
+          "unmatched_targets": 0,
+          "preserved_manual_markdown": 2
+        }
+      },
+      "sync_manifest": {
+        "passed": true,
+        "required_missing": [],
+        "optional_missing": [],
+        "outdated": [],
+        "runtime_pollution": [],
+        "checked_files": 7
+      },
+      "runtime_about": {
+        "passed": true,
+        "path": "D:\\steam\\steamapps\\common\\RimWorld\\Mods\\yyyyy_GeneticDiversity\\About\\About.xml",
+        "package_id": "yyyyy.geneticdiversity",
+        "errors": []
+      },
+      "static_passed": true,
+      "game": {
+        "passed": true,
+        "loaded_package_ids": [
+          "yyyyy.geneticdiversity"
+        ],
+        "missing_package_ids": [],
+        "mods_config_missing_package_ids": [
+          "yyyyy.geneticdiversity"
+        ],
+        "mods_config_consistent": false,
+        "mods_config_note": "advisory only; the bounded current-session Player.log is authoritative for actual loading",
+        "related_errors": []
+      },
+      "passed": true
+    }
+  ],
+  "passed": true
+}

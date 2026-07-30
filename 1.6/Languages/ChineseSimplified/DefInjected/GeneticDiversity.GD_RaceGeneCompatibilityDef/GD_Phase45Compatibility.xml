@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <GD_Compat_Nivarian.label>Nivarian 精确基因兼容</GD_Compat_Nivarian.label>
+  <GD_Compat_Nivarian.description>登记 Nivarian 的原生异种类型，并把 Nivarian 专属基因限制在 Nivarian 种族内传播。</GD_Compat_Nivarian.description>
+  <GD_Compat_NewRatkinPlus.label>NewRatkinPlus 精确基因兼容</GD_Compat_NewRatkinPlus.label>
+  <GD_Compat_NewRatkinPlus.description>登记鼠族的原生异种类型，并把鼠族身体与外观基因限制在鼠族内传播。</GD_Compat_NewRatkinPlus.description>
+  <GD_Compat_OberoniaAurea.label>Oberonia Aurea 精确基因兼容</GD_Compat_OberoniaAurea.label>
+  <GD_Compat_OberoniaAurea.description>登记 Oberonia Aurea 鼠族异种类型，并把其适应性基因限制在鼠族内传播。</GD_Compat_OberoniaAurea.description>
+  <GD_Compat_KiiroOrangeCat.label>Kiiro Orange Cat 精确基因兼容</GD_Compat_KiiroOrangeCat.label>
+  <GD_Compat_KiiroOrangeCat.description>登记 Orange Cat 异种类型，并把该来源的全部自定义与结构基因限制在 Kiiro 种族内传播。</GD_Compat_KiiroOrangeCat.description>
+  <GD_Compat_KiiroMaineCoon.label>Kiiro Maine Coon 精确基因兼容</GD_Compat_KiiroMaineCoon.label>
+  <GD_Compat_KiiroMaineCoon.description>登记 Maine Coon 异种类型，并把该来源的全部自定义与结构基因限制在 Kiiro 种族内传播。</GD_Compat_KiiroMaineCoon.description>
+  <GD_Compat_KiiroSiamese.label>Kiiro Siamese 精确基因兼容</GD_Compat_KiiroSiamese.label>
+  <GD_Compat_KiiroSiamese.description>登记 Siamese 异种类型，并把该来源的全部自定义与结构基因限制在 Kiiro 种族内传播。</GD_Compat_KiiroSiamese.description>
+  <GD_Compat_KiiroRagdoll.label>Kiiro Ragdoll 精确基因兼容</GD_Compat_KiiroRagdoll.label>
+  <GD_Compat_KiiroRagdoll.description>登记 Ragdoll 异种类型，并把该来源的全部自定义与结构基因限制在 Kiiro 种族内传播。</GD_Compat_KiiroRagdoll.description>
+  <GD_Compat_Dragonian.label>Dragonian 精确基因兼容</GD_Compat_Dragonian.label>
+  <GD_Compat_Dragonian.description>登记 Dragonian 的原生异种类型，并把 Dragonborn 基因限制在 Dragonian 种族内传播。</GD_Compat_Dragonian.description>
+  <GD_Compat_MoeLotl.label>MoeLotl 精确基因兼容</GD_Compat_MoeLotl.label>
+  <GD_Compat_MoeLotl.description>登记 MoeLotl 基础异种类型及 Axolotl 的普通研究基因。</GD_Compat_MoeLotl.description>
+  <GD_Compat_Yuran.label>Yuran 精确基因兼容</GD_Compat_Yuran.label>
+  <GD_Compat_Yuran.description>把基础 Yuran 种族限定到其原生异种类型。</GD_Compat_Yuran.description>
+  <GD_Compat_YuranBlackSnake.label>Yuran Black Snake Miko 精确基因兼容</GD_Compat_YuranBlackSnake.label>
+  <GD_Compat_YuranBlackSnake.description>把 Black Snake Miko Yuran 种族限定到其原生异种类型。</GD_Compat_YuranBlackSnake.description>
+  <GD_Compat_Miho.label>Miho 精确基因兼容</GD_Compat_Miho.label>
+  <GD_Compat_Miho.description>登记天狐 Miho 的六个可遗传异种类型与全部来源基因，并把耳型、天狐身份等种族专属基因限制在 Miho 内传播。</GD_Compat_Miho.description>
+</LanguageData>

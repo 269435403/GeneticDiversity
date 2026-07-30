@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <GD_Compat_Kiiro.label>绮罗族精确基因兼容</GD_Compat_Kiiro.label>
+  <GD_Compat_Kiiro.description>把 KiiroXenotype 作为绮罗族的精确原生来源，并限制自定义或结构基因的跨种族传播。</GD_Compat_Kiiro.description>
+  <GD_Compat_Milira.label>米莉拉精确基因兼容</GD_Compat_Milira.label>
+  <GD_Compat_Milira.description>把 MiliraXenotype 作为米莉拉种族的精确原生来源，并保持与混血种族的基因池分离。</GD_Compat_Milira.description>
+  <GD_Compat_Wolfein.label>沃芬精确基因兼容</GD_Compat_Wolfein.label>
+  <GD_Compat_Wolfein.description>只使用可遗传的沃芬异种类型作为回退，并把沃芬自定义基因类限制在沃芬种族内。</GD_Compat_Wolfein.description>
+  <GD_Compat_RatkinGeneExpanded.label>鼠族基因扩展精确兼容</GD_Compat_RatkinGeneExpanded.label>
+  <GD_Compat_RatkinGeneExpanded.description>只读取当前加载的 1.6 鼠族异种类型，并把鼠耳、鼠尾和身体外观基因限制在鼠族内。</GD_Compat_RatkinGeneExpanded.description>
+  <GD_Compat_OARatkinGeneExpand.label>OA 鼠族基因扩展精确兼容</GD_Compat_OARatkinGeneExpand.label>
+  <GD_Compat_OARatkinGeneExpand.description>把 OA 自定义和身体依赖基因限制在鼠族内；继承自可遗传基类的七个普通鼠族异种类型可作回退，四个生化实验体保持不可遗传。</GD_Compat_OARatkinGeneExpand.description>
+  <GD_Compat_Epona.label>埃波娜精确基因兼容</GD_Compat_Epona.label>
+  <GD_Compat_Epona.description>基础埃波娜只使用 Xeno_Epona，不借用独角兽、重战马、米莉拉或混血回退池。</GD_Compat_Epona.description>
+  <GD_Compat_EponaUnicorn.label>埃波娜独角兽精确基因兼容</GD_Compat_EponaUnicorn.label>
+  <GD_Compat_EponaUnicorn.description>独角兽只使用 Xeno_Unicorn，不借用其他埃波娜或混血回退池。</GD_Compat_EponaUnicorn.description>
+  <GD_Compat_EponaDestrier.label>埃波娜重战马精确基因兼容</GD_Compat_EponaDestrier.label>
+  <GD_Compat_EponaDestrier.description>重战马只使用 Xeno_Destrier，不借用其他埃波娜或混血回退池。</GD_Compat_EponaDestrier.description>
+  <GD_Compat_EponaMilira.label>埃波娜—米莉拉混血精确兼容</GD_Compat_EponaMilira.label>
+  <GD_Compat_EponaMilira.description>埃波娜—米莉拉混血只使用 Xeno_EponaMilira，并继续由埃波娜模组负责出生后的异种类型身份修正。</GD_Compat_EponaMilira.description>
+  <GD_Compat_UnicornMilira.label>独角兽—米莉拉混血精确兼容</GD_Compat_UnicornMilira.label>
+  <GD_Compat_UnicornMilira.description>独角兽—米莉拉混血只使用 Xeno_UnicornMilira，并继续由埃波娜模组负责出生后的异种类型身份修正。</GD_Compat_UnicornMilira.description>
+</LanguageData>
+

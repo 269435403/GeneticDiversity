@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <GeneticDiversity.GD_RaceGeneCompatibilityDef MayRequire="Epona.EponaDynasticRise">
+    <defName>GD_Compat_Epona</defName>
+    <label>Epona precise gene compatibility</label>
+    <description>Keeps the base Epona race tied to Xeno_Epona without borrowing Unicorn, Destrier, Milira, or hybrid fallback pools.</description>
+    <sourcePackageIds><li>Epona.EponaDynasticRise</li></sourcePackageIds>
+    <raceDefName>Alien_Epona</raceDefName>
+    <nativeXenotypeDefNames><li>Xeno_Epona</li></nativeXenotypeDefNames>
+  </GeneticDiversity.GD_RaceGeneCompatibilityDef>
+
+  <GeneticDiversity.GD_RaceGeneCompatibilityDef MayRequire="Epona.EponaDynasticRise">
+    <defName>GD_Compat_EponaUnicorn</defName>
+    <label>Epona Unicorn precise gene compatibility</label>
+    <description>Keeps the Unicorn race tied to Xeno_Unicorn without borrowing the base Epona, Destrier, Milira, or hybrid fallback pools.</description>
+    <sourcePackageIds><li>Epona.EponaDynasticRise</li></sourcePackageIds>
+    <raceDefName>Alien_Unicorn</raceDefName>
+    <nativeXenotypeDefNames><li>Xeno_Unicorn</li></nativeXenotypeDefNames>
+  </GeneticDiversity.GD_RaceGeneCompatibilityDef>
+
+  <GeneticDiversity.GD_RaceGeneCompatibilityDef MayRequire="Epona.EponaDynasticRise">
+    <defName>GD_Compat_EponaDestrier</defName>
+    <label>Epona Destrier precise gene compatibility</label>
+    <description>Keeps the Destrier race tied to Xeno_Destrier without borrowing the base Epona, Unicorn, Milira, or hybrid fallback pools.</description>
+    <sourcePackageIds><li>Epona.EponaDynasticRise</li></sourcePackageIds>
+    <raceDefName>Alien_Destrier</raceDefName>
+    <nativeXenotypeDefNames><li>Xeno_Destrier</li></nativeXenotypeDefNames>
+  </GeneticDiversity.GD_RaceGeneCompatibilityDef>
+
+  <GeneticDiversity.GD_RaceGeneCompatibilityDef MayRequire="Epona.EponaDynasticRise">
+    <defName>GD_Compat_EponaMilira</defName>
+    <label>Epona-Milira precise gene compatibility</label>
+    <description>Keeps the Epona-Milira hybrid race tied only to Xeno_EponaMilira and preserves Epona's newborn xenotype override responsibility.</description>
+    <sourcePackageIds>
+      <li>Epona.EponaDynasticRise</li>
+      <li>Ancot.MiliraRaceGenePatch</li>
+    </sourcePackageIds>
+    <raceDefName>Alien_Epona_Milira</raceDefName>
+    <nativeXenotypeDefNames><li>Xeno_EponaMilira</li></nativeXenotypeDefNames>
+  </GeneticDiversity.GD_RaceGeneCompatibilityDef>
+
+  <GeneticDiversity.GD_RaceGeneCompatibilityDef MayRequire="Epona.EponaDynasticRise">
+    <defName>GD_Compat_UnicornMilira</defName>
+    <label>Unicorn-Milira precise gene compatibility</label>
+    <description>Keeps the Unicorn-Milira hybrid race tied only to Xeno_UnicornMilira and preserves Epona's newborn xenotype override responsibility.</description>
+    <sourcePackageIds>
+      <li>Epona.EponaDynasticRise</li>
+      <li>Ancot.MiliraRaceGenePatch</li>
+    </sourcePackageIds>
+    <raceDefName>Alien_Unicorn_Milira</raceDefName>
+    <nativeXenotypeDefNames><li>Xeno_UnicornMilira</li></nativeXenotypeDefNames>
+  </GeneticDiversity.GD_RaceGeneCompatibilityDef>
+</Defs>

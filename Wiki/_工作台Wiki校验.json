@@ -1,0 +1,45 @@
+{
+  "owner": "rimworld-mod-workbench/project_wiki.py",
+  "schema": 1,
+  "checked_date": "2026-07-30",
+  "mode": "mixed",
+  "project": {
+    "name": "????? (Genetic Diversity)",
+    "package_id": "yyyyy.geneticdiversity",
+    "dependencies": [
+      {
+        "package_id": "ludeon.rimworld.biotech",
+        "display_name": "Biotech"
+      },
+      {
+        "package_id": "brrainz.harmony",
+        "display_name": "Harmony"
+      }
+    ]
+  },
+  "sources": {
+    "defs_roots": [
+      "D:\\RimWorldModding\\projects\\yyyyy_GeneticDiversity\\1.6\\Defs"
+    ],
+    "patch_dirs": [],
+    "language_dirs": [
+      "D:\\RimWorldModding\\projects\\yyyyy_GeneticDiversity\\1.6\\Languages\\ChineseSimplified"
+    ]
+  },
+  "errors": [],
+  "warnings": [],
+  "counts": {
+    "def_files": 3,
+    "def_entries": 22,
+    "translation_entries": 44,
+    "definjected_entries": 44,
+    "keyed_entries": 0,
+    "duplicate_records": 0,
+    "empty_records": 0,
+    "conflict_records": 0,
+    "matched_targets": 44,
+    "unmatched_targets": 0,
+    "preserved_manual_markdown": 2
+  },
+  "status": "ok"
+}
