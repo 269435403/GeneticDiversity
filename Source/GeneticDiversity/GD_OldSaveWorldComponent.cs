@@ -15,17 +15,28 @@ namespace GeneticDiversity
 
         internal bool HasProcessed(Pawn pawn)
         {
-            return pawn != null && processedPawnIds.Contains(pawn.thingIDNumber);
+            return pawn != null && processedPawnIds != null && processedPawnIds.Contains(pawn.thingIDNumber);
         }
 
         internal bool MarkProcessed(Pawn pawn)
         {
+            if (processedPawnIds == null)
+            {
+                processedPawnIds = new HashSet<int>();
+            }
             return pawn != null && processedPawnIds.Add(pawn.thingIDNumber);
         }
 
         internal void ClearProcessed()
         {
-            processedPawnIds.Clear();
+            if (processedPawnIds != null)
+            {
+                processedPawnIds.Clear();
+            }
+            else
+            {
+                processedPawnIds = new HashSet<int>();
+            }
         }
 
         internal static GD_OldSaveWorldComponent Current
@@ -45,7 +56,7 @@ namespace GeneticDiversity
         {
             base.ExposeData();
             Scribe_Collections.Look(ref processedPawnIds, "processedPawnIds", LookMode.Value);
-            if (Scribe.mode == LoadSaveMode.PostLoadInit && processedPawnIds == null)
+            if (processedPawnIds == null)
             {
                 processedPawnIds = new HashSet<int>();
             }
