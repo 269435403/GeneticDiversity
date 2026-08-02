@@ -13,7 +13,7 @@ namespace GeneticDiversity
             Instance = this;
             Settings = GetSettings<GD_Settings>();
             Settings.Normalize();
-            GD_SettingsAccess.ApplyChanged(force: true);
+            GD_SettingsAccess.ApplyChanged(force: true, logChange: false);
         }
 
         public override string SettingsCategory()

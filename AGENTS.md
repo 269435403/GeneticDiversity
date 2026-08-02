@@ -1,6 +1,6 @@
 # Mutation and Hererity 开发约束（所有后续 Agent 必读）
 
-> 最后更新：2026-07-30｜阶段 1～6 已完整验收并收口；阶段 6 收口后修复了主菜单 ModSettings 访问 `Find.Selector` 的生命周期异常，修复 DLL 已同步，等待用户手动复测。
+> 最后更新：2026-07-31｜阶段 1～6 已完整验收并收口；阶段 6 收口后修复了主菜单 ModSettings 访问 `Find.Selector` 的生命周期异常，修复 DLL 已同步，等待用户手动复测。
 
 
 ## 正式名称
@@ -8,6 +8,14 @@
 - 本模组对外正式名称固定为 `Mutation and Hererity`，必须保留用户指定的 `Hererity` 拼写，不得自动“纠正”为 `Heredity`。
 - 玩家可见的 About 名称、设置菜单、日志前缀、当前文档和宣传素材统一使用 `Mutation and Hererity`。
 - 为保持存档、代码和发布兼容，`yyyyy.geneticdiversity`、`yyyyy_GeneticDiversity`、`GeneticDiversity` 命名空间与 DLL 名均作为内部技术标识保留，不随展示名改名。
+
+## 玩家可见语言与 ModSettings
+
+- `ModSettings` 正文及其打开的统计界面必须跟随 RimWorld 当前语言：英文使用 `English/Keyed`，简体中文使用 `ChineseSimplified/Keyed`，两套词条必须同键且完整覆盖。
+- 设置标题、选项、说明、工具提示、按钮、浮动菜单、强度文本、统计摘要及其中展示的兼容状态必须使用稳定 Keyed key 与 `.Translate(...)`；不得把当前硬编码中文或英文误当作语言契约。
+- `SettingsCategory()` 是唯一固定展示名例外，始终显示正式英文名 `Mutation and Hererity`，不得翻译或纠正 `Hererity` 拼写。
+- `Mod` 构造函数、静态初始化和 `CreateModClasses` 阶段不得执行 `.Translate()`；此时 `LanguageDatabase.activeLanguage` 可能仍为空。早期缓存初始化必须静默，或在翻译前显式确认活动语言已存在。
+- 修改上述界面时必须同时检查两种语言的缺键、重复键、占位符一致性、C# 调用覆盖，并在构建后把 DLL 与两套 Languages 一并同步到运行副本。
 
 ## 不可变核心理念
 

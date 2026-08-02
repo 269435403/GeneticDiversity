@@ -39,8 +39,8 @@ namespace GeneticDiversity
             get
             {
                 EnsureResolved();
-                if (!IsModLoaded) return "FRD未加载，使用阶段3逻辑";
-                return adapterFailed ? "FRD已加载但反射适配失败，已安全降级" : "FRD可选反射适配可用";
+                if (!IsModLoaded) return "GD.Frd.Status.NotLoaded".Translate().ToString();
+                return (adapterFailed ? "GD.Frd.Status.Failed" : "GD.Frd.Status.Available").Translate().ToString();
             }
         }
 
@@ -64,10 +64,13 @@ namespace GeneticDiversity
                 }
             }
 
-            return StatusLabel
-                + "；FRD种族登记=" + raceCount
-                + "；FCD=" + (IsCulturalDiversityLoaded ? "已加载（保持独立）" : "未加载（不影响基因逻辑）")
-                + "；程序集硬引用=" + (HasForbiddenAssemblyReference() ? "异常" : "无") + "。";
+            string culturalDiversityStatus = (IsCulturalDiversityLoaded
+                ? "GD.Frd.Fcd.Loaded"
+                : "GD.Frd.Fcd.NotLoaded").Translate().ToString();
+            string assemblyReferenceStatus = (HasForbiddenAssemblyReference()
+                ? "GD.Frd.AssemblyReference.Abnormal"
+                : "GD.Frd.AssemblyReference.None").Translate().ToString();
+            return "GD.Frd.Status.Report".Translate(StatusLabel, raceCount, culturalDiversityStatus, assemblyReferenceStatus).ToString();
         }
 
         internal static List<GD_WeightedGene> GetConfiguredGenePrior(FactionDef faction, ThingDef race, float totalWeight)

@@ -235,14 +235,17 @@ namespace GeneticDiversity
             }
         }
 
-        internal static void ClearCache()
+        internal static void ClearCache(bool logMessage = true)
         {
             cachedSnapshot = null;
             cachedWorld = null;
             GD_HarAdapter.ClearCaches();
             GD_CompatibilityRegistry.ClearCaches();
             GD_FrdAdapter.ClearCaches();
-            GD_Log.Message("Gene pool, HAR, precise compatibility, and FRD integration caches cleared. The next eligible pawn generation will rebuild them.");
+            if (logMessage)
+            {
+                GD_Log.Message("Gene pool, HAR, precise compatibility, and FRD integration caches cleared. The next eligible pawn generation will rebuild them.");
+            }
         }
 
         internal static GD_GenePoolSnapshot RefreshNow()

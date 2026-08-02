@@ -85,10 +85,10 @@ namespace GeneticDiversity
         {
             switch (value)
             {
-                case 0: return "\u4fdd\u5b88";
-                case 1: return "\u6807\u51c6";
-                case 2: return "\u9ad8";
-                default: return "\u4f7f\u7528\u5168\u5c40";
+                case 0: return "GD.Settings.Intensity.Conservative".Translate().ToString();
+                case 1: return "GD.Settings.Intensity.Standard".Translate().ToString();
+                case 2: return "GD.Settings.Intensity.High".Translate().ToString();
+                default: return "GD.Settings.Intensity.UseGlobal".Translate().ToString();
             }
         }
 
@@ -102,11 +102,11 @@ namespace GeneticDiversity
             switch (value)
             {
                 case GD_DiversityIntensity.Conservative:
-                    return "0\u4e2a45%\u30011\u4e2a45%\u30012\u4e2a14%\u30013\u4e2a1%";
+                    return "GD.Settings.IntensityDistribution.Conservative".Translate().ToString();
                 case GD_DiversityIntensity.High:
-                    return "0\u4e2a5%\u30011\u4e2a35%\u30012\u4e2a40%\u30013\u4e2a20%";
+                    return "GD.Settings.IntensityDistribution.High".Translate().ToString();
                 default: // Standard
-                    return "0\u4e2a20%\u30011\u4e2a55%\u30012\u4e2a20%\u30013\u4e2a5%";
+                    return "GD.Settings.IntensityDistribution.Standard".Translate().ToString();
             }
         }
 
@@ -239,7 +239,7 @@ namespace GeneticDiversity
             }
         }
 
-        internal static void ApplyChanged(bool force = false)
+        internal static void ApplyChanged(bool force = false, bool logChange = true)
         {
             GD_Settings settings = Current;
             settings.Normalize();
@@ -247,8 +247,11 @@ namespace GeneticDiversity
             if (force || fingerprint != lastFingerprint)
             {
                 lastFingerprint = fingerprint;
-                GD_WorldGenePool.ClearCache();
-                GD_Log.Message("\u8bbe\u7f6e\u5df2\u66f4\u6539\uff0c\u4e16\u754c\u7cfb\u8c31\u6c60\u3001\u76ee\u6807\u6c60\u548c\u517c\u5bb9\u7f13\u5b58\u5df2\u5931\u6548\u3002");
+                GD_WorldGenePool.ClearCache(logMessage: logChange);
+                if (logChange && LanguageDatabase.activeLanguage != null)
+                {
+                    GD_Log.Message("GD.Settings.CacheInvalidated".Translate().ToString());
+                }
             }
         }
     }

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <GD.Settings.Section.Basic>Basic settings</GD.Settings.Section.Basic>
+  <GD.Settings.Enabled.Label>Enable genetic diversity</GD.Settings.Enabled.Label>
+  <GD.Settings.Enabled.Tooltip>When disabled, no additional genes are added to newly generated pawns.</GD.Settings.Enabled.Tooltip>
+  <GD.Settings.AffectPlayerFaction>Affect newly generated pawns in the player faction</GD.Settings.AffectPlayerFaction>
+  <GD.Settings.AffectNpcFactions>Affect newly generated pawns in non-player factions</GD.Settings.AffectNpcFactions>
+  <GD.Settings.GlobalIntensity>Global intensity: {0}</GD.Settings.GlobalIntensity>
+  <GD.Settings.IntensityDistribution>Slot distribution: {0}</GD.Settings.IntensityDistribution>
+  <GD.Settings.MutationRatio>Mutation pool ratio: {0} (chance for each slot to draw from the mutation pool)</GD.Settings.MutationRatio>
+  <GD.Settings.BirthMutationChance>Newborn mutation chance: {0} (at most one gene per birth)</GD.Settings.BirthMutationChance>
+  <GD.Settings.AllowStandardCrossRace>Allow standard functional genes to spread across races</GD.Settings.AllowStandardCrossRace>
+  <GD.Settings.AllowSpecialCrossRace>Allow appearance, body, and custom genes to spread across races</GD.Settings.AllowSpecialCrossRace>
+  <GD.Settings.SameRaceOnly>Use only the same-race gene pool</GD.Settings.SameRaceOnly>
+  <GD.Settings.AllowNonInheritableXenotypeMutation>Allow genes from non-inheritable xenotypes in natural mutations</GD.Settings.AllowNonInheritableXenotypeMutation>
+  <GD.Settings.AllowArchiteMutation>Allow Archite genes in natural mutations</GD.Settings.AllowArchiteMutation>
+  <GD.Settings.VerboseLogging>Verbose logging</GD.Settings.VerboseLogging>
+  <GD.Settings.Blacklist.Summary>Gene blacklist ({0} genes, {1} categories)</GD.Settings.Blacklist.Summary>
+  <GD.Settings.Blacklist.ManageGenes>Manage blacklisted genes</GD.Settings.Blacklist.ManageGenes>
+  <GD.Settings.Blacklist.ManageCategories>Manage blacklisted categories</GD.Settings.Blacklist.ManageCategories>
+  <GD.Settings.Blacklist.DisabledEntry>{0} [disabled]</GD.Settings.Blacklist.DisabledEntry>
+  <GD.Settings.Blacklist.CategoryEntry>{0} ({1} genes)</GD.Settings.Blacklist.CategoryEntry>
+  <GD.Settings.Blacklist.DisabledCategoryEntry>{0} ({1} genes) [disabled]</GD.Settings.Blacklist.DisabledCategoryEntry>
+  <GD.Settings.Blacklist.ClearGenes>Clear all blacklisted genes</GD.Settings.Blacklist.ClearGenes>
+  <GD.Settings.Blacklist.ClearCategories>Clear all blacklisted categories</GD.Settings.Blacklist.ClearCategories>
+  <GD.Settings.Overrides.Summary>Faction overrides: {0}; race overrides: {1}.</GD.Settings.Overrides.Summary>
+  <GD.Settings.Overrides.SetSelectedRace>Set race intensity for the selected pawn</GD.Settings.Overrides.SetSelectedRace>
+  <GD.Settings.Overrides.SetSelectedFaction>Set faction intensity for the selected pawn</GD.Settings.Overrides.SetSelectedFaction>
+  <GD.Settings.Overrides.ClearAll>Clear faction and race intensity overrides</GD.Settings.Overrides.ClearAll>
+  <GD.Settings.Overrides.RemoveRace>Remove this race override</GD.Settings.Overrides.RemoveRace>
+  <GD.Settings.Overrides.RemoveFaction>Remove this faction override</GD.Settings.Overrides.RemoveFaction>
+  <GD.Settings.RefreshCache>Refresh gene pool cache now</GD.Settings.RefreshCache>
+  <GD.Settings.OpenStatistics>Open statistics</GD.Settings.OpenStatistics>
+  <GD.Settings.Intensity.Conservative>Conservative</GD.Settings.Intensity.Conservative>
+  <GD.Settings.Intensity.Standard>Standard</GD.Settings.Intensity.Standard>
+  <GD.Settings.Intensity.High>High</GD.Settings.Intensity.High>
+  <GD.Settings.Intensity.UseGlobal>Use global setting</GD.Settings.Intensity.UseGlobal>
+  <GD.Settings.IntensityDistribution.Conservative>0 slots 45%, 1 slot 45%, 2 slots 9%, 3 slots 1%</GD.Settings.IntensityDistribution.Conservative>
+  <GD.Settings.IntensityDistribution.Standard>0 slots 20%, 1 slot 55%, 2 slots 20%, 3 slots 5%</GD.Settings.IntensityDistribution.Standard>
+  <GD.Settings.IntensityDistribution.High>0 slots 5%, 1 slot 35%, 2 slots 40%, 3 slots 20%</GD.Settings.IntensityDistribution.High>
+  <GD.Settings.CacheInvalidated>Settings changed; the world lineage pool, target pools, and compatibility caches were invalidated.</GD.Settings.CacheInvalidated>
+
+  <GD.Statistics.Title>Mutation and Hererity: Genetic diversity statistics</GD.Statistics.Title>
+  <GD.Statistics.ScannedPawns>Pawns scanned in the world: {0}</GD.Statistics.ScannedPawns>
+  <GD.Statistics.ScannedRaces>Races scanned: {0}</GD.Statistics.ScannedRaces>
+  <GD.Statistics.ObservationRecords>Lineage gene observation records: {0}</GD.Statistics.ObservationRecords>
+  <GD.Statistics.EndogeneEntries>Counted endogene entries: {0}</GD.Statistics.EndogeneEntries>
+  <GD.Statistics.CacheRefreshDuration>Cache refresh duration: {0} ms</GD.Statistics.CacheRefreshDuration>
+  <GD.Statistics.ExactCompatibilityHits>Exact compatibility hits: {0}</GD.Statistics.ExactCompatibilityHits>
+  <GD.Statistics.FrdPriorHits>FRD prior hits: {0}</GD.Statistics.FrdPriorHits>
+  <GD.Statistics.CompatibilityStatus>Fallback and exact compatibility: {0}</GD.Statistics.CompatibilityStatus>
+  <GD.Statistics.FrdPriorStatus>FRD prior: {0}</GD.Statistics.FrdPriorStatus>
+  <GD.Statistics.OldSaveProcessed>Old-save pawns processed: {0}</GD.Statistics.OldSaveProcessed>
+  <GD.Statistics.CommonGenesByRace>Common genes by race:</GD.Statistics.CommonGenesByRace>
+  <GD.Statistics.GeneCountEntry>{0} x{1}</GD.Statistics.GeneCountEntry>
+  <GD.Statistics.IndentedEntry>  {0}: {1}</GD.Statistics.IndentedEntry>
+  <GD.Statistics.GenesBySourceMod>Genes by source mod:</GD.Statistics.GenesBySourceMod>
+  <GD.Statistics.Diagnostics.Header>Generation diagnostics summary:</GD.Statistics.Diagnostics.Header>
+  <GD.Statistics.Diagnostics.EligiblePawns>  Eligible pawns: {0}</GD.Statistics.Diagnostics.EligiblePawns>
+  <GD.Statistics.Diagnostics.RolledSlots>  Rolled slots: {0}</GD.Statistics.Diagnostics.RolledSlots>
+  <GD.Statistics.Diagnostics.CommonAdded>  Common genes added: {0}</GD.Statistics.Diagnostics.CommonAdded>
+  <GD.Statistics.Diagnostics.MutationAdded>  Mutation genes added: {0}</GD.Statistics.Diagnostics.MutationAdded>
+  <GD.Statistics.Diagnostics.SameRaceCommonAdded>  Same-race common genes added: {0}</GD.Statistics.Diagnostics.SameRaceCommonAdded>
+  <GD.Statistics.Diagnostics.CrossRaceCommonAdded>  Cross-race common genes added: {0}</GD.Statistics.Diagnostics.CrossRaceCommonAdded>
+  <GD.Statistics.Diagnostics.DefFallbackCommonAdded>  Def fallback common genes added: {0}</GD.Statistics.Diagnostics.DefFallbackCommonAdded>
+  <GD.Statistics.Diagnostics.HarRejected>  HAR rejections: {0}</GD.Statistics.Diagnostics.HarRejected>
+
+  <GD.Compatibility.Loaded>loaded</GD.Compatibility.Loaded>
+  <GD.Compatibility.NotLoaded>not loaded</GD.Compatibility.NotLoaded>
+  <GD.Compatibility.StatusEntry>{0}={1}/active rules {2}</GD.Compatibility.StatusEntry>
+  <GD.Frd.Status.NotLoaded>FRD is not loaded; base lineage logic is active</GD.Frd.Status.NotLoaded>
+  <GD.Frd.Status.Failed>FRD is loaded, but reflection integration failed; safely degraded</GD.Frd.Status.Failed>
+  <GD.Frd.Status.Available>Optional FRD reflection integration is available</GD.Frd.Status.Available>
+  <GD.Frd.Fcd.Loaded>loaded (kept independent)</GD.Frd.Fcd.Loaded>
+  <GD.Frd.Fcd.NotLoaded>not loaded (does not affect gene logic)</GD.Frd.Fcd.NotLoaded>
+  <GD.Frd.AssemblyReference.Abnormal>abnormal</GD.Frd.AssemblyReference.Abnormal>
+  <GD.Frd.AssemblyReference.None>none</GD.Frd.AssemblyReference.None>
+  <GD.Frd.Status.Report>{0}; registered FRD races={1}; FCD={2}; hard assembly reference={3}.</GD.Frd.Status.Report>
+
+  <GD.Common.ListSeparator>, </GD.Common.ListSeparator>
+  <GD.Common.StatusSeparator>; </GD.Common.StatusSeparator>
+  <GD.Common.None>none</GD.Common.None>
+  <GD.Common.Unknown>unknown</GD.Common.Unknown>
+</LanguageData>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <GD.Settings.Section.Basic>基本设置</GD.Settings.Section.Basic>
+  <GD.Settings.Enabled.Label>启用基因多样性</GD.Settings.Enabled.Label>
+  <GD.Settings.Enabled.Tooltip>关闭后不会在新生成人物上追加基因。</GD.Settings.Enabled.Tooltip>
+  <GD.Settings.AffectPlayerFaction>影响玩家阵营新生成人物</GD.Settings.AffectPlayerFaction>
+  <GD.Settings.AffectNpcFactions>影响非玩家阵营新生成人物</GD.Settings.AffectNpcFactions>
+  <GD.Settings.GlobalIntensity>全局强度：{0}</GD.Settings.GlobalIntensity>
+  <GD.Settings.IntensityDistribution>位点分布：{0}</GD.Settings.IntensityDistribution>
+  <GD.Settings.MutationRatio>突变池比例：{0}（每个位点从突变池抽取的概率）</GD.Settings.MutationRatio>
+  <GD.Settings.BirthMutationChance>新生儿突变概率：{0}（每次出生最多一个基因）</GD.Settings.BirthMutationChance>
+  <GD.Settings.AllowStandardCrossRace>允许普通功能基因跨种族传播</GD.Settings.AllowStandardCrossRace>
+  <GD.Settings.AllowSpecialCrossRace>允许外观、身体和自定义基因跨种族传播</GD.Settings.AllowSpecialCrossRace>
+  <GD.Settings.SameRaceOnly>只使用同种族基因池</GD.Settings.SameRaceOnly>
+  <GD.Settings.AllowNonInheritableXenotypeMutation>允许不可遗传异种类型基因进入自然突变</GD.Settings.AllowNonInheritableXenotypeMutation>
+  <GD.Settings.AllowArchiteMutation>允许超凡基因进入自然突变</GD.Settings.AllowArchiteMutation>
+  <GD.Settings.VerboseLogging>详细日志</GD.Settings.VerboseLogging>
+  <GD.Settings.Blacklist.Summary>基因黑名单（{0} 个基因，{1} 个类别）</GD.Settings.Blacklist.Summary>
+  <GD.Settings.Blacklist.ManageGenes>管理黑名单基因</GD.Settings.Blacklist.ManageGenes>
+  <GD.Settings.Blacklist.ManageCategories>管理黑名单类别</GD.Settings.Blacklist.ManageCategories>
+  <GD.Settings.Blacklist.DisabledEntry>{0} [已禁用]</GD.Settings.Blacklist.DisabledEntry>
+  <GD.Settings.Blacklist.CategoryEntry>{0}（{1} 个基因）</GD.Settings.Blacklist.CategoryEntry>
+  <GD.Settings.Blacklist.DisabledCategoryEntry>{0}（{1} 个基因）[已禁用]</GD.Settings.Blacklist.DisabledCategoryEntry>
+  <GD.Settings.Blacklist.ClearGenes>清空所有黑名单基因</GD.Settings.Blacklist.ClearGenes>
+  <GD.Settings.Blacklist.ClearCategories>清空所有黑名单类别</GD.Settings.Blacklist.ClearCategories>
+  <GD.Settings.Overrides.Summary>阵营覆盖：{0} 项；种族覆盖：{1} 项。</GD.Settings.Overrides.Summary>
+  <GD.Settings.Overrides.SetSelectedRace>为当前选中人物设置种族强度</GD.Settings.Overrides.SetSelectedRace>
+  <GD.Settings.Overrides.SetSelectedFaction>为当前选中人物设置阵营强度</GD.Settings.Overrides.SetSelectedFaction>
+  <GD.Settings.Overrides.ClearAll>清空阵营和种族强度覆盖</GD.Settings.Overrides.ClearAll>
+  <GD.Settings.Overrides.RemoveRace>移除此种族覆盖</GD.Settings.Overrides.RemoveRace>
+  <GD.Settings.Overrides.RemoveFaction>移除此阵营覆盖</GD.Settings.Overrides.RemoveFaction>
+  <GD.Settings.RefreshCache>立即刷新基因池缓存</GD.Settings.RefreshCache>
+  <GD.Settings.OpenStatistics>打开统计页面</GD.Settings.OpenStatistics>
+  <GD.Settings.Intensity.Conservative>保守</GD.Settings.Intensity.Conservative>
+  <GD.Settings.Intensity.Standard>标准</GD.Settings.Intensity.Standard>
+  <GD.Settings.Intensity.High>高</GD.Settings.Intensity.High>
+  <GD.Settings.Intensity.UseGlobal>使用全局设置</GD.Settings.Intensity.UseGlobal>
+  <GD.Settings.IntensityDistribution.Conservative>0 个位点 45%、1 个位点 45%、2 个位点 9%、3 个位点 1%</GD.Settings.IntensityDistribution.Conservative>
+  <GD.Settings.IntensityDistribution.Standard>0 个位点 20%、1 个位点 55%、2 个位点 20%、3 个位点 5%</GD.Settings.IntensityDistribution.Standard>
+  <GD.Settings.IntensityDistribution.High>0 个位点 5%、1 个位点 35%、2 个位点 40%、3 个位点 20%</GD.Settings.IntensityDistribution.High>
+  <GD.Settings.CacheInvalidated>设置已更改，世界系谱池、目标池和兼容缓存已失效。</GD.Settings.CacheInvalidated>
+
+  <GD.Statistics.Title>Mutation and Hererity：基因多样性统计</GD.Statistics.Title>
+  <GD.Statistics.ScannedPawns>世界扫描人物数：{0}</GD.Statistics.ScannedPawns>
+  <GD.Statistics.ScannedRaces>扫描种族数：{0}</GD.Statistics.ScannedRaces>
+  <GD.Statistics.ObservationRecords>系谱基因观察记录：{0}</GD.Statistics.ObservationRecords>
+  <GD.Statistics.EndogeneEntries>系谱基因条目：{0}</GD.Statistics.EndogeneEntries>
+  <GD.Statistics.CacheRefreshDuration>缓存刷新耗时：{0} ms</GD.Statistics.CacheRefreshDuration>
+  <GD.Statistics.ExactCompatibilityHits>精确兼容命中数：{0}</GD.Statistics.ExactCompatibilityHits>
+  <GD.Statistics.FrdPriorHits>FRD 先验命中数：{0}</GD.Statistics.FrdPriorHits>
+  <GD.Statistics.CompatibilityStatus>回退与精确兼容：{0}</GD.Statistics.CompatibilityStatus>
+  <GD.Statistics.FrdPriorStatus>FRD 先验：{0}</GD.Statistics.FrdPriorStatus>
+  <GD.Statistics.OldSaveProcessed>已处理旧档人物：{0}</GD.Statistics.OldSaveProcessed>
+  <GD.Statistics.CommonGenesByRace>按种族常见基因：</GD.Statistics.CommonGenesByRace>
+  <GD.Statistics.GeneCountEntry>{0}×{1}</GD.Statistics.GeneCountEntry>
+  <GD.Statistics.IndentedEntry>  {0}：{1}</GD.Statistics.IndentedEntry>
+  <GD.Statistics.GenesBySourceMod>按来源模组基因数：</GD.Statistics.GenesBySourceMod>
+  <GD.Statistics.Diagnostics.Header>生成诊断摘要：</GD.Statistics.Diagnostics.Header>
+  <GD.Statistics.Diagnostics.EligiblePawns>  符合条件人物数：{0}</GD.Statistics.Diagnostics.EligiblePawns>
+  <GD.Statistics.Diagnostics.RolledSlots>  抽取位点数：{0}</GD.Statistics.Diagnostics.RolledSlots>
+  <GD.Statistics.Diagnostics.CommonAdded>  常见基因添加数：{0}</GD.Statistics.Diagnostics.CommonAdded>
+  <GD.Statistics.Diagnostics.MutationAdded>  突变基因添加数：{0}</GD.Statistics.Diagnostics.MutationAdded>
+  <GD.Statistics.Diagnostics.SameRaceCommonAdded>  同种族常见基因添加数：{0}</GD.Statistics.Diagnostics.SameRaceCommonAdded>
+  <GD.Statistics.Diagnostics.CrossRaceCommonAdded>  跨种族常见基因添加数：{0}</GD.Statistics.Diagnostics.CrossRaceCommonAdded>
+  <GD.Statistics.Diagnostics.DefFallbackCommonAdded>  Def 回退常见基因添加数：{0}</GD.Statistics.Diagnostics.DefFallbackCommonAdded>
+  <GD.Statistics.Diagnostics.HarRejected>  HAR 拒绝数：{0}</GD.Statistics.Diagnostics.HarRejected>
+
+  <GD.Compatibility.Loaded>已加载</GD.Compatibility.Loaded>
+  <GD.Compatibility.NotLoaded>未加载</GD.Compatibility.NotLoaded>
+  <GD.Compatibility.StatusEntry>{0}={1}/有效规则{2}</GD.Compatibility.StatusEntry>
+  <GD.Frd.Status.NotLoaded>FRD 未加载，使用基础系谱逻辑</GD.Frd.Status.NotLoaded>
+  <GD.Frd.Status.Failed>FRD 已加载但反射适配失败，已安全降级</GD.Frd.Status.Failed>
+  <GD.Frd.Status.Available>FRD 可选反射适配可用</GD.Frd.Status.Available>
+  <GD.Frd.Fcd.Loaded>已加载（保持独立）</GD.Frd.Fcd.Loaded>
+  <GD.Frd.Fcd.NotLoaded>未加载（不影响基因逻辑）</GD.Frd.Fcd.NotLoaded>
+  <GD.Frd.AssemblyReference.Abnormal>异常</GD.Frd.AssemblyReference.Abnormal>
+  <GD.Frd.AssemblyReference.None>无</GD.Frd.AssemblyReference.None>
+  <GD.Frd.Status.Report>{0}；FRD 种族登记={1}；FCD={2}；程序集硬引用={3}。</GD.Frd.Status.Report>
+
+  <GD.Common.ListSeparator>，</GD.Common.ListSeparator>
+  <GD.Common.StatusSeparator>；</GD.Common.StatusSeparator>
+  <GD.Common.None>无</GD.Common.None>
+  <GD.Common.Unknown>未知</GD.Common.Unknown>
+</LanguageData>

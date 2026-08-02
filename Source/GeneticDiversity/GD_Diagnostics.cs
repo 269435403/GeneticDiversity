@@ -218,6 +218,21 @@ namespace GeneticDiversity
             Increment(BirthExhaustionReasons, reason);
         }
 
+        internal static string BuildStatisticsSummary()
+        {
+            StringBuilder builder = new StringBuilder();
+            builder.AppendLine("GD.Statistics.Diagnostics.Header".Translate().ToString());
+            builder.AppendLine("GD.Statistics.Diagnostics.EligiblePawns".Translate(eligiblePawns).ToString());
+            builder.AppendLine("GD.Statistics.Diagnostics.RolledSlots".Translate(rolledSlots).ToString());
+            builder.AppendLine("GD.Statistics.Diagnostics.CommonAdded".Translate(commonAdded).ToString());
+            builder.AppendLine("GD.Statistics.Diagnostics.MutationAdded".Translate(mutationAdded).ToString());
+            builder.AppendLine("GD.Statistics.Diagnostics.SameRaceCommonAdded".Translate(sameRaceCommonAdded).ToString());
+            builder.AppendLine("GD.Statistics.Diagnostics.CrossRaceCommonAdded".Translate(crossRaceCommonAdded).ToString());
+            builder.AppendLine("GD.Statistics.Diagnostics.DefFallbackCommonAdded".Translate(defFallbackCommonAdded).ToString());
+            builder.AppendLine("GD.Statistics.Diagnostics.HarRejected".Translate(harRejected).ToString());
+            return builder.ToString().TrimEnd();
+        }
+
         internal static string BuildReport()
         {
             StringBuilder builder = new StringBuilder();

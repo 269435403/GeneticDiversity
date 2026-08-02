@@ -253,9 +253,12 @@ namespace GeneticDiversity
             {
                 string packageId = KnownSourcePackageIds[i];
                 int rules = ActiveRules.Count(rule => rule.SourcePackageIds.Contains(packageId));
-                parts.Add(packageId + "=" + (LoadedPackageIds.Contains(packageId) ? "已加载" : "未加载") + "/有效规则" + rules);
+                string loadStatus = (LoadedPackageIds.Contains(packageId)
+                    ? "GD.Compatibility.Loaded"
+                    : "GD.Compatibility.NotLoaded").Translate().ToString();
+                parts.Add("GD.Compatibility.StatusEntry".Translate(packageId, loadStatus, rules).ToString());
             }
-            return string.Join("；", parts);
+            return string.Join("GD.Common.StatusSeparator".Translate().ToString(), parts);
         }
 
         internal static List<GD_CompatibilityRule> GetActiveRulesForSource(string packageId)
@@ -312,5 +315,4 @@ namespace GeneticDiversity
         }
     }
 }
-
 

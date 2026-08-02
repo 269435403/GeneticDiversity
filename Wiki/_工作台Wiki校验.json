@@ -1,7 +1,7 @@
 {
   "owner": "rimworld-mod-workbench/project_wiki.py",
   "schema": 1,
-  "checked_date": "2026-07-30",
+  "checked_date": "2026-07-31",
   "mode": "mixed",
   "project": {
     "name": "Mutation and Hererity",
@@ -31,9 +31,9 @@
   "counts": {
     "def_files": 3,
     "def_entries": 22,
-    "translation_entries": 44,
+    "translation_entries": 122,
     "definjected_entries": 44,
-    "keyed_entries": 0,
+    "keyed_entries": 78,
     "duplicate_records": 0,
     "empty_records": 0,
     "conflict_records": 0,
